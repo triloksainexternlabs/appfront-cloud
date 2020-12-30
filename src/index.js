@@ -3,10 +3,12 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import DatiAnagraficiContainer from "./pages/DatiAnagrafici/datiAnagraficiContainer";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    {/* <App /> */}
+    <DatiAnagraficiContainer/>
   </React.StrictMode>,
   document.getElementById('root')
 );
