@@ -4,7 +4,11 @@
   font-weight: normal;
   line-height: 110%;
 }
+@font-face{
+  font-family: 'Calibri';
+  src: local('Calibri') url(../src/assets/fonts/calibrifont/calibri_font/CalibriRegular/CalibriRegular.ttf) format('truetype')
 
+}
 
 /* body::-webkit-scrollbar {
   display: none;

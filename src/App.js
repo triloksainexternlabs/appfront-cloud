@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import './App.css';
+import './App.scss';
 import logos from './images/appLogo.svg';
 import AutoMotoStoriche from './images/Auto Moto Storiche.svg'
 import AutocarriFinoA from './images/Autocarri Fino A 35 Q.svg';
