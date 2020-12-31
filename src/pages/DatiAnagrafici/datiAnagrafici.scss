@@ -19,20 +19,26 @@
         display: flex;
         justify-content: space-evenly;
         margin-top: 1%;
+        .datidelcontraente-form ,.datidelveicolo-form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
         span {
             font-family: Alata;
             font-style: normal;
             font-weight: bold;
-            font-size: 20px;
+            // font-size: 20px;
             line-height: 28px;
             letter-spacing: 0.015em;
             text-transform: uppercase;
             color: #8A25B1;
+            align-self: center;
         }
         .form-border{
             width: 3px;
             background: #0C87C8;
-            height: 100%;
+            height: 92%;
         }
         .copia-btn{
             width: 80px;
@@ -43,7 +49,7 @@
             border-radius: 2px;
             border: none;
             color: white;
-            float: right;
+            align-self: flex-end;
             cursor: pointer;
         }
     }

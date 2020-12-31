@@ -5,8 +5,8 @@ import PropTypes from 'prop-types';
 
 const useStyles = makeStyles((theme) => ({
     textField: {
-        width: '396px',
-        margin: '4%',
+        width: '424px',
+        margin: '15px 0px',
     },
   }));
 
