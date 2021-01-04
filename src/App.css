@@ -271,7 +271,7 @@ label.label-custom {
   transform: rotate(45deg);
 }
 
-.product-list-third button {
+.product-list-third button.btn {
   background: #8A25B1;
   border-radius: 2px;
   font-family: Alata;
