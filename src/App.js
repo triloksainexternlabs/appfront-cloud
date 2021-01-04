@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import './App.css';
 import logos from './images/appLogo.svg';
 import AutoMotoStoriche from './images/Auto Moto Storiche.svg'
