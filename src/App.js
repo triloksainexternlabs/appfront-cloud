@@ -19,22 +19,6 @@ function App() {
     })
   }
 
-  // useEffect(()=>{
-  //   document.addEventListener('scroll', function(e){
-  //     const scrollTop =  window.pageYOffset || document.documentElement.scrollTop; 
-  //     const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-  //     // window.onscroll = () { 
-  //       console.log("e",e)
-  //       window.scrollTo({top: 0}); 
-  //   // }; 
-  //   })
-  // }, [])
-   
-
-    // if any scroll is attempted, 
-    // set this to the previous value 
-    
-
   return (
     <div className="app">
       <div className="app-logo">

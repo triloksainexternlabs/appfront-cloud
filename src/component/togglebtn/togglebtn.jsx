@@ -1,20 +1,37 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../togglebtn/togglebtn.scss';
 const ToggleBtn = (props) => {
-    let { setValue, checked, id1, id2,id } = props;
+    console.log('toogleBtn',props.id);
+    const [sinoFlag, setSinoFlag] = useState('');
+    const [sinoId, setsinoId] = useState();
+    const handleSiNoFlag = (str,id) => {
+        if(str === 'si') {
+            setSinoFlag(str)
+            setsinoId(id)
+            console.log('si vale',sinoId,sinoFlag);
+        }
+        else if (str === 'no'){
+            setSinoFlag(str)
+            setsinoId(id)
+            console.log('no vale',sinoId,sinoFlag);
+        }
+    }
+    
     return (
         <div className='toogle-btn-container'>
             <div className='toogle-btn-wrapper'>
-                <input disabled={id==id1} id={id1} onClick={setValue} type='button' value={'Si'} className={id==id1?'active':''}></input>
-                <input disabled={id==id2} id={id2} onClick={setValue} type='button' value={'No'} className={id==id2?'active':''} ></input>
-                {/* <label>
-                <span className='toggle-true checked'>Si</span>
-                    <input type="radio" value="yes" />
-                </label>
-                <label >
-                <span className='toggle-false'>No</span>
-                    <input type="radio" value="yes" />
-                </label> */}
+                <input 
+                    onClick={()=>handleSiNoFlag('si',props.id)}
+                    type='button' 
+                    value={'Si'} 
+                    className={sinoFlag==='si' ?'active':''}
+                ></input>
+                <input 
+                    onClick={()=>handleSiNoFlag('no',props.id)}
+                    type='button' 
+                    value={'No'} 
+                    className={sinoFlag==='no' ?'active':''}
+                ></input>
             </div>
         </div>
     )
