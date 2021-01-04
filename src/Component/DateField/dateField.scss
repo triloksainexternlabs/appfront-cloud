@@ -1,0 +1,49 @@
+.date-picker-container{
+    display: flex;
+    width: 20%;
+    justify-content: space-between;
+    position: relative;
+
+    .icon-container{
+        display: flex;
+       flex-direction: row;
+       width: fit-content;
+    }
+    .input-container{
+        padding: 15px 0px;
+        width: 90%;
+      display: flex;  
+      flex-direction: column;
+      font-size: 14px;
+      input{
+          border: none;
+          width: 100%;
+          outline: none;
+          border: none;
+          border-bottom: 2px solid black;
+          padding: 7px 0px;
+         color: transparent;
+      }
+      input:focus ~ label{
+          top: 0px;
+         color: #8A25B1;
+      }
+      label{
+          position: absolute;
+          top: 20px;
+         transition:top .3s ease-in;
+
+      }
+    }
+    span{
+        height: fit-content;
+        align-self: flex-end;
+        .fa-trash-o{
+            font-size: 23px;
+            color: #1A9FE6;
+            line-height: 21px;
+        }
+    }
+    margin: auto;
+    margin-top: 5%;
+}

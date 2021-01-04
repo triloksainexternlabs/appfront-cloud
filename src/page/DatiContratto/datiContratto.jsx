@@ -7,12 +7,12 @@ import DateField from "../../Component/DateField/dateField";
 const DatiContratto = props => {
     return (
         <div>
-            {/* <Input/>
-            <DateField/> */}
-            <div className="label-text">Dati Contratto</div>
+            {/* {/* <Input/> */}
+            <DateField/> 
+            {/* <div className="label-text">Dati Contratto</div>
             <div>
                 CIAO, CODICE 
-            </div>
+            </div> */}
         </div>
     )
 }
