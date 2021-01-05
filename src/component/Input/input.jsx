@@ -19,7 +19,7 @@ const Input = props => {
                 id={inputTextId} 
                 label={inputTextLable}
                 // name={inputTextName}
-                // className={classes.textField} 
+                className={classes.textField} 
                 variant="outlined" 
             />
         </div>
