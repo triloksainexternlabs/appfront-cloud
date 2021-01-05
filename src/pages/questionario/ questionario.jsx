@@ -1,10 +1,27 @@
-import React from 'react';
+import React,{useState} from 'react';
 import SwitchBtn from '../../component/switchbtn/switchbtn';
 import ToggleBtn from '../../component/togglebtn/togglebtn';
 import '../questionario/questionario.scss';
 
 const Questionario = (props) => {
-    console.log('Questionario',props);
+    const [arr,setArr]=useState([]);
+
+    const handleToggle=(id,value)=>{
+        let temp = [...arr];
+        let found = false;
+        for(let i = 0; i < temp.length; i++) {
+            if (temp[i].id === id) {
+                temp[i].value=value;
+                found = true;
+                break;
+            }
+        }
+        if(!found){
+            temp.push({id,value});
+        }      
+        setArr(temp)
+        console.log('array:',temp);
+    }
 
     return (
         <div className='questionario-container'>
@@ -15,38 +32,35 @@ const Questionario = (props) => {
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque. Consectetur duis tincidunt arcu nunc suspendisse sagittis fames quis justo.</p>
                         <ToggleBtn 
-                            value1={props.value1} 
-                            value2={props.value2}
                             id={1}  
+                            handleToggle={handleToggle}
                         />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque.</p>
                         <ToggleBtn 
-                            value1={props.value3} 
-                            value2={props.value4} 
-                            id={2}   
+                            id={2}  
+                            handleToggle={handleToggle}
+
                         />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque.</p>
                         <ToggleBtn 
-                            value1={props.value3} 
-                            value2={props.value4}  
                             id={3}  
+                            handleToggle={handleToggle}
                         />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque. Consectetur duis tincidunt arcu nunc suspendisse sagittis fames quis justo.</p>
                         <ToggleBtn 
-                            value1={props.value3} 
-                            value2={props.value4}  
                             id={4}  
+                            handleToggle={handleToggle} 
                         />
                     </div>
-                    
-                    
-                    
+
+
+
                 </div>
                 <div className='questionario-sub-container'>
                     <h1>Dichiarazione Di Rifiuto Do Fornire UNA o piu Delle Informazioni Richieste</h1>
