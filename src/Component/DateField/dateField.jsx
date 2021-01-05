@@ -1,31 +1,22 @@
 import React, { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import TextField from '@material-ui/core/TextField';
-import PropTypes from 'prop-types'
 import '../DateField/dateField.scss';
 import calendarIcon from '../../images/calendar.svg'
-const useStyles = makeStyles((theme) => ({
-  container: {
-    display: 'flex',
-    flexWrap: 'wrap',
-  },
-  textField: {
-    width: 200,
-  },
-}));
+import trashIcon from '../../images/trash.svg'
 
 const DateField = props => {
-  const classes = useStyles();
+let { value,onChange }=props
   return (
-    <div className='date-picker-container'>
-      <div className='input-container' >
-        <input value='777' type="date" />
+    <div className={`date-picker-container ${value!==null?'onChange-color':''}`}>
+      <div className="input-container" >
+        {/* <span><img src={calendarIcon} alt=''/></span> */}
+        <input onChange={onChange} type="date" />
         <label>Scadenza Vincolo*</label>
+
       </div>
       <div className='icon-container'>
-        <span><img src={calendarIcon} /></span>
         <span>
-          <i class="fa fa-trash-o"></i>
+          <img src={trashIcon} alt='' />
         </span>
       </div>
 
@@ -33,8 +24,6 @@ const DateField = props => {
   )
 }
 
-DateField.propTypes = {
 
-}
 
 export default DateField

@@ -8,8 +8,8 @@ const InputFiled = props => {
         <div className="form-group">
            <TextField 
                 id="standard-basic"     
-                label="Standard" 
-                className="textField"
+                label={props.label} 
+                className="textField text-field"
            />
         </div>
     )

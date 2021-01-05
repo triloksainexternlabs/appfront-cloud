@@ -1,12 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React,{ useState } from 'react'
 import DatiContratto from "../DatiContratto/datiContratto";
 
 const DatiContrattoContainer = props => {
+    const [value, setValue] = useState(null)
+    let Styles=''
+  const onChange=(e)=>{
+     setValue(e.target.value)
+    }
     return (
-        <div>
-            <DatiContratto/>
-        </div>
+            <DatiContratto onChange={onChange} value={value}/>
     )
 }
 
