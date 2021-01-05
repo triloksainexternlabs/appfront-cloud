@@ -1,0 +1,29 @@
+.heading{   
+ color:#0C87C8; 
+ position: absolute;
+width: 275px;
+height: 41px;
+left: 565px;
+top: 109px;
+font-family: Alata;
+font-weight: 400;
+line-height: 41.4px;
+letter-spacing: 0.015em;
+font-style: normal; 
+}
+
+
+.borderline{
+border: 1px solid #0C87C8;
+position: absolute;
+width: 232px;
+height: 2px;
+left: 575px;
+top: 153px;
+}
+
+.progressbardiv{
+    border : 11px solid red;
+    position: absolute;
+    left:1272px;
+}
