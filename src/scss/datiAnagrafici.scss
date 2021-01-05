@@ -1,0 +1,57 @@
+.dati-anagrafici-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    .dati-anagrafici-text{
+        font-family: Alata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #0C87C8;
+        border-bottom: 2px solid;
+        width: fit-content;
+        align-self: center;
+    }
+    .dati-anagrafici-form-container{
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 1%;
+        .datidelcontraente-form ,.datidelveicolo-form{
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+        }
+        span {
+            font-family: Alata;
+            font-style: normal;
+            font-weight: bold;
+            // font-size: 20px;
+            line-height: 28px;
+            letter-spacing: 0.015em;
+            text-transform: uppercase;
+            color: #8A25B1;
+            align-self: center;
+        }
+        .form-border{
+            width: 3px;
+            background: #0C87C8;
+            height: 92%;
+        }
+        .copia-btn{
+            width: 80px;
+            height: 27px;
+            left: 1037px;
+            top: 706px;
+            background: #0C87C8;
+            border-radius: 2px;
+            border: none;
+            color: white;
+            align-self: flex-end;
+            cursor: pointer;
+            margin-right: 70px;
+        }
+    }
+}
