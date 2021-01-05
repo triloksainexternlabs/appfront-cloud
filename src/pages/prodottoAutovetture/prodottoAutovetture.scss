@@ -1,0 +1,47 @@
+.prodotto-autovetture-container{
+    display: flex;
+    flex-direction: column;
+    .prodotto-autovetture-title{
+        font-family: Alata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #0C87C8;
+        border-bottom: 2px solid;
+        width: fit-content;
+        align-self: center;
+    }
+
+    .prodotto-autovetture-list{
+        display: flex;
+        justify-content: space-around;
+    }
+    .mid-line{
+        border: 1px solid #EAE9E9;
+        margin: 4% 5%;
+        background-color: #EAE9E9;
+    }
+    .prodotto-autovetture-form{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        .left-input-field{
+            width: 50%;
+            // padding: 0% 10%;
+            margin: 0% 10%;
+            .subleft-input-field{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+        .right-input-field{
+            width: 50%;
+            // padding: 0% 10%;
+            margin: 0% 10%;
+        }
+    }
+}
