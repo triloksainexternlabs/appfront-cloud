@@ -1,5 +1,5 @@
 import React from 'react';
-import Input from "../../component/Input/input";
+import Input from "../../components/Input/input";
 import '../../scss/datiAnagrafici.scss'
 const DatiAnagrafici = props => {
     return (

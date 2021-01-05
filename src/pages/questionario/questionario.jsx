@@ -1,11 +1,11 @@
 import React,{useState} from 'react';
-import SwitchBtn from '../../component/switchbtn/switchbtn';
-import ToggleBtn from '../../component/togglebtn/togglebtn';
+import SwitchBtn from '../../components/switchbtn/switchbtn';
+import ToggleBtn from '../../components/togglebtn/togglebtn';
 import '../questionario/questionario.scss';
 
 const Questionario = (props) => {
     const [arr,setArr]=useState([]);
-    
+
     const handleToggle=(id,value)=>{
         let temp = [...arr];
         let found = false;
@@ -58,9 +58,9 @@ const Questionario = (props) => {
                             handleToggle={handleToggle} 
                         />
                     </div>
-                    
-                    
-                    
+
+
+
                 </div>
                 <div className='questionario-sub-container'>
                     <h1>Dichiarazione Di Rifiuto Do Fornire UNA o piu Delle Informazioni Richieste</h1>

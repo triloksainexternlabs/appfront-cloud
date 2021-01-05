@@ -1,9 +1,9 @@
 import './App.scss';
 import logos from './images/appLogo.svg';
-import ContinueButton from "./component/ContinueButton";
-import ElencoGaranzie from './pages/ElencoGaranzie/ElencoGaranzie';
-import ProductListcontainer from "./pages/ProductList/ProductListcontainer";
-import DatiAnagrafici from "./pages/DatiAnagrafici/datiAnagraficiContainer";
+import ContinueButton from "./components/ContinueButton";
+import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzie';
+import ProductListcontainer from "./pages/productList/ProductListcontainer";
+import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
 
 function App() {
@@ -14,13 +14,7 @@ function App() {
       behavior: 'smooth'     
     })
   }
-if(false){
-  return (
-    <Questionario />
-  )
-}
 
-  
   return (
     <div className="app">
       <div className="app-logo">
