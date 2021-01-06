@@ -22,28 +22,39 @@ const ProdottoAutovetture = props => {
             
             <div className="prodotto-autovetture-form">
                 <div className="left-input-field">
-                    <Label label='Decorrenza e Ora'/>
-                    <Inputs placeholder='Decorrenza e Ora'/>
+                    <div className="input-label">
+                        <Label label='Decorrenza e Ora'/>
+                        <Inputs placeholder='Decorrenza e Ora'/>
+                    </div>
                     <div className="subleft-input-field">
-                        <div>
+                        <div className="input-label">
                             <Label label='Eta’delVeicolo ( in Mesi)'/>
                             <Inputs placeholder='Eta’delVeicolo ( in Mesi)'/>
                         </div>
-                        <div>
+                        <div className="input-label">
                             <Label label='Tipo Cuente'/>
                             <Inputs placeholder='Tipo Cuente'/>
                         </div>
                     </div>
-                    <Label label='Codice Veicolo'/>
-                    <Inputs placeholder='Codice Veicolo'/>
+                    <div className="input-label">
+                        <Label label='Codice Veicolo'/>
+                        <Inputs placeholder='Codice Veicolo'/>
+                        <span className="preimum-text">Premio non calcolato*</span>
+                    </div>
                 </div>
                 <div className="right-input-field">
-                    <Label label='Classificazione Veicolo'/>
-                    <Inputs placeholder='Classificazione Veicolo'/>
-                    <Label label='Granzia Money Box'/>
-                    <Inputs placeholder='Granzia Money Box'/>
-                    <Label label='Provincia Di Tariffa'/>
-                    <Inputs placeholder='Provincia Di Tariffa'/>
+                    <div className="input-label">
+                        <Label label='Classificazione Veicolo'/>
+                        <Inputs placeholder='Classificazione Veicolo'/>
+                    </div>
+                    <div className="input-label">
+                        <Label label='Granzia Money Box'/>
+                        <Inputs placeholder='Granzia Money Box'/>
+                    </div>
+                    <div className="input-label">
+                        <Label label='Provincia Di Tariffa'/>
+                        <Inputs placeholder='Provincia Di Tariffa'/>
+                    </div>
                 </div>
             </div>
         </div>

@@ -4,6 +4,7 @@ import ContinueButton from "./component/ContinueButton";
 import ElencoGaranzie from './pages/ElencoGaranzie/ElencoGaranzie';
 import ProductListcontainer from "./pages/ProductList/ProductListcontainer";
 import DatiAnagrafici from "./pages/DatiAnagrafici/datiAnagraficiContainer";
+import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
 
 function App() {
 
