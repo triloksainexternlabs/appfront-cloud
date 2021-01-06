@@ -5,11 +5,13 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider} from 'react-redux';
 import store from './store';
+import ProdottoAutovetture from "../src/pages/prodottoAutovetture/prodottoAutovettureContainer";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store} >
-        <App />
+        {/* <App /> */}
+        <ProdottoAutovetture/>
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
