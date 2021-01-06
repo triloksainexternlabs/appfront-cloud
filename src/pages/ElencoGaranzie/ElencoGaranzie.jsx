@@ -1,5 +1,9 @@
 const ElencoGaranzie = () => {
     return ( 
+        
+        <div class="main_div_car">
+             {/* <div class="car_image">
+            </div> */}
         <table>
             <thead>
                 <td className="input-col"></td>
@@ -88,7 +92,12 @@ const ElencoGaranzie = () => {
                 <td className="third">Autovettura/Autocarro 35Q</td>
                 </tr>
             </tbody>
+            
         </table>
+        
+        </div>
+        
+      
      );
 }
  

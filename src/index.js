@@ -10,8 +10,8 @@ import ProdottoAutovetture from "../src/pages/prodottoAutovetture/prodottoAutove
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store} >
-        {/* <App /> */}
-        <ProdottoAutovetture/>
+         <App /> 
+        {/* <ProdottoAutovetture/> */}
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')

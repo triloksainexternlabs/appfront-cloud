@@ -4,7 +4,10 @@ import ContinueButton from "./component/ContinueButton";
 import ElencoGaranzie from './pages/ElencoGaranzie/ElencoGaranzie';
 import ProductListcontainer from "./pages/ProductList/ProductListcontainer";
 import DatiAnagrafici from "./pages/DatiAnagrafici/datiAnagraficiContainer";
-import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
+import ProclottoAuto from "./Proclotto/ProclottoAuto"
+import ProdottoAutovetture from './pages/prodottoAutovetture/prodottoAutovetture'
+import Attestato from './Attestato/Attestato'
+import Progressbar from './ProgressBar/progressbar'
 
 function App() {
 
@@ -43,9 +46,17 @@ function App() {
             <DatiAnagrafici/>
             <ContinueButton handleScroll={handleScroll} step={4}/>
           </div>
+          <ProclottoAuto/>
+          <ProdottoAutovetture/>
+          {/* <Attestato/> */}
+          {/* <Progressbar/>
+           */}
         </div>
-      </div>
+        </div>
+        
+        
     </div>
+    
   );
 }
 

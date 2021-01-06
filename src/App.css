@@ -252,6 +252,7 @@ label.label-custom {
   vertical-align: middle;
   cursor: pointer;
   margin-right: 5px;
+
 }
 
 .form-group input:checked + label:before{
@@ -287,3 +288,44 @@ label.label-custom {
   margin-top: 20px;
 }
 
+/*  css  updated by keshav  */
+/* .car_image{
+  width:359px;
+    height:786px;
+       position: absolute;
+    left:0px;
+    background-image: url('./images/car.svg');
+     background-size: cover; 
+    background-repeat: no-repeat; */
+    /* margin-top:1%; */
+    /* z-index: -1; */
+/* } */
+/* .form-group label:before { */
+  /* right: 287px; */
+  /* z-index: 1; */
+/* }
+  tbody td{
+  padding: 20px 185px;
+}   */
+/* 
+  td.input-col {
+    position: relative;
+  width: 16%;
+}  */
+
+ /* .main_div_car{
+  width: 100%;
+    display: flex;
+
+}  */
+
+ /* table{
+  width: 50%;
+    
+    align-self: center;
+     position: absolute; 
+     left: 18.5%
+
+}
+   */
+   

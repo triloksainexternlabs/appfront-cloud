@@ -31,7 +31,7 @@ li{
     content: "";
     position: absolute;
     width: 2px;
-    height: calc(100% - 60px);
+    height: calc(100% - 63px);
     left:40px;
     top:6px;
     z-index: -1;

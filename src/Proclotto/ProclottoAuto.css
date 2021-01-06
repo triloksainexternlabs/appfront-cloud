@@ -1,0 +1,55 @@
+.proclotto-autovetture-Datiintegrative-container{
+    display: flex;
+    flex-direction: column;
+}
+
+    .proclotto-autovetture-Datiintegrative-container-title{   
+   
+        font-family: Alata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 30px;
+        line-height: 41px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #0C87C8;
+        align-self: center;  
+    }
+
+   .proclotto-autovetture-Datiintegrative-container-sub-title{   
+    font-family: Alata;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 41px;
+        letter-spacing: 0.015em;
+        text-transform: capitalize;
+        color: #0C87C8;
+        align-self: center;         
+    }
+   
+   .proclotto-autovetture-Datiintegrative-form{
+        display: flex;
+        flex-direction: row;
+    }
+    .left-input-field{
+        width: 50%;
+        margin: 10% 10%;
+        justify-content: space-between; 
+        
+    }
+    .right-input-field{
+        width: 50%;
+        margin: 10% 10%;
+    }
+    .input-label{
+        margin-bottom: 5%;
+    }
+
+    .base-line{
+      color: #0C87C8;;
+        align-self: center;
+        border-bottom: 2px solid;
+        width: 285px;
+ }
+    
