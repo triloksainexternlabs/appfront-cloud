@@ -1,4 +1,8 @@
 .daticontratto-container{
+    
+    .MuiFormControl-root{
+        margin-top: 30px;
+        }
     padding: 5%;
     .MuiInputLabel-root.Mui-focused{
         color: #8A25B1;
@@ -17,13 +21,14 @@
         line-height: 25px;
         letter-spacing: 0.015em;
         text-transform: uppercase;
+        color:#8A25B1 ;
     }
     p + .form-group{
         width: 100%;
     }
+   
     .form-group{
-        margin-top: 30px;
-        width: 49%;
+        width: 48%;
             div{
                 width: 100%;
                 .MuiInput-underline:after{
@@ -42,12 +47,16 @@
        display: flex;
        flex-wrap: wrap;
        justify-content: space-between;
-
+       :nth-child(9) .input-container {
+        width: 97%;
+      }
     }
     .date-picker-container,.select-container{
-        width: 49%;
+        width: 48%;
+      
     }
-    // .select-container .MuiInputLabel-root.Mui-focused{
-    //     color: red;
-    // }
+   
+}
+#Decorrenza{
+   width: 100%;
 }

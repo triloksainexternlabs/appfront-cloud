@@ -5,7 +5,7 @@ import TextField from '@material-ui/core/TextField';
 
 const InputFiled = props => {
     return (
-        <div className="form-group">
+        <div id={props.id} className="form-group">
            <TextField 
                 id="standard-basic"     
                 label={props.label} 

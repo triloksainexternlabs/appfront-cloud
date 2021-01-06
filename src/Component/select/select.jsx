@@ -4,11 +4,11 @@ import '../select/select.scss';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 
-const SelectField = () => {
+const SelectField = (props) => {
     return (
         <div className='select-container'>
             <FormControl >
-                <InputLabel htmlFor="age-native-simple">Age</InputLabel>
+                <InputLabel htmlFor="age-native-simple">{props.name}</InputLabel>
                 <Select
                     native
                   

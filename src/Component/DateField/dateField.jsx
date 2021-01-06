@@ -1,20 +1,17 @@
 import React, { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import '../DateField/dateField.scss';
-import calendarIcon from '../../images/calendar.svg'
 import trashIcon from '../../images/trash.svg'
 
 const DateField = props => {
-let { value,onChange }=props
+  let { value, onChange, styles, label } = props;
   return (
-    <div className={`date-picker-container ${value!==null?'onChange-color':''}`}>
-      <div className="input-container" >
-        {/* <span><img src={calendarIcon} alt=''/></span> */}
-        <input onChange={onChange} type="date" />
-        <label>Scadenza Vincolo*</label>
+    <div className={`date-picker-container ${value == null ? '' : 'onChange-color'}`}>
+      <div className=" MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-formControl MuiInput-formControl input-container" >
+        <input className='MuiInputBase-input MuiInput-input' onChange={onChange} type="date" />
+        <label>{label}</label>
 
       </div>
-      <div className='icon-container'>
+      <div className={`icon-container ${styles ? 'hidden-icon' : ""}`}>
         <span>
           <img src={trashIcon} alt='' />
         </span>
@@ -23,7 +20,4 @@ let { value,onChange }=props
     </div>
   )
 }
-
-
-
-export default DateField
+export default DateField;
