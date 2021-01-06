@@ -304,4 +304,6 @@ label.label-custom {
   /* max-height: 882px; */
 }
 
-
+.PrivateNotchedOutline-legendNotched-5{
+  max-width: 100px !important;
+}
