@@ -173,6 +173,7 @@ td input {
 
 td.input-col{
   width: 10%;
+  /* position: relative; */
 }
 td.second {
   width: 70%;
@@ -286,4 +287,18 @@ label.label-custom {
   padding: 10px 20px;
   margin-top: 20px;
 }
+
+.input-col .img-div{
+  position: absolute;
+  right: 90px;
+  top: 0;
+}
+
+.input-col .img-div img {
+  width: 471px;
+  height: 813px;
+  /* max-width: 440px; */
+  /* max-height: 882px; */
+}
+
 

@@ -1,28 +1,34 @@
+import Car from '../../images/car.svg'
 const ElencoGaranzie = () => {
     return ( 
+        
         <table>
             <thead>
-                <td className="input-col"></td>
+                <td className="input-col" style={{position: 'relative'}}>
+                    <div className="img-div">
+                        <img src = {Car}></img>
+                    </div>
+                </td>
                 <td className="second">Garanzia</td>
                 <td className="third">Oggetto</td>
             </thead>
             <tbody>
                 <tr>
                     <td className="input-col">
-                    <div class="form-group">
-                        <input type="checkbox" id="Veicoli"/>
-                        <label for="Veicoli"></label>
-                    </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="Veicoli"/>
+                            <label for="Veicoli"></label>
+                        </div>
                     </td>
                     <td className="second">R.C. Veicoli- B/M</td>
                     <td className="third">Autovettura/Autocarro 35Q</td>
                 </tr>
                 <tr>
                     <td className="input-col">
-                    <div class="form-group">
-                        <input type="checkbox" id="Scoperto"/>
-                        <label for="Scoperto"></label>
-                    </div>
+                        <div class="form-group">
+                            <input type="checkbox" id="Scoperto"/>
+                            <label for="Scoperto"></label>
+                        </div>
                     </td>
                     <td className="second">Inc/Furto Con Scoperto</td>
                     <td className="third">utovettura/Autocarro 35Q</td>
@@ -89,6 +95,7 @@ const ElencoGaranzie = () => {
                 </tr>
             </tbody>
         </table>
+        
      );
 }
  

@@ -4,6 +4,8 @@ import ContinueButton from "./component/ContinueButton";
 import ElencoGaranzie from './pages/ElencoGaranzie/ElencoGaranzie';
 import ProductListcontainer from "./pages/ProductList/ProductListcontainer";
 import DatiAnagrafici from "./pages/DatiAnagrafici/datiAnagraficiContainer";
+// import ProgressBar from "./ProgressBar/progressbar";
+
 
 function App() {
 
@@ -33,10 +35,10 @@ function App() {
             <div className="head-text-w-underline">Elenco Prodotti</div>
             <ProductListcontainer handleScroll={handleScroll}/>
           </div>
-          <div className="product-list-third">
+            <div className="product-list-third">
             <div className="head-text-w-underline">Elenco Garanzie</div>
-              <ElencoGaranzie/>
-              <ContinueButton handleScroll={handleScroll} step={3} />
+            <ElencoGaranzie/>
+            <ContinueButton handleScroll={handleScroll} step={3} />
           </div>
           <div className="product-list-third">
             <DatiAnagrafici/>
