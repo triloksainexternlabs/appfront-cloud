@@ -151,11 +151,13 @@ thead td {
     font-size: 20px;
     letter-spacing: 0.015em;
     color: #8A25B1;
-    padding: 40px 0px 25px;
+    /* padding: 40px 0px 25px; */
+    padding: 20px 80px;
 }
 
 tbody td {
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
+  padding:20px 80px ;
   font-family: Calibri;
   font-style: normal;
   font-weight: normal;
@@ -172,14 +174,14 @@ td input {
 }
 
 td.input-col{
-  width: 10%;
+  /* width: 10%; */
   /* position: relative; */
 }
 td.second {
-  width: 70%;
+  /* width: 70%; */
 }
 td.third {
-  width:  65%;
+  /* width:  65%; */
 }
 
 label.label-custom:before {
@@ -253,6 +255,7 @@ label.label-custom {
   vertical-align: middle;
   cursor: pointer;
   margin-right: 5px;
+  background-color: white;
 }
 
 .form-group input:checked + label:before{

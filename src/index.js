@@ -5,11 +5,12 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { Provider} from 'react-redux';
 import store from './store';
-
+import ElencoGaranzie from "../src/pages/ElencoGaranzie/ElencoGaranzie";
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store} >
         <App />
+        {/* <ElencoGaranzie/> */}
     </Provider>
   </React.StrictMode>,
   document.getElementById('root')
