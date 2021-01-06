@@ -1,5 +1,5 @@
 import React from 'react'
-import "../DatiContratto/datiContratto.scss";
+import "./datiContratto.scss";
 import Input from "../../Component/InputFiled/inputField";
 import DateField from "../../Component/DateField/dateField";
 import SelectField from '../../Component/select/select';

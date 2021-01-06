@@ -5,6 +5,7 @@ import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzie';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
+import DatiContrato from "./pages/DatiContratto/datiContrattoContainer";
 
 function App() {
 
@@ -13,6 +14,13 @@ function App() {
       top: window.innerHeight * value,
       behavior: 'smooth'     
     })
+  }
+
+  if(true)
+  {
+    return (
+      <DatiContrato />
+    )
   }
 
   return (
@@ -46,6 +54,10 @@ function App() {
           <div className="product-list-third">
             <Questionario/>
             <ContinueButton handleScroll={handleScroll} step={5}/>
+          </div>
+          <div className="product-list-third">
+            <DatiContrato/>
+            <ContinueButton handleScroll={handleScroll} step={6}/>
           </div>
         </div>
       </div>

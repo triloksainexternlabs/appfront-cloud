@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import DatiContratto from "../DatiContratto/datiContratto";
+import DatiContratto from "./datiContratto";
 
 const DatiContrattoContainer = props => {
     const [value1, setValue1] = useState(null)
