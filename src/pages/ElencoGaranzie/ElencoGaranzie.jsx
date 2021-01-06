@@ -111,9 +111,15 @@ const ElencoGaranzie = props => {
     return (
         <div style={{display: 'flex',width: 'inherit'}}>
             <div style={{position:'absolute'}}>
-                <img src={Car}/>
+                <img
+                style={{
+                    width: '485px',
+                    height: '789px',
+                }} 
+                     src={Car}
+                />
             </div>
-            <div style={{position:'relative',marginLeft:'265px'}}>
+            <div style={{position:'relative',marginLeft:'390px'}}>
                 <table>
                     <thead>
                         <td></td>
