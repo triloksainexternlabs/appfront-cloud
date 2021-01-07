@@ -1,0 +1,93 @@
+.date-picker-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: relative;
+    // border-bottom: 1px solid;
+
+    .icon-container{
+       display: flex;
+       flex-direction: row;
+       width: fit-content;
+       position: absolute;
+       right: 0%;
+       bottom: 0px;
+       span{
+        height: fit-content;
+        align-self: flex-end;
+        margin: 2px;
+        .fa-trash-o{
+            font-size: 30px;
+            color: #1A9FE6;
+            line-height: 21px;
+        }
+    }
+    }
+    .hidden-icon{
+        display: none;
+    }
+    .input-container{
+      width: 100%  ;
+      display: flex;  
+      flex-direction: column;
+      font-size: 14px;
+      position: relative;
+      justify-content: flex-end;
+      align-items: flex-start;
+      span{
+          position: absolute;
+          right: 0px;
+      }
+     
+      input{
+          border: none;
+          width: 100%;
+          outline: none;
+          border: none;
+          padding: 5px 0px;
+          color: transparent;
+          cursor: pointer;
+      }
+      input:focus{
+          color: black;
+      }
+      input:focus ~ label{
+          bottom: 40px;
+          color: #8A25B1;
+          font-size: 14px;
+      }
+      label{
+          font-weight: 100;
+          position: absolute;
+          bottom: 10px;
+          transition: 0.2s ease all;
+          color: rgba(0, 0, 0, 0.54);
+          font-size: 16px;
+          font-family:  "Roboto", "Helvetica", "Arial", sans-serif;
+      }
+    }
+    input[type="date"]::-webkit-calendar-picker-indicator{
+        background-image: url(../../images/calendar.svg);
+        background-position: center;
+        background-size: 20px 20px;
+        background-repeat: no-repeat;
+       color: rgba(204,204,204,0);
+       outline: none;
+       margin-bottom: 8px;
+ }
+}
+.onChange-color{
+    // border-bottom: 2px solid;
+ input{
+     color: black !important;
+    
+ }
+ label{
+    bottom: 40px !important;
+    font-size: 13px !important;
+    // color: #8A25B1 !important;
+ } 
+}
+.date-picker-container:hover{
+    // border-bottom: 2px solid;
+}

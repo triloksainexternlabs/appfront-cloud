@@ -9,7 +9,7 @@ const ElencoGaranzie = () => {
             <tbody>
                 <tr>
                     <td className="input-col">
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Veicoli"/>
                         <label for="Veicoli"></label>
                     </div>
@@ -19,7 +19,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                     <td className="input-col">
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Scoperto"/>
                         <label for="Scoperto"></label>
                     </div>
@@ -29,7 +29,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                     <td>
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Cowsione"/>
                         <label for="Cowsione"></label>
                     </div>
@@ -39,7 +39,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                 <td>
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Kasko"/>
                         <label for="Kasko"></label>
                     </div>
@@ -49,7 +49,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                     <td className="input-col" >
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Back"/>
                         <label for="Back"></label>
                     </div>
@@ -59,7 +59,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                     <td className="input-col">
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Base"/>
                         <label for="Base"></label>
                     </div>
@@ -69,7 +69,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                     <td className="input-col">
-                    <div class="form-group">
+                    <div class="frm-group">
                         <input type="checkbox" id="Assistenza"/>
                         <label for="Assistenza"></label>
                     </div>
@@ -79,7 +79,7 @@ const ElencoGaranzie = () => {
                 </tr>
                 <tr>
                 <td className="input-col">
-                    <div class="form-group">
+                    <div class="frm-group">
                     <input type="checkbox" id="Cristaw"/>
                     <label for="Cristaw"></label>
                     </div>

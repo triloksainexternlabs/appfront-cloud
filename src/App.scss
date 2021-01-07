@@ -227,7 +227,7 @@ label.label-custom {
   cursor: pointer;
 }
 
-.form-group input {
+.frm-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -236,12 +236,12 @@ label.label-custom {
   cursor: pointer;
 }
 
-.form-group label {
+.frm-group label {
   position: relative;
   cursor: pointer;
 }
 
-.form-group label:before {
+.frm-group label:before {
   content:'';
   -webkit-appearance: none;
   background-color: transparent;
@@ -257,11 +257,11 @@ label.label-custom {
   margin-right: 5px;
 }
 
-.form-group input:checked + label:before{
+.frm-group input:checked + label:before{
   background-color: #8A25B1;
 }
 
-.form-group input:checked + label:after {
+.frm-group input:checked + label:after {
   content: '';
   display: block;
   position: absolute;
