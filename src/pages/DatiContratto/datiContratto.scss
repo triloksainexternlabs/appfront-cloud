@@ -1,0 +1,62 @@
+.daticontratto-container{
+    
+    .MuiFormControl-root{
+        margin-top: 30px;
+        }
+    padding: 5%;
+    .MuiInputLabel-root.Mui-focused{
+        color: #8A25B1;
+        }
+        .MuiInput-underline:after{
+            border-color: rgba(0, 0, 0, 0.42);
+        }
+    p:before{
+        color: #0C87C8;
+        content: "ciao, ";
+    }
+    p{
+        font-family: Alata;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 25px;
+        letter-spacing: 0.015em;
+        text-transform: uppercase;
+        color:#8A25B1 ;
+    }
+    p + .form-group{
+        width: 100%;
+    }
+   
+    .form-group{
+        width: 48%;
+            div{
+                width: 100%;
+                .MuiInput-underline:after{
+                    border-color: rgba(0, 0, 0, 0.42);
+                }
+            }
+    }
+    h1{
+        width: fit-content;
+        border-bottom: 2px solid;
+        margin: auto;
+        color: #0C87C8;
+    }
+    .form-container{
+        width: 100%;
+       display: flex;
+       flex-wrap: wrap;
+       justify-content: space-between;
+       :nth-child(9) .input-container {
+        width: 97%;
+      }
+    }
+    .date-picker-container,.select-container{
+        width: 48%;
+      
+    }
+   
+}
+#Decorrenza{
+   width: 100%;
+}
