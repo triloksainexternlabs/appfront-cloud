@@ -2,9 +2,12 @@
   font-family: 'Alata Regular';
   font-style: normal;
   font-weight: normal;
-  line-height: 110%;
 }
+@font-face{
+  font-family: 'Calibri';
+  src: local('Calibri') url(../src/assets/fonts/calibrifont/calibri_font/CalibriRegular/CalibriRegular.ttf) format('truetype')
 
+}
 
 body::-webkit-scrollbar {
   display: none;
@@ -224,7 +227,7 @@ label.label-custom {
   cursor: pointer;
 }
 
-.form-group input {
+.frm-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -233,12 +236,12 @@ label.label-custom {
   cursor: pointer;
 }
 
-.form-group label {
+.frm-group label {
   position: relative;
   cursor: pointer;
 }
 
-.form-group label:before {
+.frm-group label:before {
   content:'';
   -webkit-appearance: none;
   background-color: transparent;
@@ -254,11 +257,11 @@ label.label-custom {
   margin-right: 5px;
 }
 
-.form-group input:checked + label:before{
+.frm-group input:checked + label:before{
   background-color: #8A25B1;
 }
 
-.form-group input:checked + label:after {
+.frm-group input:checked + label:after {
   content: '';
   display: block;
   position: absolute;

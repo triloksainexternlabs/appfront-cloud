@@ -1,0 +1,63 @@
+.questionario-container{
+    // width: 100%;
+    // height: 100vh;
+    // padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .title{
+    font-family: Alata Regular;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 41px;
+    letter-spacing: 0.015em;
+    text-transform: capitalize;
+    color: #0C87C8;
+    margin: auto;
+    border-bottom: 2px solid  #0C87C8;
+    width: fit-content;
+    padding-bottom: 3px;
+    }
+    .title ~div{
+        padding-top: 5%;
+    }
+    .questionario-sub-container{
+       
+        h1{
+            font-size: 16px;
+            line-height: 25px;
+            letter-spacing: 0.015em;
+            text-transform: capitalize;
+            color: #8A25B1;
+            width: fit-content;
+        }
+        .questionario{
+            display: flex;
+            flex-direction: row;
+            padding-left: 20px;
+            p{
+                width: 70%;
+                font-family: Calibri;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 17px;
+                letter-spacing: 0.015em;
+                text-transform: capitalize;
+            }
+            .toogle-btn-container,.switch-btn-container{
+                display: flex;
+                align-items: center;
+                align-self: center;
+                width: 30%;
+                justify-content: center;
+            }
+           
+            
+        }
+        
+    }
+  
+}
