@@ -8,11 +8,23 @@
   src: local('Calibri') url(../src/assets/fonts/calibrifont/calibri_font/CalibriRegular/CalibriRegular.ttf) format('truetype')
 
 }
-
+.hide-progress-bar{
+  display: none;
+}
 body::-webkit-scrollbar {
   display: none;
 } 
+.product-container{
+display: flex;
+justify-content: center;
+.product-list{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 80%;
+}
 
+}
 /* Hide scrollbar for IE, Edge and Firefox */
 body {
 -ms-overflow-style: none;  
@@ -81,7 +93,7 @@ scrollbar-width: none;
   margin-top: 50px;
 }
 .form-two-content div.product {
-  padding:4px 25px;
+  padding:5px 25px;
   margin: 45px;
   border: 1px solid #00000026;
   border-radius: 10px;
