@@ -1,5 +1,6 @@
 import './App.scss';
 import logos from './images/appLogo.svg';
+import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
 import ContinueButton from "./components/ContinueButton";
 import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
@@ -54,13 +55,16 @@ function App() {
             <ContinueButton handleScroll={handleScroll} step={6}/>
           </div>
           <div className="product-list-third">
+            <ProdottoAutovettureContainer/>
+          </div>
+          <div className="product-list-third">
             <RiepilogoGaranzie/>
             <ContinueButton handleScroll={handleScroll} step={7}/>
           </div>
+          </div>
+          </div>
         </div>
-      </div>
-    </div>
-  );
+  );  
 }
 
 export default App;
