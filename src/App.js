@@ -1,27 +1,28 @@
 import './App.scss';
-import {useState,useEffect} from 'react'
+import { useState, useEffect } from 'react'
 import logos from './images/appLogo.svg';
+import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
 import ContinueButton from "./components/ContinueButton";
-import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzie';
+import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
-import RiepilogoGaranzieContainer from './pages/riepilogoGaranzie/riepilogoGaranzieContainer';
+import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
 import DatiContrato from "./pages/DatiContratto/datiContrattoContainer";
 import Progressbar from '../src/ProgressBar/progressbar'
 function App() {
-const [flag, setFlag] = useState(false);
-const [id, setId] = useState(1)
+  const [flag, setFlag] = useState(false);
+  const [id, setId] = useState(1)
   const handleScroll = (value) => {
-    const hieght=window.innerHeigh;
+    const hieght = window.innerHeigh;
     setId(value)
-    console.log(window.innerHeight,'event hora h')
+    console.log(window.innerHeight, 'event hora h')
     window.scrollTo({
       top: window.innerHeight * value,
       behavior: 'smooth'
     })
-    if (value === 1){
-      setFlag(false) 
+    if (value === 1) {
+      setFlag(false)
 
     }
     else
@@ -29,12 +30,12 @@ const [id, setId] = useState(1)
   }
 
   useEffect(() => {
-    window.addEventListener('scroll',(event)=>{
-      console.log(window.innerHeight,'event hora h')
+    window.addEventListener('scroll', (event) => {
+      console.log(window.innerHeight, 'event hora h')
     })
     return () => {
-      window.removeEventListener('scroll',(e)=>{
-        console.log(e,'removeListner')
+      window.removeEventListener('scroll', (e) => {
+        console.log(e, 'removeListner')
       })
     }
   }, [id])
@@ -66,27 +67,37 @@ const [id, setId] = useState(1)
           </div>
           <div className='product-container'>
             <div className='product-list'>
-          <div className="product-list-third">
-            <div className="head-text-w-underline">Elenco Garanzie</div>
-              <ElencoGaranzie />
-            <ContinueButton handleScroll={handleScroll} step={3} />
+              <div className="product-list-third">
+                <div className="head-text-w-underline">Elenco Garanzie</div>
+                <ElencoGaranzie />
+                <ContinueButton handleScroll={handleScroll} step={3} />
+              </div>
+              <div className="product-list-third">
+                <DatiAnagrafici />
+                <ContinueButton handleScroll={handleScroll} step={4} />
+              </div>
+              <div className="product-list-third">
+                <Questionario />
+                <ContinueButton handleScroll={handleScroll} step={5} />
+              </div>
+              <div className="product-list-third">
+                <DatiContrato />
+                <ContinueButton handleScroll={handleScroll} step={6} />
+              </div>
+              <div className="product-list-third">
+                <ProdottoAutovettureContainer />
+              </div>
+              <div className="product-list-third">
+                <RiepilogoGaranzie />
+                <ContinueButton handleScroll={handleScroll} step={7} />
+              </div>
+            </div>
+
+            <Progressbar id={id} flag={flag} />
           </div>
-          <div className="product-list-third">
-            <DatiAnagrafici />
-            <ContinueButton handleScroll={handleScroll} step={4} />
-          </div>
-          <div className="product-list-third">
-            <Questionario />
-            <ContinueButton handleScroll={handleScroll} step={5} />
-          </div>
-          <div className="product-list-third">
-            <DatiContrato />
-            <ContinueButton handleScroll={handleScroll} step={6} />
-          </div>
-          </div>
-          <Progressbar id={id} flag={flag} />
-          </div>
-         
+
+
+
         </div>
       </div>
     </div>
