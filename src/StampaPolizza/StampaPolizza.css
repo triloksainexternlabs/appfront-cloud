@@ -5,7 +5,6 @@
     flex-direction: column;
 }
 
-
 .heading{ 
       
     font-family: Alata;
@@ -17,6 +16,10 @@
     text-transform: capitalize;
     color: #0C87C8;
      text-align: center;  
+     width:fit-content;
+     margin:auto;
+     border-bottom: 2px solid #0C87C8;
+    
 }
 
 
@@ -26,6 +29,7 @@
     color:#8A25B1;
     line-height: 29.3px;
     text-align: center; 
+    margin-top: 301px;
 
     }
     .lowertext
@@ -34,12 +38,9 @@
     font-family: Calibri;
     font-size:14px;
     color:#8A25B1;
-    /* line-height: 17.09px; */
     line-height: 0;
     font-style: normal;
     font-weight: 400;
-    text-align: center;
-    /* justify-content: space-around; */
-    
+    text-align: center;    
     }
     

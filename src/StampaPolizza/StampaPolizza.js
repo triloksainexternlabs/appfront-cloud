@@ -7,8 +7,7 @@ export class StampaPolizza extends Component {
             <div>
                  
                <div className="stampa-poliza-container" >
-                   <div className="heading">Stampa Polizza</div>  
-                                
+                   <div className="heading">Stampa Polizza</div>                                 
                    <div>                    
                     <p className="middletext">E Stata Enessa La Poilizza n. 1.903.13.062552</p>
                     </div> 
