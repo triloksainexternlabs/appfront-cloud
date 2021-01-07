@@ -17,13 +17,6 @@ function App() {
     })
   }
 
-  // if(true)
-  // {
-  //   return (
-  //     <ElencoGaranzie />
-  //   )
-  // }
-
   return (
     <div className="app">
       <div className="app-logo">

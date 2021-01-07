@@ -119,12 +119,7 @@ const RiepilogoGaranzie = () => {
                     <td>00.00</td>
                 </tr> 
                 <tr id='row10'>
-                    <td>
-                        <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
-                        </div>
-                    </td>
+                    <td></td>
                     <td><span>Totala</span></td>
                     <td></td>
                     <td></td>
