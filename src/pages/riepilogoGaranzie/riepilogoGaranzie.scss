@@ -1,0 +1,146 @@
+.RiepilogoGaranzie{
+    h1{
+        font-family: Alata Regular;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 30px;
+          line-height: 41px;
+          letter-spacing: 0.015em;
+          text-transform: capitalize;
+          color: #0C87C8;
+          border-bottom: 2px solid #0C87C8;
+          width: -moz-fit-content;
+          width: fit-content;
+          padding-bottom: 3px;
+          margin: 5% auto
+      }
+    table{
+       
+        input[type=checkbox]{
+            margin-bottom: 0;
+            cursor: pointer;
+            position: absolute;
+            opacity: 0;
+            z-index: 1;
+        
+        }
+        input.input{
+            width: 20px;
+        
+        }
+        .checkbox-group input:checked + label:before {
+            background-color: #8A25B1;
+        }
+        .checkbox-group input:checked + label:after {
+            content: '';
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 9px;
+            width: 4px;
+            height: 10px;
+            border: 2px solid #FFFFFF;
+            border-width: 0 2px 2px 0;
+            transform: rotate(45deg);
+        }
+        .checkbox-group label:before {
+            content: '';
+            -webkit-appearance: none;
+            background-color: transparent;
+            border: 0px solid #FFFFFF;
+            border-radius: 50%;
+            box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.25);
+            padding: 12px;
+            display: inline-block;
+            position: relative;
+            vertical-align: middle;
+            cursor: pointer;
+            margin-right: 5px;
+        }
+       
+        .checkbox-group  {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           label {
+            position: relative;
+            cursor: pointer;
+        }
+        }
+         th {
+            text-align: left;
+            padding: 20px 60px;
+            font-size: 20px;
+            line-height: 110%;
+            color: #8A25B1;
+          }
+          td{
+            text-align: left;
+            padding: 20px 60px;
+            font-family: Calibri;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            
+            p{
+                font-family: Roboto;
+                font-style: normal;
+                font-weight: normal;
+                font-size: 14px;
+                line-height: 16px;
+                text-align: center;
+                font-weight: 100;
+                color: #000000;
+            }
+            
+          }
+    }
+    
+    tbody>tr>:nth-child(4){
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+       }
+       tbody>tr>:nth-child(5){
+      text-align: center;
+       span{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        border-bottom: 0.5px solid #AAAAAA;
+        padding-bottom: 5px;
+        width: fit-content; 
+        color: rgba(0, 0, 0, 0.24);
+       }
+    }
+       tbody>tr>:last-child{
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+       }
+       tbody>tr>td>span{
+           font-size: 22px;
+           color: #8A25B1;
+       }
+       tbody>tr>:last-child span{
+           color: black;
+           font-size: 18px;
+           vertical-align: middle;
+       }
+       .active{
+        color: black !important;
+       
+       }
+    //    tbody>tr>:nth-child(5) span{}
+}

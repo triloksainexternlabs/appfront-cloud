@@ -1,4 +1,4 @@
-import ProductComponent from '../../component/ProductComponent'
+import ProductComponent from '../../components/ProductComponent'
 const ProductList = (props) => {
     return ( 
         <div className="form-two-content" >

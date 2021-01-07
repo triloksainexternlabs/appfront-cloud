@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import "../ElencoGaranzie/ElencoGaranzie.scss";
+// import "../ElencoGaranzie/ElencoGaranzie.scss";
 import Car from "../../images/cars.png";
 
 const ElencoGaranzie = props => {
@@ -15,7 +15,7 @@ const ElencoGaranzie = props => {
                      src={Car}
                 />
             </div>
-            <div style={{position:'relative',marginLeft:'390px'}}>
+            <div style={{position:'relative',marginLeft:'390px', marginTop:120}}>
                 <table>
                     <thead>
                         <td></td>
@@ -25,7 +25,7 @@ const ElencoGaranzie = props => {
                     <tbody>
                         <tr>
                             <td className="input-col">
-                                <div class="form-group">
+                                <div class="frm-group">
                                     <input type="checkbox" id="Veicoli"/>
                                     <label for="Veicoli"></label>
                                 </div>
@@ -35,7 +35,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col">
-                                <div class="form-group">
+                                <div class="frm-group">
                                     <input type="checkbox" id="Scoperto"/>
                                     <label for="Scoperto"></label>
                                 </div>
@@ -45,7 +45,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td>
-                            <div class="form-group">
+                            <div class="frm-group">
                                 <input type="checkbox" id="Cowsione"/>
                                 <label for="Cowsione"></label>
                             </div>
@@ -55,7 +55,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                         <td>
-                            <div class="form-group">
+                            <div class="frm-group">
                                 <input type="checkbox" id="Kasko"/>
                                 <label for="Kasko"></label>
                             </div>
@@ -65,7 +65,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col" >
-                            <div class="form-group">
+                            <div class="frm-group">
                                 <input type="checkbox" id="Back"/>
                                 <label for="Back"></label>
                             </div>
@@ -75,7 +75,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col">
-                            <div class="form-group">
+                            <div class="frm-group">
                                 <input type="checkbox" id="Base"/>
                                 <label for="Base"></label>
                             </div>
@@ -85,7 +85,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col">
-                            <div class="form-group">
+                            <div class="frm-group">
                                 <input type="checkbox" id="Assistenza"/>
                                 <label for="Assistenza"></label>
                             </div>
@@ -95,7 +95,7 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                         <td className="input-col">
-                            <div class="form-group">
+                            <div class="frm-group">
                             <input type="checkbox" id="Cristaw"/>
                             <label for="Cristaw"></label>
                             </div>

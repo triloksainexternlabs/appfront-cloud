@@ -1,11 +1,12 @@
-import './App.css';
+import './App.scss';
 import logos from './images/appLogo.svg';
-import ContinueButton from "./component/ContinueButton";
-import ElencoGaranzie from './pages/ElencoGaranzie/ElencoGaranzie';
-import ProductListcontainer from "./pages/ProductList/ProductListcontainer";
-import DatiAnagrafici from "./pages/DatiAnagrafici/datiAnagraficiContainer";
-// import ProgressBar from "./ProgressBar/progressbar";
-
+import ContinueButton from "./components/ContinueButton";
+import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
+import ProductListcontainer from "./pages/productList/ProductListcontainer";
+import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
+import Questionario from "./pages/questionario/questionariocontainer";
+import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
+import DatiContrato from "./pages/DatiContratto/datiContrattoContainer";
 
 function App() {
 
@@ -15,7 +16,14 @@ function App() {
       behavior: 'smooth'     
     })
   }
-  
+
+  // if(true)
+  // {
+  //   return (
+  //     <ElencoGaranzie />
+  //   )
+  // }
+
   return (
     <div className="app">
       <div className="app-logo">
@@ -43,6 +51,18 @@ function App() {
           <div className="product-list-third">
             <DatiAnagrafici/>
             <ContinueButton handleScroll={handleScroll} step={4}/>
+          </div>
+          <div className="product-list-third">
+            <Questionario/>
+            <ContinueButton handleScroll={handleScroll} step={5}/>
+          </div>
+          <div className="product-list-third">
+            <DatiContrato/>
+            <ContinueButton handleScroll={handleScroll} step={6}/>
+          </div>
+          <div className="product-list-third">
+            <RiepilogoGaranzie/>
+            <ContinueButton handleScroll={handleScroll} step={7}/>
           </div>
         </div>
       </div>
