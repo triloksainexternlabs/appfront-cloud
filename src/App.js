@@ -16,12 +16,12 @@ function App() {
     })
   }
 
-  if(true)
-  {
-    return (
-      <DatiContrato />
-    )
-  }
+  // if(true)
+  // {
+  //   return (
+  //     <DatiContrato />
+  //   )
+  // }
 
   return (
     <div className="app">
