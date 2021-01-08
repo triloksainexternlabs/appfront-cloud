@@ -18,7 +18,7 @@ const DatiAnagrafici = props => {
                             <Input inputTextId="Provincia" inputTextName="Provincia" inputTextLable="Provincia*"/>
                         </div>
                     </div>
-                    <div className="form-line-dot" style={{display:'flex',flexDirection: 'column', alignItems: 'center', marginTop:38}}>
+                    <div className="form-line-dot" style={{display:'flex',flexDirection: 'column', alignItems: 'center', marginTop: 38, marginLeft: 109, marginRight: 109}}>
                         <div className="form-dot" style={{borderRadius: '50%',border: '5px solid', color: '#0C87C8'}}></div>
                         <div className="form-border"></div>
                         <div className="form-dot" style={{borderRadius: '50%',border: '5px solid', color: '#0C87C8'}}></div>
