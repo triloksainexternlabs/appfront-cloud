@@ -1,9 +1,14 @@
 .daticontratto-container{
     
+    padding: 5%;
+    padding: 5%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: start;
     .MuiFormControl-root{
         margin-top: 30px;
         }
-    padding: 5%;
     .MuiInputLabel-root.Mui-focused{
         color: #8A25B1;
         }
