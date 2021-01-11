@@ -8,6 +8,7 @@ import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
 import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
 import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
+import {useFormik} from 'formik';
 
 function App() {
 
@@ -17,6 +18,29 @@ function App() {
       behavior: 'smooth'     
     })
   }
+
+  const formik = useFormik({
+    initialValues: {
+      productName:"",
+      gaurantee: [],
+      cognomeName:"",
+      indirizzi: "",
+      citta:"",
+      cap:"",
+      codiceFiscale:"",
+      codiaceCliente:"",
+      provincia: "",
+      ddpdvCognomeName: "",
+      ddpdvIndirizzi: "",
+      ddpdvCitta:"",
+      ddpdvCodiceFiscale: "",
+      ddpdvCodiaceCliente: "",
+      ddpdvProvincia: ""
+    },
+    onSubmit: values => {
+      console.log("form submitted")
+    }
+  })
 
   return (
     <div className="app">
@@ -55,6 +79,7 @@ function App() {
             <ContinueButton handleScroll={handleScroll} step={6}/>
           </div>
           <div className="product-list-third">
+            <div className="head-text-w-underline">Prodotto Autovetture</div>
             <ProdottoAutovettureContainer/>
           </div>
           <div className="product-list-third">
