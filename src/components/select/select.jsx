@@ -1,6 +1,6 @@
 import React from 'react'
 import Select from '@material-ui/core/Select';
-import '../select/select.scss';
+import './select.scss';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 
@@ -11,7 +11,6 @@ const SelectField = (props) => {
                 <InputLabel htmlFor="age-native-simple">{props.name}</InputLabel>
                 <Select
                     native
-                  
                     inputProps={{
                         name: 'gfhfhf',
                         id: 'age-native-simple',

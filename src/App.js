@@ -1,13 +1,13 @@
 import './App.scss';
 import logos from './images/appLogo.svg';
 import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
-import ContinueButton from "./components/ContinueButton";
+import ContinueButton from "./components/continueButton";
 import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
 import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
-import DatiContrato from "./pages/DatiContratto/datiContrattoContainer";
+import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
 
 function App() {
 

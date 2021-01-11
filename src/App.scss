@@ -71,7 +71,7 @@ scrollbar-width: none;
   padding-bottom: 5px;
   color:  #0C87C8;
   width: fit-content;
-  margin: auto;
+  margin: 0 auto;
 }
 
 .form-two-content {
@@ -184,9 +184,11 @@ td.input-col{
 }
 td.second {
   /* width: 70%; */
+  padding: 20px 100px;
 }
 td.third {
   /* width:  65%; */
+  padding: 20px 180px 20px 280px;
 }
 
 label.label-custom:before {

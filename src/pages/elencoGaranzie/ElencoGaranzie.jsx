@@ -10,7 +10,7 @@ const ElencoGaranzie = props => {
                 <img
                 style={{
                     width: '485px',
-                    height: '789px',
+                    height: '872px',
                 }} 
                      src={Car}
                 />
