@@ -5,7 +5,7 @@ import Car from "../../images/cars.png";
 
 const ElencoGaranzie = props => {
     return (
-        <div style={{display: 'flex',width: 'inherit'}}>
+        <div  style={{display: 'flex',width: 'inherit'}}>
             <div style={{position:'absolute'}}>
                 <img
                 style={{
@@ -13,6 +13,7 @@ const ElencoGaranzie = props => {
                     height: '872px',
                 }} 
                      src={Car}
+                     alt=""
                 />
             </div>
             <div style={{position:'relative',marginLeft:'390px', marginTop:120}}>

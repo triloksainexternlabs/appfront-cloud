@@ -20,7 +20,7 @@ const ProductListContainer = (props) => {
         {text : "Macchine Operatrici", imageUrl: MacchineOperatrici},
         {text : "Auto Moto Storiche", imageUrl: AutoMotoStoriche},
     ]
-
+console.log('ProductListContainer')
     return ( 
         <ProductList list={productList} handleScroll={props.handleScroll}/>
      );
