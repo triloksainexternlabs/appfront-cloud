@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import "./prodottoAutovetture.scss";
 import Inputs from "../../component/Inputs/inputs";
 import Label from '../../component/Inputs/label';
