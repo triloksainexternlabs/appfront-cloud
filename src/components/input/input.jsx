@@ -18,7 +18,7 @@ const Input = props => {
             <TextField 
                 id={inputTextId} 
                 label={inputTextLable}
-                // name={inputTextName}
+                name={inputTextName}
                 className={classes.textField} 
                 variant="outlined" 
             />

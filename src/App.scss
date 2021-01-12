@@ -21,7 +21,7 @@ scrollbar-width: none;
 
 .app-logo {
   position: fixed;
-  top: 56px;
+  top: 20px;
   left: 83px;
 }
 .form-one {
@@ -70,6 +70,8 @@ scrollbar-width: none;
   border-bottom: 3px solid #0C87C8; 
   padding-bottom: 5px;
   color:  #0C87C8;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .form-two-content {
@@ -125,7 +127,7 @@ scrollbar-width: none;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  // align-items: center;
   height: 100vh;
   width: 100%
 }
@@ -154,11 +156,13 @@ thead td {
     font-size: 20px;
     letter-spacing: 0.015em;
     color: #8A25B1;
-    padding: 40px 0px 25px;
+    /* padding: 40px 0px 25px; */
+    padding: 20px 80px;
 }
 
 tbody td {
-  padding: 20px 0px;
+  /* padding: 20px 0px; */
+  padding:20px 80px ;
   font-family: Calibri;
   font-style: normal;
   font-weight: normal;
@@ -175,13 +179,16 @@ td input {
 }
 
 td.input-col{
-  width: 10%;
+  /* width: 10%; */
+  /* position: relative; */
 }
 td.second {
-  width: 70%;
+  /* width: 70%; */
+  padding: 20px 100px;
 }
 td.third {
-  width:  65%;
+  /* width:  65%; */
+  padding: 20px 180px 20px 280px;
 }
 
 label.label-custom:before {
@@ -227,7 +234,7 @@ label.label-custom {
   cursor: pointer;
 }
 
-.form-group input {
+.frm-group input {
   padding: 0;
   height: initial;
   width: initial;
@@ -236,12 +243,12 @@ label.label-custom {
   cursor: pointer;
 }
 
-.form-group label {
+.frm-group label {
   position: relative;
   cursor: pointer;
 }
 
-.form-group label:before {
+.frm-group label:before {
   content:'';
   -webkit-appearance: none;
   background-color: transparent;
@@ -255,13 +262,14 @@ label.label-custom {
   vertical-align: middle;
   cursor: pointer;
   margin-right: 5px;
+  background-color: white;
 }
 
-.form-group input:checked + label:before{
+.frm-group input:checked + label:before{
   background-color: #8A25B1;
 }
 
-.form-group input:checked + label:after {
+.frm-group input:checked + label:after {
   content: '';
   display: block;
   position: absolute;
@@ -288,5 +296,23 @@ label.label-custom {
   color: #FFFFFF;
   padding: 10px 20px;
   margin-top: 20px;
+  width: fit-content;
+  align-self: center;
 }
 
+.input-col .img-div{
+  position: absolute;
+  right: 90px;
+  top: 0;
+}
+
+.input-col .img-div img {
+  width: 471px;
+  height: 813px;
+  /* max-width: 440px; */
+  /* max-height: 882px; */
+}
+
+.PrivateNotchedOutline-legendNotched-5{
+  max-width: 100px !important;
+}

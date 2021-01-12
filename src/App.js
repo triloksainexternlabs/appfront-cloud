@@ -1,20 +1,48 @@
 import './App.scss';
 import logos from './images/appLogo.svg';
-import ContinueButton from "./components/ContinueButton";
-import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzie';
+import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
+import ContinueButton from "./components/continueButton";
+import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
 import StampaPolizza from "./pages/StampaPolizza/StampaPolizza"
+import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
+import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
+import {useFormik} from 'formik';
 
 function App() {
 
   const handleScroll = (value) => {
+    console.log(value,'fgfd')
     window.scrollTo({
       top: window.innerHeight * value,
       behavior: 'smooth'     
     })
   }
+
+  const formik = useFormik({
+    initialValues: {
+      productName:"",
+      gaurantee: [],
+      cognomeName:"",
+      indirizzi: "",
+      citta:"",
+      cap:"",
+      codiceFiscale:"",
+      codiaceCliente:"",
+      provincia: "",
+      ddpdvCognomeName: "",
+      ddpdvIndirizzi: "",
+      ddpdvCitta:"",
+      ddpdvCodiceFiscale: "",
+      ddpdvCodiaceCliente: "",
+      ddpdvProvincia: ""
+    },
+    onSubmit: values => {
+      console.log("form submitted")
+    }
+  })
 
   return (
     <div className="app">
@@ -35,10 +63,10 @@ function App() {
             <div className="head-text-w-underline">Elenco Prodotti</div>
             <ProductListcontainer handleScroll={handleScroll}/>
           </div>
-          <div className="product-list-third">
+            <div className="product-list-third">
             <div className="head-text-w-underline">Elenco Garanzie</div>
-              <ElencoGaranzie/>
-              <ContinueButton handleScroll={handleScroll} step={3} />
+            <ElencoGaranzie/>
+            <ContinueButton handleScroll={handleScroll} step={3} />
           </div>
           <div className="product-list-third">
             <DatiAnagrafici/>
@@ -48,10 +76,29 @@ function App() {
             <Questionario/>
             <ContinueButton handleScroll={handleScroll} step={5}/>
           </div>
+          <div className="product-list-third">
+            <DatiContrato/>
+            <ContinueButton handleScroll={handleScroll} step={6}/>
+          </div>
+          <div className="product-list-third">
+            <div className="head-text-w-underline">Prodotto Autovetture</div>
+            <ProdottoAutovettureContainer/>
+            <ContinueButton handleScroll={handleScroll} step={7} />
+
+          </div>
+          <div className="product-list-third">
+            <RiepilogoGaranzie/>
+            <ContinueButton handleScroll={handleScroll} step={8}/>
+          </div>
+          <div className="product-list-third">
+            <StampaPolizza />
+            <ContinueButton handleScroll={handleScroll} step={8} />
+          </div>
+          </div>
+          </div>
+        
         </div>
-      </div>
-     <StampaPolizza />
-    </div>
+   
   );
 }
 
