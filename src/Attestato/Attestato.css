@@ -15,7 +15,11 @@
 }
 .Attestato-container{
     align-self: center;
-    margin-top: 20%;
+    /* margin-top: 20%; */
+}
+.Attestato-input-container{
+    align-self: center;
+    margin: 50px;
 }
 .Attestato-container{
     display: flex;

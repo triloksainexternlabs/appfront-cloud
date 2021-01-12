@@ -1,6 +1,10 @@
 .proclotto-autovetture-Datiintegrative-container{
     display: flex;
     flex-direction: column;
+    align-self: center;
+    width: 70%;
+    height: 80%;
+
 }
 
     .proclotto-autovetture-Datiintegrative-container-title{   
@@ -31,16 +35,19 @@
    .proclotto-autovetture-Datiintegrative-form{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
     }
     .left-input-field{
-        width: 50%;
-        margin: 10% 10%;
+        width: 45%;
+        /* margin: 10% 10%; */
         justify-content: space-between; 
         
     }
     .right-input-field{
-        width: 50%;
-        margin: 10% 10%;
+        width: 45%;
+        /* margin: 10% 10%; */
     }
     .input-label{
         margin-bottom: 5%;

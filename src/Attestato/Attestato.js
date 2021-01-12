@@ -8,7 +8,7 @@ export class Attestato extends Component {
         return (  
             <div class="Attestato-container">              
             <div className="heading">Attestato Di Rischio</div>
-             <div class="Attestato-container">
+             <div class="Attestato-input-container">
              <CustomizedInputs/>
             </div>
                

@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
-import PropTypes from 'prop-types';
-import Inputs from '../component/Inputs/inputs'
-import Label from '../component/Inputs/label'
-import './ProclottoAuto.css'
+import Inputs from '../../component/Inputs/inputs'
+import Label from '../../component/Inputs/label'
+import '../Proclotto/ProclottoAuto.css'
 
 export class ProclottoAuto extends Component {
     render() {

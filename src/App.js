@@ -12,6 +12,8 @@ import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContai
 import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
 import Progressbar from '../src/ProgressBar/progressbar'
 import { useFormik } from 'formik';
+import ProclottoAuto from './pages/Proclotto/ProclottoAuto';
+import Attestato from './Attestato/Attestato';
 
 function App() {
   const [flag, setFlag] = useState(false);
@@ -111,6 +113,10 @@ function App() {
               <DatiContrato />
               <ContinueButton handleScroll={handleScroll} step={6} />
             </div>
+            <div className="product-list-third daticontratto">
+             <Attestato />
+              <ContinueButton handleScroll={handleScroll} step={7} />
+            </div>
             <div className="product-list-third ProdottoAutovetture">
               <div className="head-text-w-underline">Prodotto Autovetture</div>
               <ProdottoAutovettureContainer />
@@ -121,12 +127,15 @@ function App() {
               <RiepilogoGaranzie />
               <ContinueButton handleScroll={handleScroll} step={8} />
             </div>
+            <div className="product-list-third proclotto-autovetture-Datiintegrative">
+             <ProclottoAuto />
+              <ContinueButton handleScroll={handleScroll} step={9} />
+            </div>
             <div className="product-list-third stampa-poliza">
             <StampaPolizza />
-            <ContinueButton handleScroll={handleScroll} step={8} />
-          </div>s
+            <ContinueButton handleScroll={handleScroll} step={10} />
           </div>
-
+          </div>
           <Progressbar id={id} flag={flag} />
         </div>
         </div>
