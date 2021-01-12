@@ -5,7 +5,7 @@ import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzie';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
-import StampaPolizza from "./StampaPolizza/StampaPolizza"
+import StampaPolizza from "./pages/StampaPolizza/StampaPolizza"
 
 function App() {
 
@@ -50,7 +50,7 @@ function App() {
           </div>
         </div>
       </div>
-      <StampaPolizza/>
+     <StampaPolizza />
     </div>
   );
 }
