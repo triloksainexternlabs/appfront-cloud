@@ -6,6 +6,7 @@ import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
+import StampaPolizza from "./pages/StampaPolizza/StampaPolizza"
 import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
 import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
 import {useFormik} from 'formik';
@@ -13,6 +14,7 @@ import {useFormik} from 'formik';
 function App() {
 
   const handleScroll = (value) => {
+    console.log(value,'fgfd')
     window.scrollTo({
       top: window.innerHeight * value,
       behavior: 'smooth'     
@@ -81,15 +83,23 @@ function App() {
           <div className="product-list-third">
             <div className="head-text-w-underline">Prodotto Autovetture</div>
             <ProdottoAutovettureContainer/>
+            <ContinueButton handleScroll={handleScroll} step={7} />
+
           </div>
           <div className="product-list-third">
             <RiepilogoGaranzie/>
-            <ContinueButton handleScroll={handleScroll} step={7}/>
+            <ContinueButton handleScroll={handleScroll} step={8}/>
+          </div>
+          <div className="product-list-third">
+            <StampaPolizza />
+            <ContinueButton handleScroll={handleScroll} step={8} />
           </div>
           </div>
           </div>
+        
         </div>
-  );  
+   
+  );
 }
 
 export default App;
