@@ -1,10 +1,10 @@
-import ProductComponent from '../../components/ProductComponent'
+import VehicleType from '../../components/vehicleType';
 const ProductList = (props) => {
     return ( 
         <div className="form-two-content" >
         {
             props.list.map((value)=>
-                <ProductComponent 
+                <VehicleType 
                     imgUrl = {value.imageUrl} 
                     text = {value.text} 
                     handleScroll = {props.handleScroll} 

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../DateField/dateField.scss';
+import './dateField.scss';
 import trashIcon from '../../images/trash.svg'
 
 const DateField = props => {

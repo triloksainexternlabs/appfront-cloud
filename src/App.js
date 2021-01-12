@@ -2,21 +2,24 @@ import './App.scss';
 import { useState, useEffect } from 'react'
 import logos from './images/appLogo.svg';
 import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
-import ContinueButton from "./components/ContinueButton";
+import ContinueButton from "./components/continueButton";
 import ElencoGaranzie from './pages/elencoGaranzie/ElencoGaranzieContainer';
 import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
+import StampaPolizza from "./pages/StampaPolizza/StampaPolizza"
 import RiepilogoGaranzie from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
-import DatiContrato from "./pages/DatiContratto/datiContrattoContainer";
+import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
 import Progressbar from '../src/ProgressBar/progressbar'
+import { useFormik } from 'formik';
+
 function App() {
   const [flag, setFlag] = useState(false);
   const [id, setId] = useState(1)
   const handleScroll = (value) => {
     const hieght = window.innerHeigh;
     setId(value)
-    console.log(window.innerHeight, 'event hora h')
+
     window.scrollTo({
       top: window.innerHeight * value,
       behavior: 'smooth'
@@ -45,6 +48,28 @@ function App() {
   //     <DatiContrato />
   //   )
   // }
+  const formik = useFormik({
+    initialValues: {
+      productName: "",
+      gaurantee: [],
+      cognomeName: "",
+      indirizzi: "",
+      citta: "",
+      cap: "",
+      codiceFiscale: "",
+      codiaceCliente: "",
+      provincia: "",
+      ddpdvCognomeName: "",
+      ddpdvIndirizzi: "",
+      ddpdvCitta: "",
+      ddpdvCodiceFiscale: "",
+      ddpdvCodiaceCliente: "",
+      ddpdvProvincia: ""
+    },
+    onSubmit: values => {
+      console.log("form submitted")
+    }
+  })
 
   return (
     <div className="app">
@@ -65,42 +90,48 @@ function App() {
             <div className="head-text-w-underline">Elenco Prodotti</div>
             <ProductListcontainer handleScroll={handleScroll} />
           </div>
-          <div className='product-container'>
-            <div className='product-list'>
-              <div className="product-list-third">
-                <div className="head-text-w-underline">Elenco Garanzie</div>
-                <ElencoGaranzie />
-                <ContinueButton handleScroll={handleScroll} step={3} />
-              </div>
-              <div className="product-list-third">
-                <DatiAnagrafici />
-                <ContinueButton handleScroll={handleScroll} step={4} />
-              </div>
-              <div className="product-list-third">
-                <Questionario />
-                <ContinueButton handleScroll={handleScroll} step={5} />
-              </div>
-              <div className="product-list-third">
-                <DatiContrato />
-                <ContinueButton handleScroll={handleScroll} step={6} />
-              </div>
-              <div className="product-list-third">
-                <ProdottoAutovettureContainer />
-              </div>
-              <div className="product-list-third">
-                <RiepilogoGaranzie />
-                <ContinueButton handleScroll={handleScroll} step={7} />
-              </div>
+         
+        </div>
+        <div className='product-container'>
+          <div className='product-list'>
+            <div className="product-list-third ElencoGaranzie">
+              <div className="head-text-w-underline">Elenco Garanzie</div>
+              <ElencoGaranzie />
+              <ContinueButton handleScroll={handleScroll} step={3} />
             </div>
+            <div className="product-list-third DatiAnagrafici">
+              <DatiAnagrafici />
+              <ContinueButton handleScroll={handleScroll} step={4} />
+            </div>
+            <div className="product-list-third questionario daticontratto">
+              <Questionario />
+              <ContinueButton handleScroll={handleScroll} step={5} />
+            </div>
+            <div className="product-list-third daticontratto">
+              <DatiContrato />
+              <ContinueButton handleScroll={handleScroll} step={6} />
+            </div>
+            <div className="product-list-third ProdottoAutovetture">
+              <div className="head-text-w-underline">Prodotto Autovetture</div>
+              <ProdottoAutovettureContainer />
+              <ContinueButton handleScroll={handleScroll} step={7} />
 
-            <Progressbar id={id} flag={flag} />
+            </div>
+            <div className="product-list-third">
+              <RiepilogoGaranzie />
+              <ContinueButton handleScroll={handleScroll} step={8} />
+            </div>
+            <div className="product-list-third stampa-poliza">
+            <StampaPolizza />
+            <ContinueButton handleScroll={handleScroll} step={8} />
+          </div>s
           </div>
 
-
-
+          <Progressbar id={id} flag={flag} />
         </div>
       </div>
     </div>
+
   );
 }
 

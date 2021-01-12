@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import "./prodottoAutovetture.scss";
 import Inputs from "../../component/Inputs/inputs";
 import Label from '../../component/Inputs/label';
@@ -7,7 +6,7 @@ import Label from '../../component/Inputs/label';
 const ProdottoAutovetture = props => {
     return (
         <div className="prodotto-autovetture-container">
-            <div className="prodotto-autovetture-title">Prodotto Autovetture</div>
+            {/* <div className="prodotto-autovetture-title">Prodotto Autovetture</div> */}
             <div className="prodotto-autovetture-list">
                 <div className="list-one">
                     <p>Garanzia</p>

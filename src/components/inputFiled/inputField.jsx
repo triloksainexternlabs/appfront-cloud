@@ -1,6 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types';
-import "../InputFiled/inputField.scss";
+import "./inputField.scss";
 import TextField from '@material-ui/core/TextField';
 
 const InputFiled = props => {

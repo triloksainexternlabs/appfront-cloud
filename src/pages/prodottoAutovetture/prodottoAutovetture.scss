@@ -1,6 +1,8 @@
 .prodotto-autovetture-container{
     display: flex;
     flex-direction: column;
+    width: 80%;
+    align-self: center;
     .prodotto-autovetture-title{
         font-family: Alata;
         font-style: normal;

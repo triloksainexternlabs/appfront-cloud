@@ -1,8 +1,9 @@
 import React from 'react'
 import "./datiContratto.scss";
-import Input from "../../Component/InputFiled/inputField";
-import DateField from "../../Component/DateField/dateField";
-import SelectField from '../../Component/select/select';
+import Input from "../../components/inputFiled/inputField";
+// import DateField from "../../components/dateField/dateField";
+import DateField from '../../components/dateField/dateField';
+import SelectField from '../../components/select/select';
 
 const DatiContratto = props => {
     let {DataImmatricolazione, ScadenzaVincolo,value1,value2} =props

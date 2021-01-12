@@ -21,7 +21,7 @@ justify-content: center;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 
 }
@@ -83,8 +83,8 @@ scrollbar-width: none;
   padding-bottom: 5px;
   color:  #0C87C8;
   width: fit-content;
-  align-self: center;
   // margin: auto;
+  margin: 0 auto;
 }
 
 .form-two-content {
@@ -139,7 +139,7 @@ scrollbar-width: none;
 .product-list-third {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   // align-items: center;
   height: 100vh;
   width: 100%
@@ -148,6 +148,7 @@ scrollbar-width: none;
 .step-view-container {
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 .product-list-third .product-list {
@@ -197,9 +198,11 @@ td.input-col{
 }
 td.second {
   /* width: 70%; */
+  padding: 20px 100px;
 }
 td.third {
   /* width:  65%; */
+  padding: 20px 180px 20px 280px;
 }
 
 label.label-custom:before {
@@ -326,4 +329,10 @@ label.label-custom {
 
 .PrivateNotchedOutline-legendNotched-5{
   max-width: 100px !important;
+}
+.ProdottoAutovetture{
+  justify-content: space-evenly;
+}
+.ElencoGaranzie,.DatiAnagrafici,.questionario,.daticontratto,.stampa-poliza{
+  justify-content: center;
 }
