@@ -5,7 +5,8 @@ import Label from '../../component/Inputs/label';
 
 const ProdottoAutovetture = props => {
     return (
-        <div className="prodotto-autovetture-container">
+                     
+     <div className="prodotto-autovetture-container"> 
             {/* <div className="prodotto-autovetture-title">Prodotto Autovetture</div> */}
             <div className="prodotto-autovetture-list">
                 <div className="list-one">

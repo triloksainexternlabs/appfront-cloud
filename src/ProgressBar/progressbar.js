@@ -17,8 +17,6 @@ function Progressbar(props) {
                       <li className={props.id===10?'active':''}>Stamp Polliza</li>
                      </ul>
                  </div>
-
-        // </div>
     )
 }
 
