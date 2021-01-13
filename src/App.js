@@ -19,7 +19,7 @@ function App() {
   const [flag, setFlag] = useState(false);
   const [id, setId] = useState(1)
   const handleScroll = (value) => {
-    const hieght = window.innerHeigh;
+    // const hieght = window.innerHeigh;
     setId(value)
 
     window.scrollTo({
@@ -50,27 +50,38 @@ function App() {
   // }
   const formik = useFormik({
     initialValues: {
-      productName: "",
-      gaurantee: [],
-      cognomeName: "",
-      indirizzi: "",
-      citta: "",
-      cap: "",
-      codiceFiscale: "",
-      codiaceCliente: "",
-      provincia: "",
-      ddpdvCognomeName: "",
-      ddpdvIndirizzi: "",
-      ddpdvCitta: "",
-      ddpdvCodiceFiscale: "",
-      ddpdvCodiaceCliente: "",
-      ddpdvProvincia: ""
+      PersonalData:{
+        sureName:'',
+        city:'',
+        addresses:'',
+        postalCode:'',
+        fiscalCode:'',
+        customer:'',
+        district:'',
     },
-    onSubmit: values => {
-      console.log("form submitted")
-    }
-  })
+    contractData:{
+      duration:'',
+      effectiveDateTime:'',
+      policyExpiry:'',
+      splittingUp:'',
+      authorizationCode:'',
+      manufacturerCode:'',
+      constraintExpiration:'',
+      assignmentCode :'',
+      newCertificate:'',
+      registrationDate :'',
+      constraint:'',
+      coInsurancePolicy:''
 
+
+    }
+      
+    },
+    // onSubmit: values => {
+    //   console.log("form submitted")
+    // }
+  })
+console.log(formik.values.PersonalData,'formik.values.PersonalData')
   return (
     <div className="app">
       <div className="app-logo">
@@ -88,7 +99,7 @@ function App() {
           </div>
           <div className="form-two">
             <div className="head-text-w-underline">Elenco Prodotti</div>
-            <ProductListcontainer handleScroll={handleScroll} />
+            <ProductListcontainer  handleScroll={handleScroll} />
           </div>
          
         </div>
@@ -100,7 +111,7 @@ function App() {
               <ContinueButton handleScroll={handleScroll} step={3} />
             </div>
             <div className="product-list-third DatiAnagrafici">
-              <DatiAnagrafici />
+              <DatiAnagrafici formik={formik} />
               <ContinueButton handleScroll={handleScroll} step={4} />
             </div>
             <div className="product-list-third questionario daticontratto">
@@ -108,7 +119,7 @@ function App() {
               <ContinueButton handleScroll={handleScroll} step={5} />
             </div>
             <div className="product-list-third daticontratto">
-              <DatiContrato />
+              <DatiContrato formik={formik}  />
               <ContinueButton handleScroll={handleScroll} step={6} />
             </div>
             <div className="product-list-third Attestato">

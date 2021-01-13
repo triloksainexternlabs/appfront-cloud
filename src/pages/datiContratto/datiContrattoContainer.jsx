@@ -14,7 +14,7 @@ const DatiContrattoContainer = props => {
      }
      console.log(value1)
     return (
-            <DatiContratto DataImmatricolazione={DataImmatricolazione} ScadenzaVincolo={ScadenzaVincolo} value2={value2} value1={value1}/>
+            <DatiContratto formik={props.formik}  DataImmatricolazione={DataImmatricolazione} ScadenzaVincolo={ScadenzaVincolo} value2={value2} value1={value1}/>
     )
 }
 

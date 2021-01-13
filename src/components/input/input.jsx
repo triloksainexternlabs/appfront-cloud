@@ -11,7 +11,8 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Input = props => {
-    let {inputTextLable, inputTextId, inputTextName,onChange} = props;
+    let {inputTextLable, inputTextId, inputTextName,onChange,value} = props;
+    console.log(value,'valuevaluevalue')
     const classes = useStyles();
     return (
         <div>
@@ -22,6 +23,7 @@ const Input = props => {
                 name={inputTextName}
                 className={classes.textField} 
                 variant="outlined" 
+                value={value}
             />
         </div>
     )
