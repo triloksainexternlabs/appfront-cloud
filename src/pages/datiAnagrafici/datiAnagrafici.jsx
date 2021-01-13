@@ -9,13 +9,13 @@ const DatiAnagrafici = props => {
                     <div className="datidelcontraente-form">
                         <span>DATI DEL CONTRAENTE</span>
                         <div>
-                            <Input inputTextId="CognomeName" inputTextName="CognomeName" inputTextLable="Cognome Name*"/>
-                            <Input inputTextId="Indirizzi" inputTextName="Indirizzi" inputTextLable="Indirizzi*"/>
-                            <Input inputTextId="Citta" inputTextName="Citta" inputTextLable="Citta*"/>
-                            <Input inputTextId="Cap" inputTextName="Cap" inputTextLable="Cap*"/>
-                            <Input inputTextId="CodiceFiscale" inputTextName="CodiceFiscale" inputTextLable="Codice Fiscale*"/>
-                            <Input inputTextId="CodiaceCliente" inputTextName="CodiaceCliente" inputTextLable="Codiace Cliente*"/>
-                            <Input inputTextId="Provincia" inputTextName="Provincia" inputTextLable="Provincia*"/>
+                            <Input onChange={props.onChange} inputTextId="surnameName" inputTextName="surnameName" inputTextLable="Cognome Name*"/>
+                            <Input onChange={props.onChange} inputTextId="addresses" inputTextName="addresses" inputTextLable="Indirizzi*"/>
+                            <Input onChange={props.onChange} inputTextId="city" inputTextName="city" inputTextLable="Citta*"/>
+                            <Input onChange={props.onChange} inputTextId="postalCode" inputTextName="postalCode" inputTextLable="Cap*"/>
+                            <Input onChange={props.onChange} inputTextId="fiscalCode" inputTextName="fiscalCode" inputTextLable="Codice Fiscale*"/>
+                            <Input onChange={props.onChange} inputTextId="customer" inputTextName="customer" inputTextLable="Codiace Cliente*"/>
+                            <Input onChange={props.onChange} inputTextId="district" inputTextName="district" inputTextLable="Provincia*"/>
                         </div>
                     </div>
                     <div className="form-line-dot" style={{display:'flex',flexDirection: 'column', alignItems: 'center', marginTop: 38, marginLeft: 109, marginRight: 109}}>
@@ -34,7 +34,7 @@ const DatiAnagrafici = props => {
                             <Input inputTextId="CodiaceCliente" inputTextName="CodiaceCliente" inputTextLable="Codiace Cliente*"/>
                             <Input inputTextId="Provincia" inputTextName="Provincia" inputTextLable="Provincia*"/>
                         </div>
-                        <button className="copia-btn">Copia</button>
+                        <button  className="copia-btn">Copia</button>
                         
                     </div>
             </div>

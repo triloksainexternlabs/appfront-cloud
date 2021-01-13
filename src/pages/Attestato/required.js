@@ -42,7 +42,7 @@ export default function CustomizedInputs() {
       <CssTextField
          required
         className={classes.margin}
-        label="Custom CSS"
+        label="Targa Polizza"
         variant="outlined"
         id="custom-css-outlined-input"
         InputLabelProps={{className:"text"}}

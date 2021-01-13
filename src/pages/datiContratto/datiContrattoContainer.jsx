@@ -12,6 +12,7 @@ const DatiContrattoContainer = props => {
     const DataImmatricolazione=(e)=>{
       setValue2(e.target.value)
      }
+     console.log(value1)
     return (
             <DatiContratto DataImmatricolazione={DataImmatricolazione} ScadenzaVincolo={ScadenzaVincolo} value2={value2} value1={value1}/>
     )

@@ -18,6 +18,7 @@ const Questionario = (props) => {
         }
         if(!found){
             temp.push({id,value});
+            console.log(temp,'temp')
         }      
         setArr(temp)
         console.log('array:',temp);

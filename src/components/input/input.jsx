@@ -11,11 +11,12 @@ const useStyles = makeStyles((theme) => ({
   }));
 
 const Input = props => {
-    let {inputTextLable, inputTextId, inputTextName} = props;
+    let {inputTextLable, inputTextId, inputTextName,onChange} = props;
     const classes = useStyles();
     return (
         <div>
             <TextField 
+                onChange={onChange}
                 id={inputTextId} 
                 label={inputTextLable}
                 name={inputTextName}

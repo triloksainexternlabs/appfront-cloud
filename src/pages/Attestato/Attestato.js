@@ -7,7 +7,6 @@ export class Attestato extends Component {
     render() {
         return (  
             <div class="Attestato-container">              
-            <div className="heading">Attestato Di Rischio</div>
              <div class="Attestato-input-container">
              <CustomizedInputs/>
             </div>

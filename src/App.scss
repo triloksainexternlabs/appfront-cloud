@@ -330,9 +330,14 @@ label.label-custom {
 .PrivateNotchedOutline-legendNotched-5{
   max-width: 100px !important;
 }
-.ProdottoAutovetture{
+.ProdottoAutovetture,.Attestato{
   justify-content: space-evenly;
 }
 .ElencoGaranzie,.DatiAnagrafici,.questionario,.daticontratto,.stampa-poliza,.proclotto-autovetture-Datiintegrative{
   justify-content: center;
+}
+.attestato-wrapper{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
 }

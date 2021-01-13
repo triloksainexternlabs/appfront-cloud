@@ -13,7 +13,7 @@ import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
 import Progressbar from '../src/ProgressBar/progressbar'
 import { useFormik } from 'formik';
 import ProclottoAuto from './pages/Proclotto/ProclottoAuto';
-import Attestato from './Attestato/Attestato';
+import Attestato from './pages/Attestato/Attestato';
 
 function App() {
   const [flag, setFlag] = useState(false);
@@ -34,16 +34,14 @@ function App() {
       setFlag(true)
   }
 
-  useEffect(() => {
-    window.addEventListener('scroll', (event) => {
-      console.log(window.innerHeight, 'event hora h')
-    })
-    return () => {
-      window.removeEventListener('scroll', (e) => {
-        console.log(e, 'removeListner')
-      })
-    }
-  }, [id])
+  // useEffect(() => {
+  //   window.addEventListener('scroll', (event) => {
+  //   })
+  //   return () => {
+  //     window.removeEventListener('scroll', (e) => {
+  //     })
+  //   }
+  // }, [id])
   // if(true)
   // {
   //   return (
@@ -113,23 +111,26 @@ function App() {
               <DatiContrato />
               <ContinueButton handleScroll={handleScroll} step={6} />
             </div>
-            <div className="product-list-third daticontratto">
+            <div className="product-list-third Attestato">
+            <div className="head-text-w-underline">Attestato Di Rischio</div>
+            <div className='attestato-wrapper'>
              <Attestato />
               <ContinueButton handleScroll={handleScroll} step={7} />
+              </div>
             </div>
             <div className="product-list-third ProdottoAutovetture">
               <div className="head-text-w-underline">Prodotto Autovetture</div>
               <ProdottoAutovettureContainer />
-              <ContinueButton handleScroll={handleScroll} step={7} />
+              <ContinueButton handleScroll={handleScroll} step={8} />
 
             </div>
             <div className="product-list-third">
               <RiepilogoGaranzie />
-              <ContinueButton handleScroll={handleScroll} step={8} />
+              <ContinueButton handleScroll={handleScroll} step={9} />
             </div>
             <div className="product-list-third proclotto-autovetture-Datiintegrative">
              <ProclottoAuto />
-              <ContinueButton handleScroll={handleScroll} step={9} />
+              <ContinueButton handleScroll={handleScroll} step={10} />
             </div>
             <div className="product-list-third stampa-poliza">
             <StampaPolizza />

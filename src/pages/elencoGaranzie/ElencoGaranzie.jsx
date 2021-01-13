@@ -1,9 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-// import "../ElencoGaranzie/ElencoGaranzie.scss";
 import Car from "../../images/cars.png";
 
 const ElencoGaranzie = props => {
+    let {onChange} =props
     return (
         <div  style={{display: 'flex',width: 'inherit'}}>
             <div style={{position:'absolute'}}>
@@ -27,7 +27,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                                 <div class="frm-group">
-                                    <input type="checkbox" id="Veicoli"/>
+                                    <input  name='1' onChange={onChange} type="checkbox" id="Veicoli"/>
                                     <label for="Veicoli"></label>
                                 </div>
                             </td>
@@ -37,7 +37,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                                 <div class="frm-group">
-                                    <input type="checkbox" id="Scoperto"/>
+                                    <input name='2' onChange={onChange}  type="checkbox" id="Scoperto"/>
                                     <label for="Scoperto"></label>
                                 </div>
                             </td>
@@ -47,7 +47,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td>
                             <div class="frm-group">
-                                <input type="checkbox" id="Cowsione"/>
+                                <input name='3' onChange={onChange}  type="checkbox" id="Cowsione"/>
                                 <label for="Cowsione"></label>
                             </div>
                             </td>
@@ -57,7 +57,7 @@ const ElencoGaranzie = props => {
                         <tr>
                         <td>
                             <div class="frm-group">
-                                <input type="checkbox" id="Kasko"/>
+                                <input name='4' type="checkbox" id="Kasko"/>
                                 <label for="Kasko"></label>
                             </div>
                         </td>
@@ -67,7 +67,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col" >
                             <div class="frm-group">
-                                <input type="checkbox" id="Back"/>
+                                <input name='5' onChange={onChange} type="checkbox" id="Back"/>
                                 <label for="Back"></label>
                             </div>
                             </td>
@@ -77,7 +77,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                             <div class="frm-group">
-                                <input type="checkbox" id="Base"/>
+                                <input name='6' onChange={onChange} type="checkbox" id="Base"/>
                                 <label for="Base"></label>
                             </div>
                             </td>
@@ -87,7 +87,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                             <div class="frm-group">
-                                <input type="checkbox" id="Assistenza"/>
+                                <input name='7' onChange={onChange} type="checkbox" id="Assistenza"/>
                                 <label for="Assistenza"></label>
                             </div>
                             </td>
@@ -97,7 +97,7 @@ const ElencoGaranzie = props => {
                         <tr>
                         <td className="input-col">
                             <div class="frm-group">
-                            <input type="checkbox" id="Cristaw"/>
+                            <input name='8' onChange={onChange} type="checkbox" id="Cristaw"/>
                             <label for="Cristaw"></label>
                             </div>
                         </td>
