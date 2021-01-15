@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import Car from "../../images/cars.png";
 
 const ElencoGaranzie = props => {
@@ -27,7 +26,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                                 <div class="frm-group">
-                                    <input  name='1' onChange={onChange} type="checkbox" id="Veicoli"/>
+                                    <input name="elencoGaranzie.value1" value={props.formik.values.elencoGaranzie.value1} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Veicoli"/>
                                     <label for="Veicoli"></label>
                                 </div>
                             </td>
@@ -37,7 +36,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                                 <div class="frm-group">
-                                    <input name='2' onChange={onChange}  type="checkbox" id="Scoperto"/>
+                                    <input name="elencoGaranzie.value2" value={props.formik.values.elencoGaranzie.value2} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Scoperto"/>
                                     <label for="Scoperto"></label>
                                 </div>
                             </td>
@@ -47,7 +46,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td>
                             <div class="frm-group">
-                                <input name='3' onChange={onChange}  type="checkbox" id="Cowsione"/>
+                                <input name="elencoGaranzie.value3" value={props.formik.values.elencoGaranzie.value3} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}     type="checkbox" id="Cowsione"/>
                                 <label for="Cowsione"></label>
                             </div>
                             </td>
@@ -57,7 +56,7 @@ const ElencoGaranzie = props => {
                         <tr>
                         <td>
                             <div class="frm-group">
-                                <input name='4' type="checkbox" id="Kasko"/>
+                                <input name="elencoGaranzie.value4" value={props.formik.values.elencoGaranzie.value4} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Kasko"/>
                                 <label for="Kasko"></label>
                             </div>
                         </td>
@@ -67,7 +66,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col" >
                             <div class="frm-group">
-                                <input name='5' onChange={onChange} type="checkbox" id="Back"/>
+                                <input name="elencoGaranzie.value5" value={props.formik.values.elencoGaranzie.value5} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}    type="checkbox" id="Back"/>
                                 <label for="Back"></label>
                             </div>
                             </td>
@@ -77,7 +76,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                             <div class="frm-group">
-                                <input name='6' onChange={onChange} type="checkbox" id="Base"/>
+                                <input name="elencoGaranzie.value6" value={props.formik.values.elencoGaranzie.value6} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Base"/>
                                 <label for="Base"></label>
                             </div>
                             </td>
@@ -87,7 +86,7 @@ const ElencoGaranzie = props => {
                         <tr>
                             <td className="input-col">
                             <div class="frm-group">
-                                <input name='7' onChange={onChange} type="checkbox" id="Assistenza"/>
+                                <input name="elencoGaranzie.value7"  value={props.formik.values.elencoGaranzie.value7} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}  type="checkbox" id="Assistenza"/>
                                 <label for="Assistenza"></label>
                             </div>
                             </td>
@@ -97,7 +96,7 @@ const ElencoGaranzie = props => {
                         <tr>
                         <td className="input-col">
                             <div class="frm-group">
-                            <input name='8' onChange={onChange} type="checkbox" id="Cristaw"/>
+                            <input name="elencoGaranzie.value8" value={props.formik.values.elencoGaranzie.value8} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}  type="checkbox" id="Cristaw"/>
                             <label for="Cristaw"></label>
                             </div>
                         </td>

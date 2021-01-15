@@ -1,10 +1,12 @@
 import React from 'react'
 import '../riepilogoGaranzie/riepilogoGaranzie.scss'
-const RiepilogoGaranzie = () => {
+const RiepilogoGaranzie = (props) => {
+    
     return (
         <div className='RiepilogoGaranzie'>
             <h1>Riepilogo Garanzie</h1>
             <table>
+                <thead>
                 <tr id='row1'>
                     <th></th>
                     <th>Garanzia</th>
@@ -13,11 +15,12 @@ const RiepilogoGaranzie = () => {
                     <th>Sconto</th>
                     <th>Premio Scontato</th>
                 </tr>
+                </thead>
                <tbody>
                 <tr id='row2'>
                     <td>
                         <div class="checkbox-group">
-                            <input className='input' type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value1" value={props.formik.values.Warranties.value1} onChange={props.formik.handleChange} className='input' type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -30,7 +33,7 @@ const RiepilogoGaranzie = () => {
                 <tr id='row3'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value2"  value={props.formik.values.Warranties.value2} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -43,7 +46,7 @@ const RiepilogoGaranzie = () => {
                 <tr id='row4'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value3"  value={props.formik.values.Warranties.value3} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -56,7 +59,7 @@ const RiepilogoGaranzie = () => {
                 <tr id='row5'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value4"  value={props.formik.values.Warranties.value4} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -69,7 +72,7 @@ const RiepilogoGaranzie = () => {
                  <tr id='row6'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value5"  value={props.formik.values.Warranties.value5} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -82,7 +85,7 @@ const RiepilogoGaranzie = () => {
                  <tr id='row7'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value6"  value={props.formik.values.Warranties.value6} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -95,7 +98,7 @@ const RiepilogoGaranzie = () => {
                  <tr id='row8'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value7"  value={props.formik.values.Warranties.value7} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>
@@ -108,7 +111,7 @@ const RiepilogoGaranzie = () => {
                 <tr id='row9'>
                     <td>
                         <div class="checkbox-group">
-                            <input type="checkbox" id="Veicoli" />
+                            <input name="Warranties.value8"  value={props.formik.values.Warranties.value8} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
                             <label for="Veicoli"></label>
                         </div>
                     </td>

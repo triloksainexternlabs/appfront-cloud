@@ -3,18 +3,18 @@ import '../switchbtn/switchbtn.scss'
 import Switch from "react-switch";
 
 
-const SwitchBtn = () => {
-   let  className = document.getElementsByClassName('react-switch-handle')
-
+const SwitchBtn = (props) => {
+//    let  className = document.getElementsByClassName('react-switch-handle')
     const [checked, setChecked] = useState(false)
-    const toggleChecked = () => {
+    const toggleChecked = (i,v) => {
         if (checked){
             setChecked(false)
-            // className[0].style.transform = "translateX(50px)";
+            props.onChange(i,false)
         }
         else{
             setChecked(true)
-            // className[0].style.transform = "translateX(50px)";
+            props.onChange(i,true)
+
         }
     }
     return (
@@ -22,7 +22,7 @@ const SwitchBtn = () => {
             <Switch
                 width={100}
                 checked={checked}
-                onChange={toggleChecked}
+                onChange={()=>toggleChecked(props.id,props.name)}
                 uncheckedIcon={
                     <span>Confermo</span>
                 }
@@ -30,10 +30,16 @@ const SwitchBtn = () => {
                    "Confermo"
                 }
                 className="react-switch"
-                id="icon-switch"
+                id={props.id}
                 offColor="#fff"
                 onColor="#8A25B1"
+                value={props.value}
+                name={props.name}
+                // onValueChange={(e) => props.formik.handleChange(props.name, e)}
+                // onClick
+
             />
+          
         </div>
     )
 }

@@ -1,9 +1,9 @@
 import React from 'react'
 import RiepilogoGaranzie from './RiepilogoGaranzie'
 
-const RiepilogoGaranzieContainer = () => {
+export const RiepilogoGaranzieContainer = (props) => {
     return (
-        <RiepilogoGaranzie />
+        <RiepilogoGaranzie formik={props.formik} />
     )
 }
 

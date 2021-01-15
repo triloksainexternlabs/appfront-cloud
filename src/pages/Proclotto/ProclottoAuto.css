@@ -29,7 +29,8 @@
         letter-spacing: 0.015em;
         text-transform: capitalize;
         color: #0C87C8;
-        align-self: center;         
+        align-self: center;   
+        border-bottom: 1px solid;      
     }
    
    .proclotto-autovetture-Datiintegrative-form{

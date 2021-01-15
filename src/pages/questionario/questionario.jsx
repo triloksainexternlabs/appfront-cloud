@@ -33,6 +33,7 @@ const Questionario = (props) => {
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque. Consectetur duis tincidunt arcu nunc suspendisse sagittis fames quis justo.</p>
                         <ToggleBtn 
+                        // name="Warranties.value8"  value={props.formik.values.Warranties.value8} onChange={props.formik.handleChange}
                             id={1}  
                             handleToggle={handleToggle}
                         />
@@ -67,16 +68,15 @@ const Questionario = (props) => {
                     <h1>Dichiarazione Di Rifiuto Do Fornire UNA o piu Delle Informazioni Richieste</h1>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque.</p>
-                        <SwitchBtn {...props} />
+                        <SwitchBtn onChange={props.onChange}  name="value1" id={0}  {...props} />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <SwitchBtn {...props} />
-
+                        <SwitchBtn onChange={props.onChange}  name="value2" id={1}  {...props} />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque. Consectetur duis tincidunt arcu nunc suspendisse sagittis fames quis justo.</p>
-                        <SwitchBtn {...props} />
+                        <SwitchBtn onChange={props.onChange}  name="value3"  id={2} {...props} />
                     </div>
 
                 </div>

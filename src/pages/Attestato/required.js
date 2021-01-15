@@ -34,9 +34,9 @@ const useStyles = makeStyles((theme) => ({
 
 
 
-export default function CustomizedInputs() {
+export default function CustomizedInputs(props) {
   const classes = useStyles();
-
+console.log(props.formik.values.policyPlate,'dgfd')
   return (
     <form className={classes.root} noValidate>      
       <CssTextField
@@ -46,6 +46,9 @@ export default function CustomizedInputs() {
         variant="outlined"
         id="custom-css-outlined-input"
         InputLabelProps={{className:"text"}}
+        value={props.formik.values.policyPlate}
+        onChange={props.formik.handleChange}
+        name="policyPlate"
 
       />        
     </form>

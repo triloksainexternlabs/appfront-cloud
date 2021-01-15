@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 
 const Input = props => {
     let {inputTextLable, inputTextId, inputTextName,onChange,value} = props;
-    console.log(value,'valuevaluevalue')
     const classes = useStyles();
     return (
         <div>

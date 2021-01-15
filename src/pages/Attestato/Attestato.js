@@ -1,14 +1,14 @@
-import React, { Component } from 'react'
+import React from 'react'
 import './Attestato.css'
 import CustomizedInputs from './required'
 
    
-export class Attestato extends Component {
-    render() {
+export const Attestato =(props)=> {
+    
         return (  
             <div class="Attestato-container">              
              <div class="Attestato-input-container">
-             <CustomizedInputs/>
+             <CustomizedInputs formik={props.formik} />
             </div>
                
         </div>
@@ -16,7 +16,6 @@ export class Attestato extends Component {
                 
                 
         )
-}
 }
 
 export default Attestato

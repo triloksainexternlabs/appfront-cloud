@@ -1,11 +1,9 @@
-import React,{useState} from 'react';
-import PropTypes from 'prop-types';
+import React from 'react';
 import DatiAnagrafici from "./datiAnagrafici";
-import { useFormik } from 'formik';
 
 
 const DatiAnagraficiContainer = props => {
-    console.log(props.formik.values.PersonalData,'type=')
+    // console.log(props.formik.values.PersonalData,'type=')
     // const [sureName, setSureName] = useState('')
     // const [city, setCity] = useState('')
     // const [addresses, setAddresses] = useState('')

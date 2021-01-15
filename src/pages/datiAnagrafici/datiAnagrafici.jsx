@@ -2,8 +2,6 @@ import React from 'react';
 import Input from "../../components/input/input";
 import '../../scss/datiAnagrafici.scss'
 const DatiAnagrafici = props => {
-    let {formik}=props.formik;
-    console.log(props.formik.values.PersonalData,'props.formik.values')
     return (
         <div className="dati-anagrafici-container">
             <div className="dati-anagrafici-text">Dati Anagrafici</div>
