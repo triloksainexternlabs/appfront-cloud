@@ -1,6 +1,6 @@
 import ElencoGaranzie from "../elencoGaranzie/ElencoGaranzie"
 import { useState } from 'react'
-const ElencoGaranzieContainer = () => {
+const ElencoGaranzieContainer = (props) => {
     const values=[]
     // const onChange = (event) => {
       
@@ -21,13 +21,13 @@ const ElencoGaranzieContainer = () => {
         }
         if(!found){
             temp.push({id: e.target.name,value:e.target.checked});
-            console.log(temp,'temp')
+            console.log(values,'temp')
         }      
         setArr(temp)
     }
 
     return (
-        <ElencoGaranzie onChange={onChange} />
+        <ElencoGaranzie formik={props.formik}  onChange={onChange} />
     );
 }
 

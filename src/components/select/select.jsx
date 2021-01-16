@@ -5,6 +5,7 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 
 const SelectField = (props) => {
+    let {value,onChange,inputTextName} =props
     return (
         <div className='select-container'>
             <FormControl >
@@ -12,9 +13,12 @@ const SelectField = (props) => {
                 <Select
                     native
                     inputProps={{
-                        name: 'gfhfhf',
-                        id: 'age-native-simple',
+                        name: inputTextName,
+                        id: `${inputTextName}`,
                     }}
+                    value={value}
+                    onChange={onChange}
+                    inputTextName={inputTextName}
                 >
                     <option aria-label="None" value="" />
                     <option value={10}>Ten</option>

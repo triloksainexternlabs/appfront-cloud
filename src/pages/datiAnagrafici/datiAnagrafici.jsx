@@ -6,18 +6,18 @@ const DatiAnagrafici = props => {
         <div className="dati-anagrafici-container">
             <div className="dati-anagrafici-text">Dati Anagrafici</div>
             <div className="dati-anagrafici-form-container">
-                    <div className="datidelcontraente-form">
+                    <form  className="datidelcontraente-form">
                         <span>DATI DEL CONTRAENTE</span>
                         <div>
-                            <Input onChange={props.onChange} inputTextId="surnameName" inputTextName="surnameName" inputTextLable="Cognome Name*"/>
-                            <Input onChange={props.onChange} inputTextId="addresses" inputTextName="addresses" inputTextLable="Indirizzi*"/>
-                            <Input onChange={props.onChange} inputTextId="city" inputTextName="city" inputTextLable="Citta*"/>
-                            <Input onChange={props.onChange} inputTextId="postalCode" inputTextName="postalCode" inputTextLable="Cap*"/>
-                            <Input onChange={props.onChange} inputTextId="fiscalCode" inputTextName="fiscalCode" inputTextLable="Codice Fiscale*"/>
-                            <Input onChange={props.onChange} inputTextId="customer" inputTextName="customer" inputTextLable="Codiace Cliente*"/>
-                            <Input onChange={props.onChange} inputTextId="district" inputTextName="district" inputTextLable="Provincia*"/>
+                            <Input value={props.formik.values.PersonalData.sureName} onChange={props.formik.handleChange} inputTextId="PersonalData.sureName" inputTextName="PersonalData.sureName" inputTextLable="Cognome Name*"/>
+                            <Input value={props.formik.values.PersonalData.addresses} onChange={props.formik.handleChange}  inputTextId="PersonalData.addresses" inputTextName="PersonalData.addresses" inputTextLable="Indirizzi*"/>
+                            <Input value={props.formik.values.PersonalData.city} onChange={props.formik.handleChange}  inputTextId="PersonalData.city" inputTextName="PersonalData.city" inputTextLable="Citta*"/>
+                            <Input value={props.formik.values.PersonalData.postalCode} onChange={props.formik.handleChange}  inputTextId="PersonalData.postalCode" inputTextName="PersonalData.postalCode" inputTextLable="Cap*"/>
+                            <Input value={props.formik.values.PersonalData.fiscalCode} onChange={props.formik.handleChange}  inputTextId="PersonalData.fiscalCode" inputTextName="PersonalData.fiscalCode" inputTextLable="Codice Fiscale*"/>
+                            <Input value={props.formik.values.PersonalData.customer} onChange={props.formik.handleChange}  inputTextId="PersonalData.customer" inputTextName="PersonalData.customer" inputTextLable="Codiace Cliente*"/>
+                            <Input value={props.formik.values.PersonalData.district} onChange={props.formik.handleChange}  inputTextId="PersonalData.district" inputTextName="PersonalData.district" inputTextLable="Provincia*"/>
                         </div>
-                    </div>
+                    </form>
                     <div className="form-line-dot" style={{display:'flex',flexDirection: 'column', alignItems: 'center', marginTop: 38, marginLeft: 109, marginRight: 109}}>
                         <div className="form-dot" style={{borderRadius: '50%',border: '5px solid', color: '#0C87C8'}}></div>
                         <div className="form-border"></div>

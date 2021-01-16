@@ -3,7 +3,7 @@ import ProdottoAutovetture from "../prodottoAutovetture/prodottoAutovetture";
 
 const ProdottoAutovettureContainer = props => {
     return (
-            <ProdottoAutovetture/>            
+            <ProdottoAutovetture formik={props.formik} />            
     )
 }
 
