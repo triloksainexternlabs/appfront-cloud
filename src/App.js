@@ -1,5 +1,5 @@
 import './App.scss';
-import { useState } from 'react'
+import { useState,useEffect } from 'react'
 import logos from './images/appLogo.svg';
 import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
 import ContinueButton from "./components/continueButton";
@@ -56,21 +56,20 @@ function App() {
     }
       setFlag(true)
   }
+  // const [scrollPosition, setSrollPosition] = useState(0);
+const handleScrol = () => {
+    const position = window.pageYOffset;
+    console.log(position,'vposition')
+    // setSrollPosition(position);
+};
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', (event) => {
-  //   })
-  //   return () => {
-  //     window.removeEventListener('scroll', (e) => {
-  //     })
-  //   }
-  // }, [id])
-  // if(true)
-  // {
-  //   return (
-  //     <DatiContrato />
-  //   )
-  // }
+useEffect(() => {
+    window.addEventListener('scroll', handleScrol, { passive: true });
+
+    return () => {
+        window.removeEventListener('scroll', handleScrol);
+    };
+}, []);
 
   const formik = useFormik({
     initialValues: {
