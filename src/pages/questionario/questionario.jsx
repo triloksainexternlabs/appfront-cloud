@@ -21,6 +21,7 @@ const Questionario = (props) => {
             console.log(temp,'temp')
         }      
         setArr(temp)
+        props.getQuestions(temp,'trueFalse')
         console.log('array:',temp);
     }
 

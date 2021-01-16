@@ -17,13 +17,12 @@ const QuestionarioContainer = (props) => {
    }
    if(!found){
        temp.push({id,value});
-       console.log(temp,'temp')
    }      
    setValues(temp)
-   console.log('array:',temp);
+   props.getQuestions(temp,'confirm')
 }
    return (
-      <Questionario onChange={onChange} formik={props.formik}/>
+      <Questionario {...props}  onChange={onChange} formik={props.formik}/>
    )
 }
 export default QuestionarioContainer
