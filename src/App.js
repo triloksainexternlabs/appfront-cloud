@@ -1,5 +1,5 @@
 import './App.scss';
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import logos from './images/appLogo.svg';
 import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
 import ContinueButton from "./components/continueButton";
@@ -8,17 +8,18 @@ import ProductListcontainer from "./pages/productList/ProductListcontainer";
 import DatiAnagrafici from "./pages/datiAnagrafici/datiAnagraficiContainer";
 import Questionario from "./pages/questionario/questionariocontainer";
 import StampaPolizza from "./pages/StampaPolizza/StampaPolizza"
-import  RiepilogoGaranzieContainer  from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
+import RiepilogoGaranzieContainer from './pages/riepilogoGaranzie/RiepilogoGaranzieContainer';
 import DatiContrato from "./pages/datiContratto/datiContrattoContainer";
 import Progressbar from '../src/ProgressBar/progressbar'
 import { useFormik } from 'formik';
 import ProclottoAuto from './pages/Proclotto/ProclottoAuto';
 import Attestato from './pages/Attestato/Attestato';
-import {useDispatch} from 'react-redux'
-import {storeUserDetails} from '../src/redux/actions'
+import { useDispatch } from 'react-redux'
+import { storeUserDetails } from '../src/redux/actions'
 
 function App() {
-  let n=1;
+  const components = []
+  let n = 1;
   const [flag, setFlag] = useState(false);
   const [id, setId] = useState(1)
   const dispatch = useDispatch()
@@ -27,21 +28,19 @@ function App() {
 
 
 
-  const getQuestions=(arr,type)=>{
-   
-    if(type==='trueFalse')
-    {
-      let temp=[...arr]
+  const getQuestions = (arr, type) => {
+
+    if (type === 'trueFalse') {
+      let temp = [...arr]
       setSiNoArr(temp)
     }
-    else{
-      let temp=[...arr]
+    else {
+      let temp = [...arr]
       setConfirmArr(temp)
     }
   }
   const handleScroll = (value,) => {
     setId(value)
-
     window.scrollTo({
       top: window.innerHeight * value,
       behavior: 'smooth'
@@ -51,25 +50,35 @@ function App() {
 
     }
     else
-    if(value===11){
-      dispatch(storeUserDetails({data:formik.values,questionArr:[...siNoArr,...confirmArr]}))
-    }
-      setFlag(true)
+      if (value === 11) {
+        dispatch(storeUserDetails({ data: formik.values, questionArr: [...siNoArr, ...confirmArr] }))
+      }
+    setFlag(true)
   }
   // const [scrollPosition, setSrollPosition] = useState(0);
-const handleScrol = () => {
+  const handleScrol = () => {
     const position = window.pageYOffset;
-    console.log(position,'vposition')
+    console.log(position, 'vposition')
     // setSrollPosition(position);
-};
+  };
+  var lastScrollTop = 0;
 
-useEffect(() => {
-    window.addEventListener('scroll', handleScrol, { passive: true });
+  document.addEventListener("scroll", function () {
+    var st = window.pageYOffset || document.documentElement.scrollTop;
+    if (st > lastScrollTop) {
+      console.log(st, 'lastScrollTop', lastScrollTop, 'down')
+    } else {
+      console.log(st, 'lastScrollTop', lastScrollTop, 'upscroll code')
+    }
+    lastScrollTop = st <= 0 ? 0 : st;
+  }, false);
+  // useEffect(() => {
+  //     window.addEventListener('scroll', handleScrol, { passive: true });
 
-    return () => {
-        window.removeEventListener('scroll', handleScrol);
-    };
-}, []);
+  //     return () => {
+  //         window.removeEventListener('scroll', handleScrol);
+  //     };
+  // }, []);
 
   const formik = useFormik({
     initialValues: {
@@ -138,18 +147,16 @@ useEffect(() => {
     },
 
   })
-  // let x=document.getElementsByClassName('product-list-third')
-  // console.log(x,'product-list-thirdproduct-list-third')
-  
+
 
   return (
-    <div className="app">
+    <div className="app" >
       <div className="app-logo">
         <img src={logos} alt="app-logo" />
       </div>
       <div className="step-view-container">
         <div>
-          <div className="form-one">
+          <div className={`form-one `}>
             <div>
               <span className="head-text">Gruppi Prodotto</span>
             </div>
@@ -157,59 +164,59 @@ useEffect(() => {
               Prodotto Auto
             </button>
           </div>
-          <div className="form-two">
+          <div className={`form-two `}>
             <div className="head-text-w-underline">Elenco Prodotti</div>
             <ProductListcontainer handleScroll={handleScroll} />
           </div>
 
         </div>
-        <div className='product-container'>
-          <div className='product-list'>
-            <div className="product-list-third ElencoGaranzie">
-              <div className="head-text-w-underline">Elenco Garanzie</div>
-              <ElencoGaranzie formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={3} />
-            </div>
-            <div className="product-list-third DatiAnagrafici">
-              <DatiAnagrafici formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={4} />
-            </div>
-            <div className="product-list-third questionario daticontratto ">
-              <Questionario getQuestions={getQuestions} formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={5} />
-            </div>
-            <div className="product-list-third daticontratto">
-              <DatiContrato formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={6} />
-            </div>
-            <div className="product-list-third Attestato">
-              <div className="head-text-w-underline">Attestato Di Rischio</div>
-              <div className='attestato-wrapper'>
-                <Attestato formik={formik} />
-                <ContinueButton handleScroll={handleScroll} step={7} />
-              </div>
-            </div>
-            <div className="product-list-third ProdottoAutovetture">
-              <div className="head-text-w-underline">Prodotto Autovetture</div>
-              <ProdottoAutovettureContainer formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={8} />
-
-            </div>
-            <div className="product-list-third">
-              <RiepilogoGaranzieContainer formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={9} />
-            </div>
-            <div className="product-list-third proclotto-autovetture-Datiintegrative">
-              <ProclottoAuto formik={formik} />
-              <ContinueButton handleScroll={handleScroll} step={10} />
-            </div>
-            <div className="product-list-third stampa-poliza">
-              <StampaPolizza />
-              <ContinueButton handleScroll={handleScroll} step={11} />
-            </div>
-          </div>
-          <Progressbar id={id} flag={flag} />
+        {/* <div className='product-container'>
+          <div className='product-list '> */}
+        <div className={`product-list-third ElencoGaranzie ${id === 2 ? 'next' : ''}`}>
+          <div className="head-text-w-underline">Elenco Garanzie</div>
+          <ElencoGaranzie formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={3} />
         </div>
+        <div className={`product-list-third DatiAnagrafici`}>
+          <DatiAnagrafici formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={4} />
+        </div>
+        <div className="product-list-third questionario daticontratto ">
+          <Questionario getQuestions={getQuestions} formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={5} />
+        </div>
+        <div className="product-list-third daticontratto">
+          <DatiContrato formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={6} />
+        </div>
+        <div className="product-list-third Attestato">
+          <div className="head-text-w-underline">Attestato Di Rischio</div>
+          <div className='attestato-wrapper'>
+            <Attestato formik={formik} />
+            <ContinueButton handleScroll={handleScroll} step={7} />
+          </div>
+        </div>
+        <div className="product-list-third ProdottoAutovetture">
+          <div className="head-text-w-underline">Prodotto Autovetture</div>
+          <ProdottoAutovettureContainer formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={8} />
+
+        </div>
+        <div className="product-list-third">
+          <RiepilogoGaranzieContainer formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={9} />
+        </div>
+        <div className="product-list-third proclotto-autovetture-Datiintegrative">
+          <ProclottoAuto formik={formik} />
+          <ContinueButton handleScroll={handleScroll} step={10} />
+        </div>
+        <div className="product-list-third stampa-poliza">
+          <StampaPolizza />
+          <ContinueButton handleScroll={handleScroll} step={11} />
+        </div>
+        {/* </div> */}
+        <Progressbar id={id} flag={flag} />
+        {/* </div> */}
       </div>
 
 
