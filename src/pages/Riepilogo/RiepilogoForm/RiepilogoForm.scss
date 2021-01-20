@@ -1,0 +1,27 @@
+.riepilogoForm{
+    border-bottom: 1px solid  #EAE9E9;
+    padding: 3% 3% 1%;
+    .riepilogoform-main{
+    display:flex;
+    flex-direction:row;
+    justify-content: space-around;
+    height: 100%;
+    .left-riepilogoform,.right-riepilogoform{
+        display:flex;
+        flex-direction:column;
+        justify-content: space-evenly;
+        width: 50%;
+       
+           .sub-input-field{
+               padding-bottom: 20px;
+               input{
+                  appearance: none;
+               }
+        }
+    }
+    .right-riepilogoform{
+        width: 40%;
+    }
+   
+    }
+}

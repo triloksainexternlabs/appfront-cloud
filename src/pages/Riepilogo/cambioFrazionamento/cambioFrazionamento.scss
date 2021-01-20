@@ -1,0 +1,71 @@
+.CambioFrazionamento{
+    font-family: Alata;
+    font-style: normal;
+    font-weight: normal;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .cambio-frazionamento-container{
+     width: 100%;
+    }
+    h1{
+        width: fit-content;
+        color: #8A25B1;
+        margin-block-start:1.5em;
+        margin-block-end: 1.5em;
+        font-size: 20px;
+        line-height: 25px;
+    }
+    .MuiInputLabel-root.Mui-focused{
+        color: #8A25B1;
+        }
+        .MuiInput-underline:after{
+            border-color: rgba(0, 0, 0, 0.42);
+        }
+    h1 + div{
+        display: flex;
+        width: 100%;
+        // padding-left: 55px;
+        justify-content: space-between;
+        .input-wrapper{
+            width: 48%;
+            // input{
+               
+            // }
+        }
+
+    }
+    .privacy-container{
+        display: flex;
+        flex-direction: column;
+            .privacy-sub-container{
+                display: flex;
+                .active{
+                    font-size: 18px;
+                    line-height: 25px;
+                    color: white;
+                    background-color: #0C87C8 !important;
+                }
+                &>div{
+                    width: 50%;
+                    padding: 20px 0px;
+                    &>div{
+                        width: fit-content;
+                        p{
+                            font-family:Calibri;
+                            font-style: normal;
+                            font-weight: normal;
+                            font-size: 18px;
+                            line-height: 22px;
+                        }
+                        &>div{
+                            margin: auto;
+                            width: fit-content;
+                        }
+                    }
+                }
+            //   display: flex;
+    }
+}
+}

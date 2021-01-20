@@ -20,23 +20,21 @@ const SwitchBtn = (props) => {
     return (
         <div className='switch-btn-container'>
             <Switch
-                width={100}
+                width={props.width}
                 checked={checked}
                 onChange={()=>toggleChecked(props.id,props.name)}
                 uncheckedIcon={
-                    <span>Confermo</span>
+                    <span>{props.label}</span>
                 }
                 checkedIcon={
-                   "Confermo"
+                   props.label
                 }
                 className="react-switch"
                 id={props.id}
-                offColor="#fff"
-                onColor="#8A25B1"
+                offColor={props.offColor}
+                onColor={props.onColor}
                 value={props.value}
                 name={props.name}
-                // onValueChange={(e) => props.formik.handleChange(props.name, e)}
-                // onClick
 
             />
           

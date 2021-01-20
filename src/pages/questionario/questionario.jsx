@@ -62,22 +62,20 @@ const Questionario = (props) => {
                         />
                     </div>
 
-
-
                 </div>
                 <div className='questionario-sub-container'>
                     <h1>Dichiarazione Di Rifiuto Do Fornire UNA o piu Delle Informazioni Richieste</h1>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque.</p>
-                        <SwitchBtn onChange={props.onChange}  name="value1" id={0}  {...props} />
+                        <SwitchBtn width={100} label="Confermo" offColor={"#fff"} onColor="#8A25B1" onChange={props.onChange}  name="value1" id={0}  {...props} />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        <SwitchBtn onChange={props.onChange}  name="value2" id={1}  {...props} />
+                        <SwitchBtn width={100} label="Confermo"  offColor={"#fff"} onColor="#8A25B1" onChange={props.onChange}  name="value2" id={1}  {...props} />
                     </div>
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque. Consectetur duis tincidunt arcu nunc suspendisse sagittis fames quis justo.</p>
-                        <SwitchBtn onChange={props.onChange}  name="value3"  id={2} {...props} />
+                        <SwitchBtn width={100} label="Confermo"  offColor={"#fff"} onColor="#8A25B1" onChange={props.onChange}  name="value3"  id={2} {...props} />
                     </div>
 
                 </div>

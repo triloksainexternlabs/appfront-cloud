@@ -1,0 +1,36 @@
+.riepilogi-table{
+    border-bottom:1px solid  #EAE9E9;
+    padding: 30px 9% 0px;
+
+.main-table{
+    display: flex;
+    justify-content: space-between;
+    // width: 70%;
+    .table-cloumn-one{
+        p{
+            font-family: Alata;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 25px;
+            color: #8A25B1;
+        }
+        p:nth-child(1){
+            margin-top: 55px;
+        }
+    }
+    .table-cloumn{
+        p{
+            font-family: Calibri;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 22px;
+            text-transform: capitalize;
+            color: #000000;
+        }
+        p:nth-child(1) {
+            font-weight: 600;
+        }
+    }
+}
+}

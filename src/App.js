@@ -1,5 +1,5 @@
 import './App.scss';
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 import logos from './images/appLogo.svg';
 import ProdottoAutovettureContainer from "./pages/prodottoAutovetture/prodottoAutovettureContainer";
 import ContinueButton from "./components/continueButton";
@@ -17,6 +17,7 @@ import Attestato from './pages/Attestato/Attestato';
 import { useDispatch } from 'react-redux'
 import { storeUserDetails } from '../src/redux/actions'
 import ReactPageScroller from 'react-page-scroller';
+import RiepilogoContainer from './pages/Riepilogo/RiepilogoContainer';
 // import { tr } from 'date-fns/locale';
 // import * as ReactPageScroller from "react-page-scroller";
 
@@ -126,7 +127,7 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={id}
+          customPageNumber={10}
           // onBeforePageScroll={onBeforePageScroll}
         // pageOnChange={handlePageChange}
         >
@@ -139,7 +140,7 @@ function App() {
             </button>
           </div>
           <div className={`form-two `}>
-            <div className="head-text-w-underline">Elenco Prodotti</div>
+            <div className="head-text-w-underline">ELENCO PRODOTTI</div>
             <ProductListcontainer handleScroll={handleScroll} />
           </div>
           <div className={`product-list-third ElencoGaranzie  `}>
@@ -166,20 +167,37 @@ function App() {
               <ContinueButton handleScroll={handleScroll} step={7} />
             </div>
           </div>
-          <div className="product-list-third ProdottoAutovetture ">
+          <div className="product-list-third ProdottoAutovetture riepilogoGaranzie">
             <div className="head-text-w-underline">Prodotto Autovetture</div>
             <ProdottoAutovettureContainer formik={formik} />
+            <div className='riepilogo-btn-container'>
             <ContinueButton handleScroll={handleScroll} step={8} />
+            <ContinueButton handleScroll={handleScroll} step={8} />
+            </div>
 
           </div>
-          <div className="product-list-third ">
+          <div className="product-list-third riepilogoGaranzie">
             <RiepilogoGaranzieContainer formik={formik} />
+            <div className='riepilogo-btn-container'>
             <ContinueButton handleScroll={handleScroll} step={9} />
+            <ContinueButton handleScroll={handleScroll} step={9} />
+            </div>
+
           </div>
           <div className="product-list-third proclotto-autovetture-Datiintegrative ">
             <ProclottoAuto formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={10} />
           </div>
+          <div className="product-list-third riepilogo">
+            <RiepilogoContainer />
+            <div className='riepilogo-btn-container'>
+            <ContinueButton handleScroll={handleScroll} step={11} />
+            <ContinueButton handleScroll={handleScroll} step={11} />
+            <ContinueButton handleScroll={handleScroll} step={11} />
+            </div>
+
+          </div>
+
           <div className="product-list-third stampa-poliza ">
             <StampaPolizza />
             <ContinueButton handleScroll={handleScroll} step={11} />
