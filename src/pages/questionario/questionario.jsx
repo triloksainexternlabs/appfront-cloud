@@ -27,7 +27,6 @@ const Questionario = (props) => {
 
     return (
         <div className='questionario-container'>
-            <h1 className='title'>Questionario</h1>
             <div>
                 <div className='questionario-sub-container'>
                     <h1>Questionario Per La Valutazione Dell’adeguatezza Dei Contratti  Auto e Rami elementari offerti</h1>

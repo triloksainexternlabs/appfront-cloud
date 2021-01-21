@@ -12,9 +12,9 @@
     h1{
         width: fit-content;
         color: #8A25B1;
-        margin-block-start:1.5em;
-        margin-block-end: 1.5em;
-        font-size: 20px;
+        margin-block-start:1em;
+        // margin-block-end: 1.5em;
+        font-size: 18px;
         line-height: 25px;
     }
     .MuiInputLabel-root.Mui-focused{
@@ -30,6 +30,11 @@
         justify-content: space-between;
         .input-wrapper{
             width: 48%;
+            input[type="date"]::-webkit-calendar-picker-indicator{
+                display: none;
+                -webkit-appearance: none;
+            }
+             
             // input{
                
             // }
@@ -41,10 +46,20 @@
         flex-direction: column;
             .privacy-sub-container{
                 display: flex;
+                .si-label::after,.no-label::after{
+                    color:#0C87C8 ;
+                }
+                .si-label-active::after,.no-label-active::after{
+                    color:white ;
+                    margin: 5px 8px;
+                }
+                .no-label-disable::after{
+                    color: #0C87C8 ;
+                }
                 .active{
                     font-size: 18px;
                     line-height: 25px;
-                    color: white;
+                    color: transparent;
                     background-color: #0C87C8 !important;
                 }
                 &>div{
@@ -68,4 +83,5 @@
             //   display: flex;
     }
 }
+
 }

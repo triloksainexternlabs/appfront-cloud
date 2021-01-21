@@ -1,13 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
+import ContinueButton from '../../components/continueButton'
 import './StampaPolizza.css'
 
-export class StampaPolizza extends Component {
-    render() {
+const StampaPolizza =(props)=> {
+
         return (
-            <div>
-                 
                <div className="stampa-poliza-container" >
-                   <div className="heading">Stampa Polizza</div>                                 
                    <div>                    
                     <p className="middletext">E Stata Enessa La Poilizza n. 1.903.13.062552</p>
                     </div> 
@@ -15,12 +13,12 @@ export class StampaPolizza extends Component {
                     <p className="lowertext">Premi Prosegui Apertura Della Finestra Di Stampa.</p>
                     <p className="lowertext"> Dopo Avere Stampare Le Note Infcrmative.</p>
                     </div>
-                 </div>           
-        </div>
-                
+                    <ContinueButton handhandleScroll={props.handleScroll} step={props.step} />
+
+                 </div>   
         
         )
-    }
+    
 }
 
 export default StampaPolizza

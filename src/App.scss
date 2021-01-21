@@ -39,8 +39,8 @@ scrollbar-width: none;
   justify-content: space-evenly;
   width: 70%;
   align-self: center;
-  position: absolute;
-  bottom: 10px;
+  // position: absolute;
+  // bottom: 10px;
 }
 .form-two {
   display: flex;
@@ -66,6 +66,31 @@ scrollbar-width: none;
 .head-text {
   color:  #0C87C8;
   font-size: 25PX;
+}
+.headings,.prodotto-heading{
+  font-family: Alata Regular;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 41px;
+  letter-spacing: 0.015em;
+  text-transform: capitalize;
+  color: #0C87C8;
+  margin:0px auto;
+  border-bottom: 2px solid #0C87C8;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding-bottom: 3px;
+  margin-top: 50px;
+}
+.prodotto-heading{
+border-bottom: none;
+padding: 0%;
+}
+.sub-heading{
+  font-size: 24px !important;
+  line-height: 33px !important;
+  margin-top: 0%;
 }
 
 .head-text-w-underline {
@@ -131,7 +156,7 @@ scrollbar-width: none;
 
 .step-view-container {
   display: flex;
-  justify-content: center;
+  // justify-content: center;
   flex-direction: column;
 }
 
@@ -320,12 +345,12 @@ label.label-custom {
 .PrivateNotchedOutline-legendNotched-5{
   max-width: 100px !important;
 }
-.ProdottoAutovetture,.Attestato{
-  justify-content: space-evenly;
-}
-.ElencoGaranzie,.DatiAnagrafici,.questionario,.daticontratto,.stampa-poliza,.proclotto-autovetture-Datiintegrative{
-  justify-content: center;
-}
+// .ProdottoAutovetture,.Attestato{
+//   justify-content: space-evenly;
+// }
+// .ElencoGaranzie,.DatiAnagrafici,.questionario,.daticontratto,.stampa-poliza,.proclotto-autovetture-Datiintegrative{
+//   justify-content: center;
+// }
 .attestato-wrapper{
   display: flex;
   flex-direction: column;

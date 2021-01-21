@@ -5,18 +5,17 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
-
 .heading{ 
-      
-    font-family: Alata;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 30px;
-    line-height: 41px;
-    letter-spacing: 0.015em;
-    text-transform: capitalize;
-    color: #0C87C8;
+     font-family: Alata;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 30px;
+     line-height: 41px;
+     letter-spacing: 0.015em;
+     text-transform: capitalize;
+     color: #0C87C8;
      text-align: center;  
      width:fit-content;
      margin: 0px auto 2%;

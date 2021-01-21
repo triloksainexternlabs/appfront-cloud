@@ -1,16 +1,16 @@
 import React from 'react'
 import CambioFrazionamento from './cambioFrazionamento'
 
-const CambioFrazionamentoContainer = () => {
+const CambioFrazionamentoContainer = (props) => {
     const toggle=(id,value)=>{
-        console.log('fdttewrt',id,value)
+        props.summary({id,value})
     }
-    const onChange=()=>{
-
+    const onChange=(id,value)=>{
+    props.summary({id,value})
     }
     return (
         <div style={{padding: '0% 9%'}}>
-            <CambioFrazionamento onChange={onChange} handleToggle={toggle} />
+            <CambioFrazionamento {...props} onChange={onChange} handleToggle={toggle} />
         </div>
     )
 }

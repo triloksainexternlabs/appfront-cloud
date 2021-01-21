@@ -1,7 +1,6 @@
 import React from 'react'
 import './progressbar.css'
 function Progressbar(props) {
-    console.log(props,'currentPagecurrentPage')
     return (
              <div className={props.flag?"divmenu":'hide-progress-bar'}>
                  <ul class="ullist">

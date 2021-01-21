@@ -18,16 +18,15 @@ import { useDispatch } from 'react-redux'
 import { storeUserDetails } from '../src/redux/actions'
 import ReactPageScroller from 'react-page-scroller';
 import RiepilogoContainer from './pages/Riepilogo/RiepilogoContainer';
-// import { tr } from 'date-fns/locale';
-// import * as ReactPageScroller from "react-page-scroller";
 
-let currentPage=0;
+
 function App() {
   const [flag, setFlag] = useState(false);
   const [id, setId] = useState(0)
   const dispatch = useDispatch()
   const [siNoArr, setSiNoArr] = useState([]);
   const [confirmArr, setConfirmArr] = useState([]);
+  const [summaryValues, setSummaryValues] = useState([false, false]);
 
 
 
@@ -117,6 +116,17 @@ function App() {
         value7: false,
         value8: false,
       },
+      Riepilogo: {
+        prodotto: '',
+        dataDecorrenza: '',
+        dataScadenzaPolizza: '',
+        contraente: '',
+        frazionamento1: '',
+        frazionamento2: '',
+        scadenzaRata: '',
+        dataProcessing: '',
+      }
+
     },
 
   })
@@ -127,8 +137,8 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={10}
-          // onBeforePageScroll={onBeforePageScroll}
+          customPageNumber={11}
+        // onBeforePageScroll={onBeforePageScroll}
         // pageOnChange={handlePageChange}
         >
           <div className="form-one">
@@ -140,70 +150,78 @@ function App() {
             </button>
           </div>
           <div className={`form-two `}>
-            <div className="head-text-w-underline">ELENCO PRODOTTI</div>
+            <div className="headings">ELENCO PRODOTTI</div>
             <ProductListcontainer handleScroll={handleScroll} />
           </div>
           <div className={`product-list-third ElencoGaranzie  `}>
-            <div className="head-text-w-underline">Elenco Garanzie</div>
+            <div className="headings">Elenco Garanzie</div>
             <ElencoGaranzie formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={3} />
           </div>
           <div className={`product-list-third DatiAnagrafici`}>
+            <div className="headings">Dati Anagrafici</div>
             <DatiAnagrafici formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={4} />
           </div>
           <div className="product-list-third questionario daticontratto ">
+            <h1 className='headings'>Questionario</h1>
             <Questionario getQuestions={getQuestions} formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={5} />
           </div>
           <div className="product-list-third daticontratto ">
+            <h1 className='headings'>Dati Contratto</h1>
             <DatiContrato formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={6} />
           </div>
           <div className="product-list-third Attestato ">
-            <div className="head-text-w-underline ">Attestato Di Rischio</div>
+            <div className="headings">Attestato Di Rischio</div>
             <div className='attestato-wrapper '>
               <Attestato formik={formik} />
               <ContinueButton handleScroll={handleScroll} step={7} />
             </div>
           </div>
           <div className="product-list-third ProdottoAutovetture riepilogoGaranzie">
-            <div className="head-text-w-underline">Prodotto Autovetture</div>
+            <div className="headings">Prodotto Autovetture</div>
             <ProdottoAutovettureContainer formik={formik} />
             <div className='riepilogo-btn-container'>
-            <ContinueButton handleScroll={handleScroll} step={8} />
-            <ContinueButton handleScroll={handleScroll} step={8} />
+              <ContinueButton handleScroll={handleScroll} step={8} />
+              <ContinueButton handleScroll={handleScroll} step={8} />
             </div>
 
           </div>
           <div className="product-list-third riepilogoGaranzie">
+            <h1 className="headings">Riepilogo Garanzie</h1>
             <RiepilogoGaranzieContainer formik={formik} />
             <div className='riepilogo-btn-container'>
-            <ContinueButton handleScroll={handleScroll} step={9} />
-            <ContinueButton handleScroll={handleScroll} step={9} />
+              <ContinueButton handleScroll={handleScroll} step={9} />
+              <ContinueButton handleScroll={handleScroll} step={9} />
             </div>
 
           </div>
           <div className="product-list-third proclotto-autovetture-Datiintegrative ">
+
+            <div className="prodotto-heading">Prodotto Autovetture</div>
+            <div className=" headings sub-heading">Dati Integrative</div>
             <ProclottoAuto formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={10} />
           </div>
           <div className="product-list-third riepilogo">
-            <RiepilogoContainer />
+            <div className="headings">Riepilogo</div>
+            <RiepilogoContainer formik={formik} />
             <div className='riepilogo-btn-container'>
-            <ContinueButton handleScroll={handleScroll} step={11} />
-            <ContinueButton handleScroll={handleScroll} step={11} />
-            <ContinueButton handleScroll={handleScroll} step={11} />
+              <ContinueButton handleScroll={handleScroll} step={11} />
+              <ContinueButton handleScroll={handleScroll} step={11} />
+              <ContinueButton handleScroll={handleScroll} step={11} />
             </div>
 
           </div>
 
           <div className="product-list-third stampa-poliza ">
-            <StampaPolizza />
-            <ContinueButton handleScroll={handleScroll} step={11} />
+            <div className="headings">Stampa Polizza</div>
+            <StampaPolizza handleScroll={handleScroll} step={11} />
           </div>
         </ReactPageScroller>
-        <Progressbar id={id-1} flag={flag} />
+        <Progressbar id={id - 1} flag={flag} />
       </div>
 
 

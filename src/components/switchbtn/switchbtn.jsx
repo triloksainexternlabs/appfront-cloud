@@ -22,7 +22,7 @@ const SwitchBtn = (props) => {
             <Switch
                 width={props.width}
                 checked={checked}
-                onChange={()=>toggleChecked(props.id,props.name)}
+                onChange={props.isSummary?(e)=>{props.formik.setFieldValue("Riepilogo.collectedTitle",e) ;setChecked(true)}:()=>toggleChecked(props.id,props.name) }
                 uncheckedIcon={
                     <span>{props.label}</span>
                 }
@@ -37,7 +37,8 @@ const SwitchBtn = (props) => {
                 name={props.name}
 
             />
-          
+            {/* } */}
+            {/* */}
         </div>
     )
 }

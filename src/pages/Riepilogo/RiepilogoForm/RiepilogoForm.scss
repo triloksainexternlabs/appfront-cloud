@@ -6,6 +6,9 @@
     flex-direction:row;
     justify-content: space-around;
     height: 100%;
+    ::placeholder{
+        font-size: 12px;
+    }
     .left-riepilogoform,.right-riepilogoform{
         display:flex;
         flex-direction:column;
@@ -14,13 +17,24 @@
        
            .sub-input-field{
                padding-bottom: 20px;
-               input{
-                  appearance: none;
-               }
+               input[type="date"]::-webkit-calendar-picker-indicator{
+                display: none;
+                -webkit-appearance: none;
+            }
+          
+                .main-part{
+                    width: 100%;
+
+                }
         }
     }
     .right-riepilogoform{
         width: 40%;
+    }
+    .left-riepilogoform{
+        .input-field .sub-input-field{
+            width: 40%;
+        }
     }
    
     }

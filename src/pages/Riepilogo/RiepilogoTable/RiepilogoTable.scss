@@ -1,6 +1,6 @@
 .riepilogi-table{
     border-bottom:1px solid  #EAE9E9;
-    padding: 30px 9% 0px;
+    padding: 30px 9%;
 
 .main-table{
     display: flex;
@@ -8,7 +8,6 @@
     // width: 70%;
     .table-cloumn-one{
         p{
-            font-family: Alata;
             font-style: normal;
             font-weight: normal;
             font-size: 18px;
@@ -17,6 +16,7 @@
         }
         p:nth-child(1){
             margin-top: 55px;
+           
         }
     }
     .table-cloumn{
@@ -30,6 +30,8 @@
         }
         p:nth-child(1) {
             font-weight: 600;
+            color: #757575;
+            font-size: 18px;
         }
     }
 }
