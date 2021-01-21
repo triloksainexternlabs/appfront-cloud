@@ -36,7 +36,6 @@ const useStyles = makeStyles((theme) => ({
 
 export default function CustomizedInputs(props) {
   const classes = useStyles();
-console.log(props.formik.values.policyPlate,'dgfd')
   return (
     <form className={classes.root} noValidate>      
       <CssTextField

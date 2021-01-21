@@ -1,6 +1,5 @@
 import React from 'react'
 import './progressbar.css'
-<link href="//db.onlinewebfonts.com/c/a78cfad3beb089a6ce86d4e280fa270b?family=Calibri" rel="stylesheet" type="text/css"/>
 function Progressbar(props) {
     return (
              <div className={props.flag?"divmenu":'hide-progress-bar'}>

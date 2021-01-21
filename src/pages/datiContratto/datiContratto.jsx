@@ -10,7 +10,6 @@ const DatiContratto = props => {
     
     return (
         <div className='daticontratto-container'>
-            <h1>Dati Contratto</h1>
             <p>codice intermediario</p>
             <form className='form-container'>
                 <Input value={props.formik.values.contractData.effectiveDateTime} onChange={props.formik.handleChange} inputTextId="contractData.effectiveDateTime" inputTextName="contractData.effectiveDateTime"  id="Decorrenza" label="Decorrenza e ora*" />

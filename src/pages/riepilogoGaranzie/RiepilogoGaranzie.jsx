@@ -4,7 +4,7 @@ const RiepilogoGaranzie = (props) => {
     
     return (
         <div className='RiepilogoGaranzie'>
-            <h1>Riepilogo Garanzie</h1>
+
             <table>
                 <thead>
                 <tr id='row1'>

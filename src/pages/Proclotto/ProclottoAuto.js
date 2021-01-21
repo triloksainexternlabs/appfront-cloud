@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import Inputs from '../../component/Inputs/inputs'
 import Label from '../../component/Inputs/label'
 import '../Proclotto/ProclottoAuto.css'
@@ -6,8 +6,7 @@ import '../Proclotto/ProclottoAuto.css'
 export const ProclottoAuto =(props)=> {
         return (
             <div className="proclotto-autovetture-Datiintegrative-container">
-            <div className=" proclotto-autovetture-Datiintegrative-container-title">Prodotto Autovetture</div>            
-             <div className=" proclotto-autovetture-Datiintegrative-container-sub-title">Dati Integrative</div> 
+        
              {/* <div class="base-line"></div>                       */}
              <div className="proclotto-autovetture-Datiintegrative-form">
                 <div className="left-input-field">

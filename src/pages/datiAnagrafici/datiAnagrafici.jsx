@@ -4,7 +4,6 @@ import '../../scss/datiAnagrafici.scss'
 const DatiAnagrafici = props => {
     return (
         <div className="dati-anagrafici-container">
-            <div className="dati-anagrafici-text">Dati Anagrafici</div>
             <div className="dati-anagrafici-form-container">
                     <form  className="datidelcontraente-form">
                         <span>DATI DEL CONTRAENTE</span>

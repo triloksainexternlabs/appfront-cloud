@@ -1,21 +1,14 @@
 import React from 'react';
-import Car from "../../images/cars.png";
+import Car from "../../images/car.svg";
 
 const ElencoGaranzie = props => {
     let {onChange} =props
     return (
         <div  style={{display: 'flex',width: 'inherit'}}>
-            <div style={{position:'absolute'}}>
-                <img
-                style={{
-                    width: '485px',
-                    height: '872px',
-                }} 
-                     src={Car}
-                     alt=""
-                />
+            <div className='img-view' >
+                <img src={Car} alt="" />
             </div>
-            <div style={{position:'relative',marginLeft:'390px', marginTop:120}}>
+            <div className='elencoGaranzie-table' >
                 <table>
                     <thead>
                         <td></td>
