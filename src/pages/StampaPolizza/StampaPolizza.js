@@ -1,5 +1,4 @@
 import React from 'react'
-import ContinueButton from '../../components/continueButton'
 import './StampaPolizza.css'
 
 const StampaPolizza =(props)=> {
@@ -13,8 +12,6 @@ const StampaPolizza =(props)=> {
                     <p className="lowertext">Premi Prosegui Apertura Della Finestra Di Stampa.</p>
                     <p className="lowertext"> Dopo Avere Stampare Le Note Infcrmative.</p>
                     </div>
-                    <ContinueButton handhandleScroll={props.handleScroll} step={props.step} />
-
                  </div>   
         
         )

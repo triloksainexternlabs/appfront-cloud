@@ -21,7 +21,6 @@ const ElencoGaranzieContainer = (props) => {
         }
         if(!found){
             temp.push({id: e.target.name,value:e.target.checked});
-            console.log(values,'temp')
         }      
         setArr(temp)
     }

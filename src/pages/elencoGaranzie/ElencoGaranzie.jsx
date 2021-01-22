@@ -2,12 +2,13 @@ import React from 'react';
 import Car from "../../images/car.svg";
 
 const ElencoGaranzie = props => {
-    let {onChange} =props
+    let { onChange } = props
     return (
-        <div  style={{display: 'flex',width: 'inherit'}}>
+        <>
             <div className='img-view' >
                 <img src={Car} alt="" />
             </div>
+        <div  style={{display: 'flex',width: 'inherit',height:'80%'}}>
             <div className='elencoGaranzie-table' >
                 <table>
                     <thead>
@@ -100,6 +101,7 @@ const ElencoGaranzie = props => {
                 </table>
             </div>
        </div>
+       </>
     )
 }
 

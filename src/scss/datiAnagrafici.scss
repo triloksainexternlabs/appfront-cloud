@@ -2,6 +2,7 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+    height: 80%;
     .dati-anagrafici-text{
         font-family: Alata;
         font-style: normal;
@@ -18,7 +19,6 @@
     .dati-anagrafici-form-container{
         display: flex;
         justify-content: center;
-        margin: 2% 0;
         .datidelcontraente-form ,.datidelveicolo-form{
             display: flex;
             flex-direction: column;

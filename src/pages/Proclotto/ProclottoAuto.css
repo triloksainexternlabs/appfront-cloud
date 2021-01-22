@@ -2,8 +2,8 @@
     display: flex;
     flex-direction: column;
     align-self: center;
-    width: 70%;
-    height: 80%;
+    width: 60%;
+    height: 75%;
 
 }
 
@@ -21,7 +21,7 @@
     }
 
    .proclotto-autovetture-Datiintegrative-container-sub-title{   
-    font-family: Alata;
+    font-family: Alata Regular;
         font-style: normal;
         font-weight: bold;
         font-size: 24px;
@@ -32,26 +32,17 @@
         align-self: center;   
         border-bottom: 1px solid;      
     }
-   
    .proclotto-autovetture-Datiintegrative-form{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         height: 100%;
         align-items: center;
-    }
-    .left-input-field{
-        width: 45%;
-        /* margin: 10% 10%; */
-        justify-content: space-between; 
         
     }
-    .right-input-field{
-        width: 45%;
-        /* margin: 10% 10%; */
-    }
+    
     .input-label{
-        margin-bottom: 5%;
+        /* margin: 5% 0px; */
     }
 
     .base-line{
@@ -60,4 +51,18 @@
         border-bottom: 2px solid;
         width: 285px;
  }
+ .proclotto-autovetture-Datiintegrative-container .left-input-field{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50%;
     
+}
+.proclotto-autovetture-Datiintegrative-container .right-input-field{
+    width: 40%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    height: 50%;
+}

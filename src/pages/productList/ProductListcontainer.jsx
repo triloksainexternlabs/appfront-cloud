@@ -21,7 +21,7 @@ const ProductListContainer = (props) => {
         {text : "Auto Moto Storiche", imageUrl: AutoMotoStoriche},
     ]
     return ( 
-        <ProductList list={productList} handleScroll={props.handleScroll}/>
+        <ProductList list={productList} step={props.step} handleScroll={props.handleScroll}/>
      );
 }
  

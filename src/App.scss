@@ -34,13 +34,26 @@ scrollbar-width: none;
 .riepilogo,.riepilogoGaranzie{
   position: relative;
 }
-.riepilogo-btn-container{
+.riepilogo .headings{
+  margin-top: 30px;
+}
+.riepilogo-btn-container,.riepilogoGaranzie-btn-container{
   display: flex;
-  justify-content: space-evenly;
-  width: 70%;
-  align-self: center;
-  // position: absolute;
-  // bottom: 10px;
+    justify-content: space-between;
+    width: 60%;
+    align-self: center;
+    margin-right: 7%;
+}
+.riepilogo-btn-container{
+  margin: 0px;
+}
+.ProdottoAutovetture-btn-container{
+  display: flex;
+  width: 75%;
+  justify-content: flex-end;
+  button{
+    margin: 0px 0px 0px 40px;
+  }
 }
 .form-two {
   display: flex;
@@ -81,7 +94,7 @@ scrollbar-width: none;
   width: -moz-fit-content;
   width: fit-content;
   padding-bottom: 3px;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .prodotto-heading{
 border-bottom: none;
@@ -312,18 +325,17 @@ label.label-custom {
 }
 .product-list-third button.btn {
   background: #8A25B1;
-  border-radius: 2px;
-  font-family: Alata;
+  border-radius: 4px;
+  font-family: Alata Regular;
   font-style: normal;
   font-weight: normal;
-  font-size: 24px;
+  font-size: 20px;
   line-height: 110%;
   text-align: center;
   letter-spacing: 0.015em;
   border: none;
   color: #FFFFFF;
   padding: 10px 20px;
-  margin-top: 20px;
   width: fit-content;
   align-self: center;
   z-index: 1;
@@ -345,27 +357,32 @@ label.label-custom {
 .PrivateNotchedOutline-legendNotched-5{
   max-width: 100px !important;
 }
-// .ProdottoAutovetture,.Attestato{
-//   justify-content: space-evenly;
-// }
-// .ElencoGaranzie,.DatiAnagrafici,.questionario,.daticontratto,.stampa-poliza,.proclotto-autovetture-Datiintegrative{
-//   justify-content: center;
-// }
 .attestato-wrapper{
   display: flex;
   flex-direction: column;
-  height: 50%;
+  height: 100%;
+  justify-content: center;
 }
 .elencoGaranzie-table{
   margin-top: 120px;
-  margin-left: 295px;
+  margin-left: 250px;
+  position: relative;
+}
+.ElencoGaranzie{
   position: relative;
 }
 .img-view{
   width: 100%;
   position: absolute;
-  height: 90vh;
+  height: 80%;
+  bottom: 0%;
   img{
     height: 100%;
   }
+}
+.filled-icon{
+  background: #0C87C8;
+}
+.filled-text{
+  color: #0C87C8 !important;
 }

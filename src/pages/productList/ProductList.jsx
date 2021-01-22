@@ -3,8 +3,9 @@ const ProductList = (props) => {
     return ( 
         <div className="form-two-content" >
         {
-            props.list.map((value)=>
-                <VehicleType 
+            props.list.map((value,i)=>
+                <VehicleType
+                    id={i} 
                     imgUrl = {value.imageUrl} 
                     text = {value.text} 
                     handleScroll = {props.handleScroll} 

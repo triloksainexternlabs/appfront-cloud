@@ -18,17 +18,15 @@ import { useDispatch } from 'react-redux'
 import { storeUserDetails } from '../src/redux/actions'
 import ReactPageScroller from 'react-page-scroller';
 import RiepilogoContainer from './pages/Riepilogo/RiepilogoContainer';
+import Button from '../src/components/button/button';
 
 
 function App() {
-  const [flag, setFlag] = useState(false);
   const [id, setId] = useState(0)
   const dispatch = useDispatch()
   const [siNoArr, setSiNoArr] = useState([]);
   const [confirmArr, setConfirmArr] = useState([]);
-  const [summaryValues, setSummaryValues] = useState([false, false]);
-
-
+  const [currentProgressValue, setCurrentProgressValue] = useState(0)
 
   const getQuestions = (arr, type) => {
     if (type === 'trueFalse') {
@@ -42,16 +40,11 @@ function App() {
   }
   const handleScroll = (value,) => {
     setId(value)
-    if (value === 1) {
-      setFlag(false)
-    }
-    else
-      if (value === 11) {
-        dispatch(storeUserDetails({ data: formik.values, questionArr: [...siNoArr, ...confirmArr] }))
-      }
-    setFlag(true)
-  }
 
+    if (value === 11) {
+      dispatch(storeUserDetails({ data: formik.values, questionArr: [...siNoArr, ...confirmArr] }))
+    }
+  }
   const formik = useFormik({
     initialValues: {
       policyPlate: '',
@@ -130,6 +123,13 @@ function App() {
     },
 
   })
+  const pageOnChange=(e)=>{
+    // setCurrentProgressValue(e)
+    setId(e)
+
+  }
+  console.log(currentProgressValue,id,'event')
+
   return (
     <div className="app" >
       <div className="app-logo">
@@ -137,9 +137,8 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={11}
-        // onBeforePageScroll={onBeforePageScroll}
-        // pageOnChange={handlePageChange}
+          customPageNumber={id}
+          pageOnChange={pageOnChange}
         >
           <div className="form-one">
             <div>
@@ -183,8 +182,8 @@ function App() {
           <div className="product-list-third ProdottoAutovetture riepilogoGaranzie">
             <div className="headings">Prodotto Autovetture</div>
             <ProdottoAutovettureContainer formik={formik} />
-            <div className='riepilogo-btn-container'>
-              <ContinueButton handleScroll={handleScroll} step={8} />
+            <div className='ProdottoAutovetture-btn-container'>
+              <Button name="Calcola Premlo Netto" />
               <ContinueButton handleScroll={handleScroll} step={8} />
             </div>
 
@@ -192,8 +191,9 @@ function App() {
           <div className="product-list-third riepilogoGaranzie">
             <h1 className="headings">Riepilogo Garanzie</h1>
             <RiepilogoGaranzieContainer formik={formik} />
-            <div className='riepilogo-btn-container'>
-              <ContinueButton handleScroll={handleScroll} step={9} />
+            <div className='riepilogoGaranzie-btn-container'>
+              <Button name="Torna Al Dati Contratto" />
+              <Button name="Aggiorna Calcolo Sconti" />
               <ContinueButton handleScroll={handleScroll} step={9} />
             </div>
 
@@ -209,19 +209,23 @@ function App() {
             <div className="headings">Riepilogo</div>
             <RiepilogoContainer formik={formik} />
             <div className='riepilogo-btn-container'>
+              <Button name="Torna alla lista garanzia" />
               <ContinueButton handleScroll={handleScroll} step={11} />
-              <ContinueButton handleScroll={handleScroll} step={11} />
-              <ContinueButton handleScroll={handleScroll} step={11} />
+              <Button name="Ricalcolo Frazionamento" />
             </div>
 
           </div>
 
           <div className="product-list-third stampa-poliza ">
             <div className="headings">Stampa Polizza</div>
-            <StampaPolizza handleScroll={handleScroll} step={11} />
+            <div className='stampa-wrapper'>
+              <StampaPolizza />
+              <ContinueButton handleScroll={handleScroll} step={11} />
+            </div>
+
           </div>
         </ReactPageScroller>
-        <Progressbar id={id - 1} flag={flag} />
+        <Progressbar currentProgressValue={id}  />
       </div>
 
 

@@ -1,8 +1,10 @@
-.prodotto-autovetture-container{
+.prodottoAutovetture-container{
     display: flex;
     flex-direction: column;
-    width: 80%;
-    align-self: center;
+    width: 75%;
+    height: 80%;
+    justify-content: center;
+    padding-left: 3%;
     .prodotto-autovetture-title{
         font-family: Alata;
         font-style: normal;
@@ -46,34 +48,45 @@
     .prodotto-autovetture-form{
         display: flex;
         flex-direction: row;
-        // justify-content: space-evenly;
-        .left-input-field{
+        justify-content: space-between;
+        width: 80%;
+        margin-right: 50px;
+        align-self: flex-end;
+        .right-input-field{
+            width: 40%;
+            ._input{
+                margin: 8% 0px !important;
+            }
+        }
+                .left-input-field{
             width: 50%;
             // margin: 0% 10%;
             .subleft-input-field{
                 display: flex;
                 flex-direction: row;
                 justify-content: space-between;
+                &>.input-label{
+                    width: 45%;
+                }
             }
-            .preimum-text{
-                font-family: 'Alata';
-                font-style: normal;
-                font-weight: normal;
-                font-size: 18px;
-                line-height: 25px;
-                color: #0C87C8;
-            }
+           
         }
-        .right-input-field{
-            width: 50%;
-            margin: 0% 10%;
-        }
+       
+       
         .input-label{
-            margin-bottom: 5%;
+            margin: 3% 0px;
+            
         }
         .MuiInput-underline:after{
             border-color: rgba(0, 0, 0, 0.42);
-            // border: 1px solid #000000;
         }
+
+    }
+    .preimum-text{
+    //     font-family: 'Alata';
+        font-weight: 100;
+        font-size: 18px;
+        line-height: 29px;
+        color: #0C87C8;
     }
 }
