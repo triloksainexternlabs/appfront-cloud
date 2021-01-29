@@ -3,7 +3,7 @@ import './progressbar.css'
 function Progressbar(props) {
     return (
              <div className={props.currentProgressValue===0||props.currentProgressValue===1?'hide-progress-bar':"divmenu"}>
-                 <ul class="ullist">
+                 <ul className="ullist">
                      <li className={props.currentProgressValue===2?'active':''}>Elenco Garanzia</li>
                      <li className={props.currentProgressValue===3?'active':''}>Datti Anagrafici</li>
                      <li className={props.currentProgressValue===4?'active':''}>Questionario</li>

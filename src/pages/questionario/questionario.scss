@@ -4,6 +4,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    width: 80%;
 
     .title{
     font-family: Alata Regular;
@@ -59,4 +61,17 @@
         
     }
   
+}
+@media screen and (max-width:1600px){
+    .questionario-container{
+        .questionario-sub-container{
+            h1{
+                font-size:15px ;
+            }
+            .questionario p{
+               font-size: 13px;
+            }
+        }
+        
+    }
 }

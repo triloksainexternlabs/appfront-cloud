@@ -3,6 +3,8 @@
     flex-direction: column;
     width: 100%;
     height: 80%;
+    justify-content: center;
+    align-items: center;
     .dati-anagrafici-text{
         font-family: Alata;
         font-style: normal;
@@ -17,24 +19,41 @@
         align-self: center;
     }
     .dati-anagrafici-form-container{
+        width: 80%;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         .datidelcontraente-form ,.datidelveicolo-form{
             display: flex;
             flex-direction: column;
             margin-top: 50px;
+            
+                // .MuiInput-underline:after{
+                //     border-color: rgba(0, 0, 0, 0.42);
+                // }
+            .MuiInputLabel-root.Mui-focused{
+                color: #5094BA;
+                }
+                .MuiInput-underline:after{
+                    border-color: rgba(0, 0, 0, 0.42);
+                }
+
+
+                .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+                    border-color: #5094BA !important;
+                  }
+                  .datidelveicolo-title {
+                    font-family: Alata Regular;
+                    font-style: normal;
+                    // font-weight: bold;
+                    font-size: 20px;
+                    line-height: 28px;
+                    letter-spacing: 0.015em;
+                    text-transform: uppercase;
+                    color: #8A25B1;
+                    align-self: center;
+                }
         }
-        span {
-            font-family: Alata;
-            font-style: normal;
-            font-weight: bold;
-            // font-size: 20px;
-            line-height: 28px;
-            letter-spacing: 0.015em;
-            text-transform: uppercase;
-            color: #8A25B1;
-            align-self: center;
-        }
+       
         .form-border{
             width: 3px;
             background: #0C87C8;
@@ -53,5 +72,27 @@
             cursor: pointer;
             margin-right: 70px;
         }
+        .form-line-dot{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 38px;
+        }
     }
+}
+@media screen and (max-width:1600px){
+    .dati-anagrafici-container .dati-anagrafici-form-container{
+        justify-content: center;
+        .MuiOutlinedInput-input{
+            padding: 18.5px 13px;
+
+        }
+        .datidelveicolo-title{
+            font-size: 18px !important;
+        }
+    }
+    .PrivateNotchedOutline-legendLabelled-4 > span{
+        font-size: 16px;
+    }
+            
 }

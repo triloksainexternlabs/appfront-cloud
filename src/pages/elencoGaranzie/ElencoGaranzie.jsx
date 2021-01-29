@@ -1,6 +1,6 @@
 import React from 'react';
 import Car from "../../images/car.svg";
-
+import '../../scss/elencoGaranzie.scss';
 const ElencoGaranzie = props => {
     let { onChange } = props
     return (
@@ -19,9 +19,9 @@ const ElencoGaranzie = props => {
                     <tbody>
                         <tr>
                             <td className="input-col">
-                                <div class="frm-group">
+                                <div className="frm-group">
                                     <input name="elencoGaranzie.value1" value={props.formik.values.elencoGaranzie.value1} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Veicoli"/>
-                                    <label for="Veicoli"></label>
+                                    <label htmlFor="Veicoli"></label>
                                 </div>
                             </td>
                             <td className="second">R.C. Veicoli- B/M</td>
@@ -29,9 +29,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col">
-                                <div class="frm-group">
+                                <div className="frm-group">
                                     <input name="elencoGaranzie.value2" value={props.formik.values.elencoGaranzie.value2} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Scoperto"/>
-                                    <label for="Scoperto"></label>
+                                    <label htmlFor="Scoperto"></label>
                                 </div>
                             </td>
                             <td className="second">Inc/Furto Con Scoperto</td>
@@ -39,9 +39,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td>
-                            <div class="frm-group">
+                            <div className="frm-group">
                                 <input name="elencoGaranzie.value3" value={props.formik.values.elencoGaranzie.value3} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}     type="checkbox" id="Cowsione"/>
-                                <label for="Cowsione"></label>
+                                <label htmlFor="Cowsione"></label>
                             </div>
                             </td>
                             <td className="second">Cowsione</td>
@@ -49,9 +49,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                         <td>
-                            <div class="frm-group">
+                            <div className="frm-group">
                                 <input name="elencoGaranzie.value4" value={props.formik.values.elencoGaranzie.value4} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Kasko"/>
-                                <label for="Kasko"></label>
+                                <label htmlFor="Kasko"></label>
                             </div>
                         </td>
                         <td className="second">Esternsione Kasko</td>
@@ -59,9 +59,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col" >
-                            <div class="frm-group">
+                            <div className="frm-group">
                                 <input name="elencoGaranzie.value5" value={props.formik.values.elencoGaranzie.value5} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}    type="checkbox" id="Back"/>
-                                <label for="Back"></label>
+                                <label htmlFor="Back"></label>
                             </div>
                             </td>
                             <td className="second">Cash Back</td>
@@ -69,9 +69,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col">
-                            <div class="frm-group">
+                            <div className="frm-group">
                                 <input name="elencoGaranzie.value6" value={props.formik.values.elencoGaranzie.value6} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}   type="checkbox" id="Base"/>
-                                <label for="Base"></label>
+                                <label htmlFor="Base"></label>
                             </div>
                             </td>
                             <td className="second">Assistenza Base</td>
@@ -79,9 +79,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                             <td className="input-col">
-                            <div class="frm-group">
+                            <div className="frm-group">
                                 <input name="elencoGaranzie.value7"  value={props.formik.values.elencoGaranzie.value7} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}  type="checkbox" id="Assistenza"/>
-                                <label for="Assistenza"></label>
+                                <label htmlFor="Assistenza"></label>
                             </div>
                             </td>
                             <td className="second">Assistenza VIP</td>
@@ -89,9 +89,9 @@ const ElencoGaranzie = props => {
                         </tr>
                         <tr>
                         <td className="input-col">
-                            <div class="frm-group">
+                            <div className="frm-group">
                             <input name="elencoGaranzie.value8" value={props.formik.values.elencoGaranzie.value8} onChange={(e)=>{props.formik.handleChange(e); onChange(e)}}  type="checkbox" id="Cristaw"/>
-                            <label for="Cristaw"></label>
+                            <label htmlFor="Cristaw"></label>
                             </div>
                         </td>
                         <td className="second">Pacchet. Eventi Cristaw</td>

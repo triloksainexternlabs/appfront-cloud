@@ -1,0 +1,31 @@
+.elencoGaranzie-table{
+    margin-top: 120px;
+    margin-left: 250px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start
+  }
+  .ElencoGaranzie{
+    position: relative;
+  }
+  .img-view{
+    width: 100%;
+    position: absolute;
+    height: 80%;
+    bottom: 0%;
+    img{
+      height: 100%;
+    }
+  }
+  @media screen and (max-width:1600px){
+    .elencoGaranzie-table{
+        margin-top: 80px;
+        thead td {
+            font-size: 20px !important;
+        }
+        td.second,.third{
+            font-size: 16px;
+        }
+    }
+  }

@@ -26,7 +26,6 @@ function App() {
   const dispatch = useDispatch()
   const [siNoArr, setSiNoArr] = useState([]);
   const [confirmArr, setConfirmArr] = useState([]);
-  const [currentProgressValue, setCurrentProgressValue] = useState(0)
 
   const getQuestions = (arr, type) => {
     if (type === 'trueFalse') {
@@ -128,7 +127,6 @@ function App() {
     setId(e)
 
   }
-  console.log(currentProgressValue,id,'event')
 
   return (
     <div className="app" >

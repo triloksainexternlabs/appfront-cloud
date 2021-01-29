@@ -6,7 +6,7 @@ const DatiAnagrafici = props => {
         <div className="dati-anagrafici-container">
             <div className="dati-anagrafici-form-container">
                     <form  className="datidelcontraente-form">
-                        <span>DATI DEL CONTRAENTE</span>
+                        <span className="datidelveicolo-title">DATI DEL CONTRAENTE</span>
                         <div>
                             <Input value={props.formik.values.PersonalData.sureName} onChange={props.formik.handleChange} inputTextId="PersonalData.sureName" inputTextName="PersonalData.sureName" inputTextLable="Cognome Name*"/>
                             <Input value={props.formik.values.PersonalData.addresses} onChange={props.formik.handleChange}  inputTextId="PersonalData.addresses" inputTextName="PersonalData.addresses" inputTextLable="Indirizzi*"/>
@@ -17,7 +17,7 @@ const DatiAnagrafici = props => {
                             <Input value={props.formik.values.PersonalData.district} onChange={props.formik.handleChange}  inputTextId="PersonalData.district" inputTextName="PersonalData.district" inputTextLable="Provincia*"/>
                         </div>
                     </form>
-                    <div className="form-line-dot" style={{display:'flex',flexDirection: 'column', alignItems: 'center', marginTop: 38, marginLeft: 109, marginRight: 109}}>
+                    <div className="form-line-dot" >
                         <div className="form-dot" style={{borderRadius: '50%',border: '5px solid', color: '#0C87C8'}}></div>
                         <div className="form-border"></div>
                         <div className="form-dot" style={{borderRadius: '50%',border: '5px solid', color: '#0C87C8'}}></div>

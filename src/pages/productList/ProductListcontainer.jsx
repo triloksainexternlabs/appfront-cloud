@@ -10,15 +10,15 @@ import Rimorchi from '../../images/Rimorchi.svg';
 import ProductList from './ProductList'
 const ProductListContainer = (props) => {
     const productList = [
-        {text : "Autovetture", imageUrl: Autovetture},
-        {text : "Motocicu", imageUrl: Motocicu},
-        {text : "Ciclomotori", imageUrl: Ciclomotori},
-        {text : "Motocarri", imageUrl: Motocarri},
-        {text : "Rimorchi", imageUrl: Rimorchi},
-        {text : "Autocarri Fino A 35 Q", imageUrl: AutocarriFinoA},
-        {text : "Autocarri Oltre 35 Q.", imageUrl: AutocarriOltreQ},
-        {text : "Macchine Operatrici", imageUrl: MacchineOperatrici},
-        {text : "Auto Moto Storiche", imageUrl: AutoMotoStoriche},
+        {id:1,text : "Autovetture", imageUrl: Autovetture},
+        {id:2,text : "Motocicu", imageUrl: Motocicu},
+        {id:3,text : "Ciclomotori", imageUrl: Ciclomotori},
+        {id:4,text : "Motocarri", imageUrl: Motocarri},
+        {id:5,text : "Rimorchi", imageUrl: Rimorchi},
+        {id:6,text : "Autocarri Fino A 35 Q", imageUrl: AutocarriFinoA},
+        {id:7,text : "Autocarri Oltre 35 Q.", imageUrl: AutocarriOltreQ},
+        {id:8,text : "Macchine Operatrici", imageUrl: MacchineOperatrici},
+        {id:9,text : "Auto Moto Storiche", imageUrl: AutoMotoStoriche},
     ]
     return ( 
         <ProductList list={productList} step={props.step} handleScroll={props.handleScroll}/>

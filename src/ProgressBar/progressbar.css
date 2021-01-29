@@ -16,15 +16,14 @@ li{
 
 }
 .divmenu{
-    height: fit-content;
+    height:80%;
     /* background-color: red; */
     width: fit-content;
     position: fixed;
     top: 10%;
     right: 0px;
     display: flex;
-    /* align-items: center; */
-    justify-content: flex-end;
+    align-items: center;
 }
 .divmenu ul{
     padding-left: 50px;

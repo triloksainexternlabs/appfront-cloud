@@ -1,13 +1,11 @@
-import React,{useState} from 'react'
+import React, { useState } from 'react'
 const VehicleType = (props) => {
-    const [active, setActive] = useState(null)
-    const changeIcon=(id)=>{
-        setActive(id)
 
-    }
+   
+
     return (
-        <div id={props.id} className={`product ${props.id===active?'filled-text':''}`} onClick={()=>{props.handleScroll(2); changeIcon(props.id);}}>
-              <div className={`img-container ${props.id===active?'filled-icon':''}`}><img src={props.imgUrl} alt="Ciclomotori"/></div>{props.text}
+        <div key={props.id} className={`product ${props.activeId === props.id ? 'filled-icon' : ''}`} onClick={() => { props.changeIcon(props.id); props.handleScroll(2); }}>
+            <div className={`img-container`}><img src={props.imgUrl} alt="Ciclomotori" /></div>{props.text}
         </div>
     )
 }

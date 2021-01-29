@@ -21,7 +21,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value1" value={props.formik.values.Warranties.value1} onChange={props.formik.handleChange} className='input' type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>R.C. Veicoli- B/M</td>
@@ -34,7 +34,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input  name="Warranties.value2"  value={props.formik.values.Warranties.value2} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Inc/Furto Con Scoperto</td>
@@ -47,7 +47,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value3"  value={props.formik.values.Warranties.value3} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Collisione</td>
@@ -60,7 +60,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value4"  value={props.formik.values.Warranties.value4} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Esternsione Kasko</td>
@@ -73,7 +73,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value5"  value={props.formik.values.Warranties.value5} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Cash Back</td>
@@ -86,7 +86,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value6"  value={props.formik.values.Warranties.value6} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Assistenza Base</td>
@@ -99,7 +99,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value7"  value={props.formik.values.Warranties.value7} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Assistenza VIP</td>
@@ -112,7 +112,7 @@ const RiepilogoGaranzie = (props) => {
                     <td>
                         <div class="checkbox-group">
                             <input name="Warranties.value8"  value={props.formik.values.Warranties.value8} onChange={props.formik.handleChange} type="checkbox" id="Veicoli" />
-                            <label for="Veicoli"></label>
+                            <label htmlFor="Veicoli"></label>
                         </div>
                     </td>
                     <td>Pacchet. Eventi Cristaw</td>
