@@ -60,3 +60,9 @@
        
     }
 }
+@media screen and (max-width:1600px){
+    .toogle-btn-wrapper .si-label::after,.no-label::after{
+        font-size: 14px !important;
+        margin: 5px 10px !important;
+    }
+}

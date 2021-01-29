@@ -4,14 +4,18 @@
     justify-content: space-between;
     position: relative;
     // border-bottom: 1px solid;
-
+    .MuiInput-underline:after{
+        border-width: 1px !important;
+    }
     .icon-container{
+        justify-content: center;
        display: flex;
        flex-direction: row;
        width: fit-content;
        position: absolute;
        right: 0%;
        bottom: 0px;
+       border-bottom: 1px solid rgba(0, 0, 0, 0.42);
        span{
         height: fit-content;
         align-self: flex-end;

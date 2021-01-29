@@ -24,7 +24,7 @@
             font-family: Calibri;
             font-style: normal;
             font-size: 18px;
-            line-height: 22px;
+            line-height: 25px;
             text-transform: capitalize;
             color: #000000;
         }
@@ -35,4 +35,67 @@
         }
     }
 }
+}
+@media screen and (max-width:1600px){
+    .riepilogi-table{
+        padding: 15px 5%;
+    }
+    .riepilogo-container .MuiInputBase-root, .MuiInputBase-input{
+        font-size: 13px !important;
+    }
+     .riepilogi-table .main-table .table-cloumn p:nth-child(1),.riepilogi-table .main-table .table-cloumn-one p,.riepilogi-table .main-table .table-cloumn p{
+        font-size: 16px;
+        margin-block-end: 0px;
+
+    }
+    .CambioFrazionamento{
+         .privacy-container .privacy-sub-container > div{
+             padding: 15px 0px !important;
+         }       h1{
+            font-size: 16px !important;
+        }   
+    }
+    .CambioFrazionamento .privacy-container .privacy-sub-container > div > div p{
+        font-size: 15px !important;
+    }
+    .cambio-frazionamento-wrapper{
+        padding: 0px 5%;
+    }
+    .CambioFrazionamento h1 + div .input-wrapper{
+        width: 45%;
+    }
+    .riepilogo-container{
+        height: 84% !important;
+        .MuiInputBase-input{
+            padding: 3px 0px;
+        }
+        .riepilogoForm{
+            padding-top: 2%;
+        }
+    }
+    
+}
+@media screen and (max-width:1299px){
+   
+    .riepilogo-container .MuiInputBase-root, .MuiInputBase-input{
+        font-size: 11px !important;
+    }
+     .riepilogi-table .main-table .table-cloumn p:nth-child(1),.riepilogi-table .main-table .table-cloumn-one p,.riepilogi-table .main-table .table-cloumn p{
+        font-size: 14px;
+    }
+    .CambioFrazionamento{
+         .privacy-container .privacy-sub-container > div{
+             padding: 15px 0px;
+
+         }
+         h1{
+            font-size: 14px !important;
+
+        }   
+    }
+    .CambioFrazionamento .privacy-container .privacy-sub-container > div > div p{
+        font-size: 14px !important;
+    }
+ 
+    
 }

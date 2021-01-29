@@ -9,7 +9,7 @@ const CambioFrazionamentoContainer = (props) => {
     props.summary({id,value})
     }
     return (
-        <div style={{padding: '0% 9%'}}>
+        <div className='cambio-frazionamento-wrapper'>
             <CambioFrazionamento {...props} onChange={onChange} handleToggle={toggle} />
         </div>
     )

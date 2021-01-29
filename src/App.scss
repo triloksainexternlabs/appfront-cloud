@@ -103,7 +103,7 @@ padding: 0%;
 .sub-heading{
   font-size: 24px !important;
   line-height: 33px !important;
-  margin-top: 0%;
+  margin-top: 0% !important;
 }
 
 .head-text-w-underline {
@@ -353,8 +353,24 @@ label.label-custom {
 //   color: #0C87C8 !important;
 // }
 @media screen and (max-width:1600px){
-  .headings{
+  .headings,.prodotto-heading{
     font-size: 25px;
     margin-top: 50px;
   }
-}
+  .sub-heading{
+    font-size: 22px !important;
+  }
+   .product-list-third button.btn {
+     font-size: 16px;
+}}
+@media screen and (max-width:1600px){
+  .headings,.prodotto-heading{
+    font-size: 24px;
+    margin-top: 30px;
+  }
+  .sub-heading{
+    font-size: 21px !important;
+  }
+   .product-list-third button.btn {
+     font-size: 14px;
+}}

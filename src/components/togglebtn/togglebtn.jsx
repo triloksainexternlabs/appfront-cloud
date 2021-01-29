@@ -21,7 +21,7 @@ const ToggleBtn = (props) => {
     return (
         <div className='toogle-btn-container'>
             <div className='toogle-btn-wrapper'>
-                <div>
+                <div style={{zIndex:9}}>
                 <label className={`si-label ${sinoFlag?'si-label-active':''}`}></label>
                 <input 
                     id={props.id}
@@ -32,7 +32,7 @@ const ToggleBtn = (props) => {
                 >
                 </input>
                 </div>
-                <div>
+                <div style={{zIndex:9}}>
                 <label className={`no-label ${sinoFlag===false?noLabel===sinoFlag?'no-label-active':'no-label-disable':'no-label-disable'}`}></label>
                 <input 
                     id={props.id}

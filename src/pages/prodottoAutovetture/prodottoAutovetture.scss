@@ -52,6 +52,8 @@
         width: 80%;
         margin-right: 50px;
         align-self: flex-end;
+        
+
         .right-input-field{
             width: 40%;
             ._input{
@@ -79,6 +81,8 @@
         }
         .MuiInput-underline:after{
             border-color: rgba(0, 0, 0, 0.42);
+            border-width: 1px !important;
+
         }
 
     }
@@ -88,5 +92,13 @@
         font-size: 18px;
         line-height: 29px;
         color: #0C87C8;
+    }
+}
+@media screen and (max-width:1600px){
+    .prodottoAutovetture-container .preimum-text{
+        font-size: 16px;
+    }
+    .prodotto-autovetture-form .MuiInputBase-root{
+        font-size: 13px;
     }
 }

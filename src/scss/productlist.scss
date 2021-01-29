@@ -14,7 +14,7 @@
     min-width: 100px;
     font-weight: normal;
     font-size: 20px;
-    line-height: 110%;
+    line-height: 22px;
     text-align: center;
     letter-spacing: 0.015em;
     color: #8A25B1;
@@ -25,8 +25,17 @@
 //   media queries
 
 
-@media  screen and (max-width:1600px){
+@media screen and (max-width:1600px){
     .form-two-content{
-        width: 80%;
+        width: 75%;
     }
+}
+@media screen and (max-width:1299px){
+  .form-two-content{
+    width: 70%;
+    div.product{
+      margin: 28px;
+      font-size: 16px;
+    }
+  }
 }

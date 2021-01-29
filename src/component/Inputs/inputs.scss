@@ -3,6 +3,7 @@
     flex-direction: column;
     .MuiInput-underline:after{
         border-color: rgba(0, 0, 0, 0.42);
+        border-width: 1px !important;
       }
 }
 

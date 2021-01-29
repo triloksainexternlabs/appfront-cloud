@@ -15,13 +15,15 @@
         margin-block-start:1em;
         // margin-block-end: 1.5em;
         font-size: 18px;
-        line-height: 25px;
+        // line-height: 25px;
     }
     .MuiInputLabel-root.Mui-focused{
         color: #8A25B1;
         }
         .MuiInput-underline:after{
             border-color: rgba(0, 0, 0, 0.42);
+            border-width: 1px !important;
+
         }
     h1 + div{
         display: flex;

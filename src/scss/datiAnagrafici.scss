@@ -5,6 +5,7 @@
     height: 80%;
     justify-content: center;
     align-items: center;
+    
     .dati-anagrafici-text{
         font-family: Alata;
         font-style: normal;
@@ -22,6 +23,7 @@
         width: 80%;
         display: flex;
         justify-content: space-between;
+       
         .datidelcontraente-form ,.datidelveicolo-form{
             display: flex;
             flex-direction: column;
@@ -35,6 +37,8 @@
                 }
                 .MuiInput-underline:after{
                     border-color: rgba(0, 0, 0, 0.42);
+                    border-width: 1px !important;
+
                 }
 
 
@@ -77,22 +81,51 @@
             flex-direction: column;
             align-items: center;
             margin-top: 38px;
+            
         }
     }
 }
 @media screen and (max-width:1600px){
     .dati-anagrafici-container .dati-anagrafici-form-container{
-        justify-content: center;
+        width: 75%;
+        .makeStyles-textField-1{
+            width: 350px;
+        }
+        .MuiInputLabel-root{
+            font-size: 14px !important;
+             }
         .MuiOutlinedInput-input{
-            padding: 18.5px 13px;
+            padding: 14.5px 13px;
 
         }
         .datidelveicolo-title{
-            font-size: 18px !important;
+            font-size: 16px !important;
         }
     }
     .PrivateNotchedOutline-legendLabelled-4 > span{
         font-size: 16px;
+    }
+            
+}
+@media screen and (max-width:1299px){
+    .dati-anagrafici-container .dati-anagrafici-form-container{
+        justify-content: center;
+        .makeStyles-textField-1{
+            width: 245px;
+        }
+        .MuiInputLabel-root{
+            font-size: 13px !important;
+             }
+        .MuiOutlinedInput-input{
+            padding: 14.5px 13px;
+
+        }
+        .datidelveicolo-title{
+            font-size: 14px !important;
+        }
+    }
+    .PrivateNotchedOutline-legendLabelled-4 > span{
+        font-size: 14px;
     }
             
 }
