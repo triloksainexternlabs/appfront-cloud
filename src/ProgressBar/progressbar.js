@@ -1,8 +1,9 @@
 import React from 'react'
 import './progressbar.css'
 function Progressbar(props) {
+    let innerWidth=window.innerWidth;
     return (
-             <div className={props.currentProgressValue===0||props.currentProgressValue===1?'hide-progress-bar':"divmenu"}>
+             <div className={props.currentProgressValue===0||props.currentProgressValue===1||innerWidth<500?'hide-progress-bar':"divmenu"}>
                  <ul className="ullist">
                      <li className={props.currentProgressValue===2?'active':''}>Elenco Garanzia</li>
                      <li className={props.currentProgressValue===3?'active':''}>Datti Anagrafici</li>

@@ -129,3 +129,41 @@
     }
             
 }
+@media screen and (max-width:500px){
+    .DatiAnagrafici{
+        height: 200vh;
+    }
+    .dati-anagrafici-container{
+        justify-content: flex-start;
+        align-items: flex-start;
+        .dati-anagrafici-form-container{
+            .datidelveicolo-title{
+                align-self: flex-start !important;
+
+            }
+            width: 100%;
+            flex-direction: column;
+            .form-line-dot{
+                flex-direction: row !important;
+                margin: 10px 15px;
+            }
+            .form-border{
+                width: 100%;
+                height: 3px;
+            }
+            .makeStyles-textField-1{
+                width: 100%;
+            }
+        } 
+           .makeStyles-textField-1{
+            margin: 12px auto;
+        }
+        .datidelveicolo-title ~div div{
+            display: flex;
+        }
+}
+.datidelcontraente-form{
+    margin-top: 30px !important;
+    padding: 0% 10%;
+}
+}

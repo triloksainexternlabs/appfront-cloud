@@ -135,7 +135,7 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={id}
+          customPageNumber={3}
           pageOnChange={pageOnChange}
         >
           <div className="form-one">

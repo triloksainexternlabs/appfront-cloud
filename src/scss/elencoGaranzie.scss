@@ -21,6 +21,10 @@
   }
   @media only screen and (max-width:1600px) {
     .elencoGaranzie-table{
+      .frm-group input:checked + label:after{
+        top: 8px;
+        left: 7px;
+      }
         margin-top: 35px;
         margin-left:170px;
         .frm-group label:before{
@@ -64,6 +68,46 @@
         .frm-group label:before{
           padding: 10px;
         }
+        
+    }
+  }
+  // mobile view
+  @media only screen and (max-width:500px) {
+    .img-view{
+      display: none;
+    }
+    .img-view~div{
+      margin-top: 30px;
+    }
+    .elencoGaranzie-table{
+      width: 100%;
+      margin: 0px;
+      table{
+        width: 100%;
+      }
+    tbody td {
+      padding: 16px 0px;
+      font-size: 12px;
+    }
+    tbody td :first-child{
+      text-align: center;
+    }
+    
+    td.second{
+      padding: 7px 0px;
+    }
+       td.third{
+        padding: 10px 0px;
+      }
+        thead td{
+            font-size: 16px ;
+            padding: 20px 35px;
+        }
+        .frm-group input:checked + label:after{
+          top: 3px;
+          left: 7px;
+        }
+        
     }
   }
   
