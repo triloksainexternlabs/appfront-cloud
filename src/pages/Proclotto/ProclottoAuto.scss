@@ -73,3 +73,19 @@
         }
     /* } */
 }
+@media screen and (max-width:500px){
+    .proclotto-autovetture-Datiintegrative-container{
+        width: 80%;
+    }
+        .proclotto-autovetture-Datiintegrative-form{
+            width: 100%;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+        }
+            .proclotto-autovetture-Datiintegrative-container .left-input-field,.proclotto-autovetture-Datiintegrative-container .right-input-field{
+                width: 100%;
+                justify-content: space-around;
+            }
+   
+}

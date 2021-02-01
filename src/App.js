@@ -19,6 +19,7 @@ import { storeUserDetails } from '../src/redux/actions'
 import ReactPageScroller from 'react-page-scroller';
 import RiepilogoContainer from './pages/Riepilogo/RiepilogoContainer';
 import Button from '../src/components/button/button';
+import { tr } from 'date-fns/locale';
 
 
 function App() {
@@ -135,8 +136,10 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={3}
+          customPageNumber={5}
           pageOnChange={pageOnChange}
+          blockScrollUp={true}
+          blockScrollDown={true}
         >
           <div className="form-one">
             <div>
@@ -146,15 +149,16 @@ function App() {
               Prodotto Auto
             </button>
           </div>
-          <div className={`form-two `}>
+          {/* <div className={`form-two `}>
             <div className="headings">ELENCO PRODOTTI</div>
             <ProductListcontainer handleScroll={handleScroll} />
-          </div>
+          </div> */}
           <div className={`product-list-third ElencoGaranzie  `}>
             <div className="headings">Elenco Garanzie</div>
             <ElencoGaranzie formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={3} />
           </div>
+      
           <div className={`product-list-third DatiAnagrafici`}>
             <div className="headings">Dati Anagrafici</div>
             <DatiAnagrafici formik={formik} />
@@ -222,7 +226,7 @@ function App() {
             </div>
 
           </div>
-        </ReactPageScroller>
+          </ReactPageScroller>
         <Progressbar currentProgressValue={id}  />
       </div>
 

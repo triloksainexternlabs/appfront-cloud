@@ -88,3 +88,28 @@
         
     }
 }
+@media screen and (max-width:500px){
+    .daticontratto{
+        overflow: scroll;
+    }
+    .questionario-container{
+        height: max-content;
+
+        .questionario-sub-container{
+            h1{
+                font-size:13px ;
+            }
+            .questionario{
+                padding-left: 0px;
+                flex-direction: column;
+                p{
+                    width: 100%;
+                 }
+                 .toogle-btn-container,.switch-btn-container{
+                     align-self: flex-end;
+                }
+            } 
+        }
+        
+    }
+}

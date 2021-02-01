@@ -131,11 +131,14 @@
 }
 @media screen and (max-width:500px){
     .DatiAnagrafici{
-        height: 200vh;
+        overflow: scroll;
+        overflow-x: hidden;
+
     }
     .dati-anagrafici-container{
         justify-content: flex-start;
         align-items: flex-start;
+       
         .dati-anagrafici-form-container{
             .datidelveicolo-title{
                 align-self: flex-start !important;
@@ -145,7 +148,7 @@
             flex-direction: column;
             .form-line-dot{
                 flex-direction: row !important;
-                margin: 10px 15px;
+                margin: 20px 10px 0px;
             }
             .form-border{
                 width: 100%;
@@ -162,8 +165,34 @@
             display: flex;
         }
 }
-.datidelcontraente-form{
+.datidelcontraente-form,.datidelveicolo-form{
     margin-top: 30px !important;
-    padding: 0% 10%;
+    width: 80%;
+    align-self:center;
+    // padding: 0% 10%;
+    .copia-btn{
+        margin-right: 0px !important;
+    }
+}
+}
+
+@media screen and (max-width:425px){
+    // .dati-anagrafici-container~button{
+    //     display: none;
+    // }
+    .headings,.prodotto-heading{
+        font-size: 18px;
+    }
+    .form-two  .form-two-content{
+    div.product {
+     height: 100px;
+     font-size: 10px;
+     width: 33%;
+
+     .img-container{
+         width: 40px;
+         height: 40px;
+     }
+    }
 }
 }

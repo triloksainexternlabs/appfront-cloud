@@ -1,7 +1,7 @@
 import React from 'react'
 import Inputs from '../../component/Inputs/inputs'
 import Label from '../../component/Inputs/label'
-import '../Proclotto/ProclottoAuto.css'
+import '../Proclotto/ProclottoAuto.scss'
 
 export const ProclottoAuto =(props)=> {
         return (

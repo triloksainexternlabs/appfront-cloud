@@ -20,7 +20,6 @@
 .Attestato-input-container{
     align-self: center;
     margin: 50px;
-    
 }
 .Attestato-container{
     display: flex;
@@ -44,3 +43,10 @@ top: 153px;
     position: absolute;
     left:1272px;
 } */
+@media only screen and (max-width:500px){
+    .Attestato-input-container{
+        margin: 10px;
+        width: 60%;
+        align-self: center;
+    }
+}

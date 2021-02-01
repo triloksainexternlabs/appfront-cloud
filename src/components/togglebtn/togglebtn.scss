@@ -5,6 +5,7 @@
         width: fit-content;
         display: flex;
         align-items: center;
+        position: relative;
     .si-label::after,.no-label::after{
         content: 'Si';
         position: absolute;

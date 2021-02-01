@@ -109,3 +109,38 @@
          }
     }
 }
+@media screen and (max-width:500px){
+    .daticontratto-container{
+        width: 80%;
+        height: max-content;
+        .form-group,.select-container{
+            width: 100%;
+        }
+        .date-picker-container {
+            width: 100%;
+            margin-top: 30px;
+        }
+        .MuiFormControl-root{
+            margin-top: 10px;
+        }
+        .input-container label{
+            font-size: 12px !important;
+        }
+        input:focus ~ label{
+            bottom: 25px !important;
+            font-size: 13px;
+        }
+        input[type="date"]::-webkit-calendar-picker-indicator{
+            background-size: 18px 15px !important;    
+        }
+        .icon-container span img{
+            height: auto;
+            width: 13px;
+        }
+        input[type="date"] {
+           appearance: none;
+           -webkit-appearance: none;
+        }
+    }
+    
+}

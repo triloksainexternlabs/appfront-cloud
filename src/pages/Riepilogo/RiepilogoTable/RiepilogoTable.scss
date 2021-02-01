@@ -84,10 +84,10 @@
         font-size: 14px;
     }
     .CambioFrazionamento{
-         .privacy-container .privacy-sub-container > div{
-             padding: 15px 0px;
+        //  .privacy-container .privacy-sub-container > div{
+        //      padding: 15px 0px;
 
-         }
+        //  }
          h1{
             font-size: 14px !important;
 
@@ -97,5 +97,92 @@
         font-size: 14px !important;
     }
  
+    
+}
+@media screen and (max-width:500px){
+    .riepilogo .headings{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .riepilogo-btn-container{
+        justify-content: center;
+     :nth-child(2n+1){
+         display: none;
+     }
+    }
+    .riepilogo-container{
+        width: 100% !important;
+        height: 100% !important;
+        overflow: scroll;
+        width: 100%;
+        .riepilogoForm{
+            padding: 0px;
+            width: 100%;
+            padding-bottom: 30px;
+        }
+        .riepilogoform-main{
+            width: 80%;
+            margin: auto;
+
+            flex-direction: column;
+            .left-riepilogoform,.right-riepilogoform{
+                flex-direction: column;
+                width: 100%;
+                .input-field{
+                    width: 100%;
+                    flex-direction: column !important;
+                    justify-content: space-between;
+                    .sub-input-field{
+                        width: 100%;
+
+                    }
+                }
+            }
+        }
+        .riepilogi-table{
+            .main-table{
+                flex-direction: column;
+                .table-cloumn-one,.table-cloumn{
+                    display: flex;
+                    justify-content: space-between;
+                    :first-child{
+                        text-align: left;
+                    }
+                    p{
+                        width: 33%;
+                        text-align: center;
+                    }
+                }
+                }
+            }
+            .cambio-frazionamento-wrapper{
+                .CambioFrazionamento h1 + div{
+                    flex-direction: column;
+                    width: 100%;
+                    .input-wrapper{
+                        width: 100%;
+                        margin-top: 10px;
+                    }
+                }
+                .privacy-container .privacy-sub-container{
+                    flex-direction: column;
+                    &>div{
+                        width: 100%;
+                        padding: 10px 0px !important;
+                    }
+                    &>div>div{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        width: 100%;
+                        align-items: center;
+                        div{
+                            margin: 0px;
+                        }
+                    }
+                }
+
+            }
+    }
     
 }
