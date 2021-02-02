@@ -8,13 +8,13 @@ const SelectField = (props) => {
     let {value,onChange,inputTextName} =props
     return (
         <div className='select-container'>
-            <FormControl >
+            <FormControl variant={window.innerWidth<500?"outlined":'standard'} >
                 <InputLabel htmlFor="age-native-simple">{props.name}</InputLabel>
                 <Select
                     native
                     inputProps={{
                         name: inputTextName,
-                        id: `${inputTextName}`,
+                        id: `outlined-age-native-simple`,
                     }}
                     value={value}
                     onChange={onChange}

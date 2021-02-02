@@ -216,14 +216,186 @@
            
         }
         }
-        @media screen and (max-width:1299px){
+        @media screen and (max-width:500px){
             .riepilogoGaranzie-btn-container{
-                :nth-child(2n+1){
-                    display: none;
-                }
-
-            }
-            .RiepilogoGaranzie{
-                display: none;
+                width: 100%;
+                justify-content: center;
+                margin: 0px;
+             :first-child,:nth-child(2){
+                 display: none;
+             }
             }
         }
+        @media screen and (max-width: 380px){
+            .riepilogoGaranzie-btn-container{
+                .btn{
+                    margin-top: 50px !important;
+                }
+        }}
+
+
+
+
+          // MOBILE VIEW\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+        .riepilogo-accordian{
+
+            width: 90%;
+            height: 100%;
+            margin-top: 20px;
+            align-self: center;
+            .accordian-data-container{
+              display: flex;
+              letter-spacing: 0.015em;
+              width: 100%;
+
+              .accordian-sub-container{
+                display: flex;
+                flex-direction: column;
+                width:auto;
+                word-break: break-word;
+                width: 50%;
+                :first-child{
+                    color: #8A25B1;
+                    line-height: 22px;
+                    font-size: 14px;
+                    font-weight: normal;
+
+                }
+                :nth-last-child(1){
+                    font-size: 12px;
+                    text-align: left;
+                    line-height: 15px;
+                    color: #5E5E5E;
+                    font-family: Calibri;
+                    word-break: break-word;
+                    padding-right: 5px;
+
+                }
+              }
+            }
+            .total-amount{
+                // width: 100%;
+                display: flex;
+                justify-content: space-between;
+               padding: 20px;
+               :first-child{
+                   color: #8A25B1;
+                   font-size: 14px;
+                   letter-spacing: 0.015em;
+                   line-height: 110%;
+                   &~span{
+                      line-height: 100%;
+                   }
+               }
+            
+            }
+            .MuiAccordionSummary-root {
+                margin-top: 20px;
+                // box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+            }
+            .MuiCheckbox-colorSecondary.Mui-checked{
+                color: #8A25B1;
+            }
+            .MuiTypography-body1{
+                font-size: 12px;
+            }
+            input[type=checkbox]{
+                margin-bottom: 0;
+                cursor: pointer;
+                position: absolute;
+                opacity: 0;
+                z-index: 1;
+            
+            }
+            input.input{
+                width: 20px;
+            
+            }
+            .checkbox-group input:checked + label:before {
+                background-color: #8A25B1;
+            }
+            .checkbox-group input:checked + label:after {
+                content: '';
+                display: block;
+                position: absolute;
+                top: 3px;
+                left: 12px;
+                width: 3px;
+                height: 10px;
+                border: 2px solid #FFFFFF;
+                border-width: 0 2px 2px 0;
+                transform: rotate(45deg);
+            }
+            .checkbox-group label:before {
+                content: '';
+                -webkit-appearance: none;
+                background-color: transparent;
+                border: 0px solid #FFFFFF;
+                border-radius: 50%;
+                box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.25);
+                padding: 10px;
+                display: inline-block;
+                position: relative;
+                cursor: pointer;
+                margin-left: 5px;
+            }
+           
+            .checkbox-group  {
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+               label {
+                position: relative;
+                cursor: pointer;
+            }
+            }
+            .MuiAccordion-root.Mui-expanded {
+             border-left: 3px solid #8A25B1;
+             z-index: 9;
+            }
+            .MuiAccordion-root.Mui-expanded .opacity-view{
+                    visibility: visible;
+            }
+            .visible{
+                visibility: visible !important;
+            }
+            .opacity-view{
+                background-color: white;
+                position: fixed;
+                width: 90%;
+                height: 100%;
+                opacity: .5;
+                z-index: 1;
+                visibility: hidden;
+            }
+           .premio-container{
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            &>div{
+                text-align: center;
+
+                p{
+                    color: #8A25B1;
+                    font-size: 13px;
+                    margin: 0px;
+                    &~span{
+                        font-size: 12px;
+                        color: #5E5E5E;
+                    }
+                }
+                
+                input[type="number"]{
+                      width: 30px;
+                      color: #5e5e5e;
+                      border: none;
+                      border-bottom: 1px solid #AAAAAA;
+                      font-family: Roboto;
+                      outline: none;
+                      font-size: 12px;
+                }
+            }
+           }
+        }
+       

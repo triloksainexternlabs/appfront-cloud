@@ -19,7 +19,6 @@ import { storeUserDetails } from '../src/redux/actions'
 import ReactPageScroller from 'react-page-scroller';
 import RiepilogoContainer from './pages/Riepilogo/RiepilogoContainer';
 import Button from '../src/components/button/button';
-import { tr } from 'date-fns/locale';
 
 
 function App() {
@@ -149,10 +148,10 @@ function App() {
               Prodotto Auto
             </button>
           </div>
-          {/* <div className={`form-two `}>
+          <div className={`form-two `}>
             <div className="headings">ELENCO PRODOTTI</div>
             <ProductListcontainer handleScroll={handleScroll} />
-          </div> */}
+          </div>
           <div className={`product-list-third ElencoGaranzie  `}>
             <div className="headings">Elenco Garanzie</div>
             <ElencoGaranzie formik={formik} />

@@ -138,6 +138,7 @@
     .dati-anagrafici-container{
         justify-content: flex-start;
         align-items: flex-start;
+        height: auto;
        
         .dati-anagrafici-form-container{
             .datidelveicolo-title{
@@ -148,7 +149,7 @@
             flex-direction: column;
             .form-line-dot{
                 flex-direction: row !important;
-                margin: 20px 10px 0px;
+                margin: 25px 10px 0px;
             }
             .form-border{
                 width: 100%;

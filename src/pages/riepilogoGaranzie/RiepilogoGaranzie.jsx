@@ -19,7 +19,7 @@ const RiepilogoGaranzie = (props) => {
                <tbody>
                 <tr id='row2'>
                     <td>
-                        <div class="checkbox-group">
+                        <div class="checkbox-group_">
                             <input name="Warranties.value1" value={props.formik.values.Warranties.value1} onChange={props.formik.handleChange} className='input' type="checkbox" id="Veicoli" />
                             <label htmlFor="Veicoli"></label>
                         </div>

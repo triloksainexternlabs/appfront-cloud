@@ -10,6 +10,7 @@
         }
     .MuiInputLabel-root.Mui-focused{
         color: #8A25B1;
+        z-index: 99999;
         }
         .MuiInput-underline:after{
             border-width: 1px !important;
