@@ -5,9 +5,6 @@ const ElencoGaranzie = props => {
     let { onChange } = props
     return (
         <>
-            <div className='img-view' >
-                <img src={Car} alt="" />
-            </div>
         <div  style={{display: 'flex',width: 'inherit',height:'80%'}}>
             <div className='elencoGaranzie-table' >
                 <table>

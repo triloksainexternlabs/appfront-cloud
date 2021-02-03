@@ -22,10 +22,10 @@ import Button from '../src/components/button/button';
 
 
 function App() {
-  const [id, setId] = useState(0)
-  const dispatch = useDispatch()
-  const [siNoArr, setSiNoArr] = useState([]);
-  const [confirmArr, setConfirmArr] = useState([]);
+  const [id, setId] = useState(0)   /*used for set current page*/
+  const dispatch = useDispatch() 
+  const [siNoArr, setSiNoArr] = useState([]); /*used for store true false values for questionary  */
+  const [confirmArr, setConfirmArr] = useState([]); /*used for store true false values for questionary  */
 
   const getQuestions = (arr, type) => {
     if (type === 'trueFalse') {
@@ -37,13 +37,15 @@ function App() {
       setConfirmArr(temp)
     }
   }
+  // handlescroll used for update  current page 
   const handleScroll = (value,) => {
     setId(value)
-
     if (value === 11) {
-      dispatch(storeUserDetails({ data: formik.values, questionArr: [...siNoArr, ...confirmArr] }))
+      dispatch(storeUserDetails({ data: formik.values, questionArr: [...siNoArr, ...confirmArr] }))  /* used for store data in redux-store*/
     }
   }
+
+  // user data
   const formik = useFormik({
     initialValues: {
       policyPlate: '',
@@ -122,10 +124,9 @@ function App() {
     },
 
   })
+  // update state on page scroll
   const pageOnChange = (e) => {
-    // setCurrentProgressValue(e)
     setId(e)
-
   }
 
   return (
@@ -135,10 +136,9 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={10}
+          customPageNumber={id}
           pageOnChange={pageOnChange}
-          blockScrollUp={false}
-          blockScrollDown={true}
+          blockScrollDown={window.innerWidth<500? true:false}
         >
           <div className="form-one">
             <div>
@@ -226,7 +226,7 @@ function App() {
 
           </div>
         </ReactPageScroller>
-        <Progressbar currentProgressValue={id} />
+        <Progressbar handleScroll={handleScroll} currentProgressValue={id} />
       </div>
 
 
