@@ -5,7 +5,7 @@ const Label = props => {
     return (
         <div>
             <label 
-                className="input-label input_label" 
+                className="input-label" 
                 htmlFor=""
             >
                 {props.label}
