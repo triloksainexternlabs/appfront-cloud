@@ -3,28 +3,28 @@ import {
     SAVE_USER_DATA_SUCCESS_REQUEST,
     SAVE_USER_DATA_FAILURE_REQUEST
 } from '../actionType/index'
-const initialValues={
-    data:{},
-    questions:{}
+const initialValues = {
+    data: {},
+    questions: {}
 }
-export default function Reducer(state={initialValues}, action) {
-   switch (action.type) {
-       case REQUEST_FOR_SAVE_USER_DATA:
-           return{
-               ...state,
-               data:action.data
-           }
+export default function Reducer(state = { initialValues }, action) {
+    switch (action.type) {
+        case REQUEST_FOR_SAVE_USER_DATA:
+            return {
+                ...state,
+                data: action.data
+            }
         case SAVE_USER_DATA_FAILURE_REQUEST:
-            return{
+            return {
                 ...state
             }
         case SAVE_USER_DATA_SUCCESS_REQUEST:
-            return{
+            return {
                 ...state
             }
 
-       default:
-           break;
-   }
-    
+        default:
+            break;
+    }
+
 }

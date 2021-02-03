@@ -377,86 +377,96 @@ label.label-custom {
      font-size: 14px;
 }}
 @media screen and (max-width:500px){
-  .MuiOutlinedInput-input{
-    padding: 14.5px 13px !important;
+      .MuiOutlinedInput-input{
+        padding: 14.5px 13px !important;
 
-  }
-  .MuiFormLabel-root.Mui-focused{
-    color:  #8A25B1 !important;
-    box-shadow: 0px 0px 4px #BBE7FF !important;
-
-}
-  input[type="date"] {
-    appearance: none;
-    -webkit-appearance: none;
- }
-  .product-list-third {
-    overflow: scroll;
-    button.btn {
-    margin-top: 20px;
-}}
-  .app-logo{
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    background-color: white;
-    z-index: 99999999999;
-    img{
-      margin-top: 20px;
-      margin-left: 25px;
-      width: 50%;
-    }
-  }
-  .headings,.prodotto-heading{
-    font-size: 20px !important;
-    margin-top: 115px;
-    margin-left: 40px;
-    line-height: 100%;
-    
-  }
-  .sub-heading{
-    font-size: 16px !important;
-    border: none;
-  }
-  .form-two{
-    justify-content: flex-start;
-    align-items: flex-start;
-    .form-two-content{
-     margin-top: 60px;
-      width: 100vw;
-      flex-direction: row;
-      justify-content: space-around;
-      border-top: 1px solid #00000026;
-    }
-    .form-two-content :nth-child(3n-2){
-      border-right: 1px solid #00000026 !important;
-    }
-   
-    .form-two-content :nth-child(3n){
-      border-left: 1px solid #00000026 !important;
-      
-    }
-    .form-two-content :nth-child(1n){
-      border-bottom: 1px solid #00000026 !important;
-    }
-    .form-two-content div.product{
-      margin: 0px;
-      font-size: 16px;
-      width: 33%;
-      height: 138px;
-      display: inline-flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      padding: 0px;
-      border-radius: 0px;
-      border: 0px;
-      font-size: 14px;
-      .img-container{
-        width: 50px;
-        height: 50px;
-        position: initial;
       }
+      .MuiFormLabel-root.Mui-focused{
+        color:  #0C87C8 !important;
+        font-size: 14px !important;
     }
-  }
+    .MuiInputLabel-outlined{
+      font-size: 14px !important;
+      line-height: 0px !important;
+      background-color: white !important;
+    }
+    .MuiInputLabel-shrink{
+      top: 7px !important;
+    }
+    .MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+      border: 1px  solid  #0C87C8 !important;
+    }
+      input[type="date"] {
+        appearance: none;
+        -webkit-appearance: none;
+    }
+      .product-list-third {
+        overflow: scroll;
+        button.btn {
+        margin-top: 20px;
+    }}
+      .app-logo{
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        background-color: white;
+        z-index: 99999999999;
+        img{
+          margin-top: 20px;
+          margin-left: 25px;
+          width: 50%;
+        }
+      }
+      .headings,.prodotto-heading{
+        font-size: 20px !important;
+        margin-top: 115px;
+        margin-left: 40px;
+        line-height: 100%;
+        
+      }
+      .sub-heading{
+        font-size: 16px !important;
+        border: none;
+      }
+      .form-two{
+        justify-content: flex-start;
+        align-items: flex-start;
+        .form-two-content{
+        margin-top: 60px;
+          width: 100vw;
+          flex-direction: row;
+          justify-content: space-around;
+          border-top: 1px solid #00000026;
+        }
+        .form-two-content :nth-child(3n-2){
+          border-right: 1px solid #00000026 !important;
+        }
+      
+        .form-two-content :nth-child(3n){
+          border-left: 1px solid #00000026 !important;
+          
+        }
+        .form-two-content :nth-child(1n){
+          border-bottom: 1px solid #00000026 !important;
+        }
+        .form-two-content div.product{
+          margin: 0px;
+          font-size: 16px;
+          width: 33%;
+          height: 138px;
+          display: inline-flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          padding: 0px;
+          border-radius: 0px;
+          border: 0px;
+          font-size: 14px;
+          .img-container{
+            width: 50px;
+            height: 50px;
+            position: initial;
+          }
+        }
+      }
  }

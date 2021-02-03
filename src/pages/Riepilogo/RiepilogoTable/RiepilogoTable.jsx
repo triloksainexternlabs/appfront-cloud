@@ -2,7 +2,7 @@ import React from 'react'
 import "./RiepilogoTable.scss";
 
 const RiepilogoTable = props => {
-    
+
     return (
         <div className="main-table">
             <div className="table-cloumn-one">

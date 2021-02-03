@@ -7,7 +7,7 @@ import FormControlLabel from '@material-ui/core/FormControlLabel';
 import { Input } from '@material-ui/core';
 
 const AccordianBox = (props) => {
-  let { Garanzia, Oggetto,name,id,onChange,value,handleChange } = props;
+  let { Garanzia, Oggetto, name, id, onChange, value, handleChange } = props;
 
   return (
     <div>
@@ -24,7 +24,7 @@ const AccordianBox = (props) => {
             onClick={(event) => event.stopPropagation()}
             onFocus={(event) => event.stopPropagation()}
             control={<div class="checkbox-group">
-              <input id={id} name={name} value={value} onChange={handleChange} type="checkbox"  className='input' />
+              <input id={id} name={name} value={value} onChange={handleChange} type="checkbox" className='input' />
               <label htmlFor="Veicoli"></label></div>}
             checkedIcon={<Input />}
           // icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
@@ -53,7 +53,7 @@ const AccordianBox = (props) => {
             </div>
             <div>
               <p>Premio Scontato</p>
-              <span>{props.discountAward[id]?props.discountAward[id]:'00.00'}</span>
+              <span>{props.discountAward[id] ? props.discountAward[id] : '00.00'}</span>
             </div>
           </div>
         </AccordionDetails>

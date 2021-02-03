@@ -123,7 +123,23 @@
         .riepilogoform-main{
             width: 80%;
             margin: auto;
-
+            .MuiInputBase-input {
+                // color: transparent;
+            }
+            .MuiInputBase-input:focus{
+                color: black !important;
+            }
+            .MuiInputLabel-outlined{
+                font-size: 13px !important;
+                line-height: 0px !important;
+                // background-color: white !important;
+              }
+              .MuiInputLabel-shrink{
+                top: 7px !important;
+              }
+            .main-part{
+                margin-top: 10px;
+            }
             flex-direction: column;
             .left-riepilogoform,.right-riepilogoform{
                 flex-direction: column;
@@ -161,7 +177,8 @@
                     width: 100%;
                     .input-wrapper{
                         width: 100%;
-                        margin-top: 10px;
+                        margin-top: 20px;
+                        margin-bottom: 10px;
                     }
                 }
                 .privacy-container .privacy-sub-container{

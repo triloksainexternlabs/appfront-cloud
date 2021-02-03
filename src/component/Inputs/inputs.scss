@@ -24,3 +24,9 @@
     letter-spacing: '0.015em';
     color: #BABABA;
 }
+@media only screen and (max-width:500px){
+    .input_label{
+        display: none;
+    }
+}
+

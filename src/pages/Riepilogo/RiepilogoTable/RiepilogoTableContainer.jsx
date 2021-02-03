@@ -4,13 +4,8 @@ import RiepilogoTable from "./RiepilogoTable";
 const RiepilogoTableContainer = props => {
     return (
         <div className='riepilogi-table'>
-            <RiepilogoTable/>
+            <RiepilogoTable />
         </div>
     )
 }
-
-RiepilogoTableContainer.propTypes = {
-
-}
-
 export default RiepilogoTableContainer

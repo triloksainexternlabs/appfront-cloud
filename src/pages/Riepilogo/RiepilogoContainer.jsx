@@ -3,12 +3,7 @@ import Riepilogo from "../Riepilogo/Riepilogo";
 
 const RiepilogoContainer = props => {
     return (
-        <Riepilogo {...props} />            
+        <Riepilogo {...props} />
     )
 }
-
-RiepilogoContainer.propTypes = {
-
-}
-
 export default RiepilogoContainer

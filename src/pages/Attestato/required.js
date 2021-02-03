@@ -1,11 +1,11 @@
 import React from 'react';
 import './required.css'
-import { withStyles, makeStyles} from '@material-ui/core/styles';
+import { withStyles, makeStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
 
 const CssTextField = withStyles({
   root: {
-    
+
     '& .MuiOutlinedInput-root': {
       '& fieldset': {
         borderColor: '#0C87C8',
@@ -16,7 +16,7 @@ const CssTextField = withStyles({
       '&.Mui-focused fieldset': {
         borderColor: '#0C87C8',
       },
-            
+
     },
   },
 })(TextField);
@@ -27,8 +27,8 @@ const useStyles = makeStyles((theme) => ({
   },
   margin: {
     margin: theme.spacing(1),
-    width:'355px',
-    height:'32px'
+    width: '355px',
+    height: '32px'
   },
 }));
 
@@ -37,19 +37,19 @@ const useStyles = makeStyles((theme) => ({
 export default function CustomizedInputs(props) {
   const classes = useStyles();
   return (
-    <form className={classes.root} noValidate>      
+    <form className={classes.root} noValidate>
       <CssTextField
-         required
+        required
         className={classes.margin}
         label="Targa Polizza"
         variant="outlined"
         id="custom-css-outlined-input"
-        InputLabelProps={{className:"text"}}
+        InputLabelProps={{ className: "text" }}
         value={props.formik.values.policyPlate}
         onChange={props.formik.handleChange}
         name="policyPlate"
 
-      />        
+      />
     </form>
   );
 }

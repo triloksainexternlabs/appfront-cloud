@@ -13,7 +13,7 @@ const InputFiled = props => {
                 value={value}
                 onChange={onChange}
                 name={inputTextName}
-                variant={window.innerWidth<500?"outlined":'standard'}
+                // variant={window.innerWidth<500?"outlined":'standard'}
                 // variant={window.innerHeight<500?'outlined-basic':'standard-basic'} 
            />
         </div>

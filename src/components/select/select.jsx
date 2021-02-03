@@ -5,10 +5,10 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 
 const SelectField = (props) => {
-    let {value,onChange,inputTextName} =props
+    let { value, onChange, inputTextName } = props
     return (
         <div className='select-container'>
-            <FormControl variant={window.innerWidth<500?"outlined":'standard'} >
+            <FormControl  >
                 <InputLabel htmlFor="age-native-simple">{props.name}</InputLabel>
                 <Select
                     native

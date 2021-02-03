@@ -10,7 +10,7 @@ export const RiepilogoGaranzieContainer = (props) => {
     const [isAccordian, setIsAccordian] = useState(false);
 
     const calculateDiscount = (e) => {
-        console.log("calculateDiscount",'calculateDiscount')
+        console.log("calculateDiscount", 'calculateDiscount')
 
         const { id, value } = e.target;
         let discountValue = parseFloat(value);
@@ -23,14 +23,14 @@ export const RiepilogoGaranzieContainer = (props) => {
     }
     const onChange = (e) => {
         setValues({ ...values, [e.target.id]: parseFloat(e.target.value) })
-       console.log("onChange",'onChange')
+        console.log("onChange", 'onChange')
 
     }
-   const Accordian=()=>{
-       if(isAccordian)
-       setIsAccordian(false)
-       else
-       setIsAccordian(true)
+    const Accordian = () => {
+        if (isAccordian)
+            setIsAccordian(false)
+        else
+            setIsAccordian(true)
     }
     return (
         window.innerWidth < 500 ?

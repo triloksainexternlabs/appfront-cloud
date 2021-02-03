@@ -122,7 +122,7 @@ function App() {
     },
 
   })
-  const pageOnChange=(e)=>{
+  const pageOnChange = (e) => {
     // setCurrentProgressValue(e)
     setId(e)
 
@@ -135,9 +135,9 @@ function App() {
       </div>
       <div id='form-container' className="step-view-container">
         <ReactPageScroller
-          customPageNumber={5}
+          customPageNumber={id}
           pageOnChange={pageOnChange}
-          blockScrollUp={true}
+          blockScrollUp={false}
           blockScrollDown={true}
         >
           <div className="form-one">
@@ -157,7 +157,7 @@ function App() {
             <ElencoGaranzie formik={formik} />
             <ContinueButton handleScroll={handleScroll} step={3} />
           </div>
-      
+
           <div className={`product-list-third DatiAnagrafici`}>
             <div className="headings">Dati Anagrafici</div>
             <DatiAnagrafici formik={formik} />
@@ -225,8 +225,8 @@ function App() {
             </div>
 
           </div>
-          </ReactPageScroller>
-        <Progressbar currentProgressValue={id}  />
+        </ReactPageScroller>
+        <Progressbar currentProgressValue={id} />
       </div>
 
 

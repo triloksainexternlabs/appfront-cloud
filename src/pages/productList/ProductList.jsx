@@ -8,22 +8,22 @@ const ProductList = (props) => {
         setActiveId(id)
         console.log(activeId, 'buttonRef.current.style.color=')
     }
-    return ( 
+    return (
         <div className="form-two-content" >
-        {
-            props.list.map((value)=>
-                <VehicleType
-                    changeIcon={changeIcon}
-                    activeId={activeId}
-                    id={value.id}
-                    imgUrl = {value.imageUrl} 
-                    text = {value.text} 
-                    handleScroll = {props.handleScroll} 
-                />
-            )
-        }
+            {
+                props.list.map((value) =>
+                    <VehicleType
+                        changeIcon={changeIcon}
+                        activeId={activeId}
+                        id={value.id}
+                        imgUrl={value.imageUrl}
+                        text={value.text}
+                        handleScroll={props.handleScroll}
+                    />
+                )
+            }
         </div>
     );
 }
- 
+
 export default ProductList;

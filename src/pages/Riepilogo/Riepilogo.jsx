@@ -6,10 +6,10 @@ import "./Riepilogo.scss";
 
 const Riepilogo = props => {
     return (
-        <div className="riepilogo-container">   
+        <div className="riepilogo-container">
             <RiepilogoForm {...props} />
-            <RiepilogoTable {...props}/>
-            <CambioFrazionamento {...props}/>
+            <RiepilogoTable {...props} />
+            <CambioFrazionamento {...props} />
         </div>
     )
 }
