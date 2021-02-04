@@ -14,7 +14,7 @@ function Progressbar(props) {
                 <li onClick={()=>props.handleScroll(8)} className={props.currentProgressValue === 8 ? 'active' : ''}>Riepilogo Garanzie</li>
                 <li onClick={()=>props.handleScroll(9)} className={props.currentProgressValue === 9 ? 'active' : ''}>Prodotto Autovetture Dati Integrative</li>
                 <li onClick={()=>props.handleScroll(10)} className={props.currentProgressValue === 10 ? 'active' : ''}>Riepilogo</li>
-                <li onClick={()=>props.handleScroll(11)} className={props.currentProgressValue === 11 ? 'active' : ''}>Stamp Polliza</li>
+                <li onClick={()=>props.handleScroll(11)} className={props.currentProgressValue === 11 ? 'active' :"" }>Stamp Polliza</li>
             </ul>
         </div>
     )

@@ -4,14 +4,11 @@ import DatiContratto from "./datiContratto";
 const DatiContrattoContainer = props => {
     const [value1, setValue1] = useState(null)
     const [value2, setValue2] = useState(null)
-
-    // let Styles=''
+// used for select ScadenzaVincolo date 
   const ScadenzaVincolo=(e)=>{
      setValue1(e.target.value)
-     
-     console.log( props.formik.setFieldValue(e.target.value))
-
     }
+  // used for select DataImmatricolazione date 
     const DataImmatricolazione=(e)=>{
       setValue2(e.target.value)
      }
@@ -19,9 +16,4 @@ const DatiContrattoContainer = props => {
             <DatiContratto formik={props.formik}  DataImmatricolazione={DataImmatricolazione} ScadenzaVincolo={ScadenzaVincolo} value2={value2} value1={value1}/>
     )
 }
-
-DatiContrattoContainer.propTypes = {
-
-}
-
 export default DatiContrattoContainer

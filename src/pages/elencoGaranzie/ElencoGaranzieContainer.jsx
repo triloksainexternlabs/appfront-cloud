@@ -1,12 +1,6 @@
 import ElencoGaranzie from "../elencoGaranzie/ElencoGaranzie"
 import { useState } from 'react'
 const ElencoGaranzieContainer = (props) => {
-    // const values=[]
-    // const onChange = (event) => {
-      
-    //     console.log( [event.target.name],event.target.checked,'value')
-
-    // }
     const [arr,setArr]=useState([]);
 
     const onChange=(e)=>{

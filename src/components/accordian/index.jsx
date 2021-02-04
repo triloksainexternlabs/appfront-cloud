@@ -27,8 +27,6 @@ const AccordianBox = (props) => {
               <input id={id} name={name} value={value} onChange={handleChange} type="checkbox" className='input' />
               <label htmlFor="Veicoli"></label></div>}
             checkedIcon={<Input />}
-          // icon={<CheckBoxOutlineBlankIcon fontSize="small" />}
-
           />
           <div className='accordian-data-container'>
             <div className='accordian-sub-container'>

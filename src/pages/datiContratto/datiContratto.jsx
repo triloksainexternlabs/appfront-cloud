@@ -1,12 +1,10 @@
 import React from 'react'
 import "./datiContratto.scss";
 import Input from "../../components/inputFiled/inputField";
-// import DateField from "../../components/dateField/dateField";
 import DateField from '../../components/dateField/dateField';
 import SelectField from '../../components/select/select';
 
 const DatiContratto = props => {
-    // let {DataImmatricolazione, ScadenzaVincolo,value1,value2,formik} =props;
 
     return (
         <div className='daticontratto-container'>
@@ -31,7 +29,4 @@ const DatiContratto = props => {
     )
 }
 
-
 export default DatiContratto
-// onChange={ScadenzaVincolo} value={value1}
-// onChange={DataImmatricolazione} value={value2}

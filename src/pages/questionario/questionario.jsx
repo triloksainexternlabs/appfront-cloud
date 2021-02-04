@@ -33,7 +33,6 @@ const Questionario = (props) => {
                     <div className='questionario'>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Interdum urna tristique donec id enim, neque. Consectetur duis tincidunt arcu nunc suspendisse sagittis fames quis justo.</p>
                         <ToggleBtn
-                            // name="Warranties.value8"  value={props.formik.values.Warranties.value8} onChange={props.formik.handleChange}
                             id={1}
                             handleToggle={handleToggle}
                         />

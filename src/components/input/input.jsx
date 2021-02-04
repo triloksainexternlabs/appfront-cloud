@@ -3,6 +3,7 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import PropTypes from 'prop-types';
 
+// adding style for textfield 
 const useStyles = makeStyles((theme) => ({
     textField: {
         width: '424px',
@@ -27,7 +28,7 @@ const Input = props => {
         </div>
     )
 }
-
+// validating props is string or not
 Input.propTypes = {
     inputTextId: PropTypes.string,
     inputTextLable: PropTypes.string,

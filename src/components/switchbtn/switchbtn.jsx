@@ -4,16 +4,15 @@ import Switch from "react-switch";
 
 
 const SwitchBtn = (props) => {
-//    let  className = document.getElementsByClassName('react-switch-handle')
-    const [checked, setChecked] = useState(false)
-    const toggleChecked = (i,v) => {
-        if (checked){
+    const [checked, setChecked] = useState(false) /*  used for switch confirm or not */
+    const toggleChecked = (i, v) => {
+        if (checked) {
             setChecked(false)
-            props.onChange(i,false)
+            props.onChange(i, false)
         }
-        else{
+        else {
             setChecked(true)
-            props.onChange(i,true)
+            props.onChange(i, true)
 
         }
     }
@@ -22,12 +21,12 @@ const SwitchBtn = (props) => {
             <Switch
                 width={props.width}
                 checked={checked}
-                onChange={props.isSummary?(e)=>{props.formik.setFieldValue("Riepilogo.collectedTitle",e) ;setChecked(true)}:()=>toggleChecked(props.id,props.name) }
+                onChange={props.isSummary ? (e) => { props.formik.setFieldValue("Riepilogo.collectedTitle", e); setChecked(true) } : () => toggleChecked(props.id, props.name)}
                 uncheckedIcon={
                     <span>{props.label}</span>
                 }
                 checkedIcon={
-                   props.label
+                    props.label
                 }
                 className="react-switch"
                 id={props.id}
@@ -37,8 +36,6 @@ const SwitchBtn = (props) => {
                 name={props.name}
 
             />
-            {/* } */}
-            {/* */}
         </div>
     )
 }

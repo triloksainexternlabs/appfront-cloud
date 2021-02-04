@@ -23,10 +23,11 @@ import Button from '../src/components/button/button';
 
 function App() {
   const [id, setId] = useState(0)   /*used for set current page*/
-  const dispatch = useDispatch() 
+  const dispatch = useDispatch()
   const [siNoArr, setSiNoArr] = useState([]); /*used for store true false values for questionary  */
-  const [confirmArr, setConfirmArr] = useState([]); /*used for store true false values for questionary  */
+  const [confirmArr, setConfirmArr] = useState([]); /* used for store confirm or not values for questionary  */
 
+  // getQuestions used for store questionry SiNo or confirm values
   const getQuestions = (arr, type) => {
     if (type === 'trueFalse') {
       let temp = [...arr]
@@ -37,7 +38,7 @@ function App() {
       setConfirmArr(temp)
     }
   }
-  // handlescroll used for update  current page 
+  // handlescroll used for update  current page  state
   const handleScroll = (value,) => {
     setId(value)
     if (value === 11) {
@@ -124,8 +125,9 @@ function App() {
     },
 
   })
-  // update state on page scroll
+  // update current page state on page scroll
   const pageOnChange = (e) => {
+    if(!e<12)
     setId(e)
   }
 
@@ -138,7 +140,7 @@ function App() {
         <ReactPageScroller
           customPageNumber={id}
           pageOnChange={pageOnChange}
-          blockScrollDown={window.innerWidth<500? true:false}
+          blockScrollDown={window.innerWidth < 500 ? true : false}
         >
           <div className="form-one">
             <div>
@@ -150,12 +152,12 @@ function App() {
           </div>
           <div className={`form-two `}>
             <div className="headings">ELENCO PRODOTTI</div>
-            <ProductListcontainer handleScroll={handleScroll} />
+            <ProductListcontainer handleScroll={handleScroll} />           {/*  Product List */}
           </div>
           <div className={`product-list-third ElencoGaranzie  `}>
             <div className="headings">Elenco Garanzie</div>
             <ElencoGaranzie formik={formik} />
-            <ContinueButton handleScroll={handleScroll} step={3} />
+            <ContinueButton handleScroll={handleScroll} step={3} />    {/*  continueButton -used for next step or next process */}
           </div>
 
           <div className={`product-list-third DatiAnagrafici`}>
@@ -184,7 +186,7 @@ function App() {
             <div className="headings">Prodotto Autovetture</div>
             <ProdottoAutovettureContainer formik={formik} />
             <div className='ProdottoAutovetture-btn-container'>
-              <Button name="Calcola Premlo Netto" />
+              <Button name="Calcola Premlo Netto" />                 {/* button used for Calculate Net Premium */}
               <ContinueButton handleScroll={handleScroll} step={8} />
             </div>
 
@@ -223,16 +225,13 @@ function App() {
               <StampaPolizza />
               <ContinueButton handleScroll={handleScroll} step={11} />
             </div>
-
           </div>
         </ReactPageScroller>
+        {/* progress status */}
         <Progressbar handleScroll={handleScroll} currentProgressValue={id} />
+
       </div>
-
-
     </div>
-
-
   );
 }
 

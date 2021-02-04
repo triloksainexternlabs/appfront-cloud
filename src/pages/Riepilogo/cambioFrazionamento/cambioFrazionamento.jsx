@@ -29,7 +29,7 @@ const CambioFrazionamento = (props) => {
                         <div>
                             <div>
                                 <p>Autorizza ai trattamento</p>
-                                <ToggleButton {...props} isSummary={true} value={props.formik.values.Riepilogo.authorizeTreatment} handleToggle={props.handleToggle} inputTextId="Riepilogo.authorizeTreatment" name="Riepilogo.authorizeTreatment" id={0} />
+                                <ToggleButton {...props} isSummary={true} value={props.formik.values.Riepilogo.authorizeTreatment} inputTextId="Riepilogo.authorizeTreatment" name="Riepilogo.authorizeTreatment" id={0} />
                             </div>
 
                         </div>

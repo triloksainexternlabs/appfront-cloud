@@ -43,7 +43,6 @@ export const ProclottoAuto = (props) => {
                         <Inputs value={props.formik.values.supplementaryData.provincia} onChange={props.formik.handleChange} inputTextId="supplementaryData.provincia" inputTextName="supplementaryData.provincia" placeholder='Provincia INT. Pra' />
                     </div>
                 </div>
-                {/* </div>  */}
             </div>
         </div>
     )

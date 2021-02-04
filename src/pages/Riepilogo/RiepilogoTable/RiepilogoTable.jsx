@@ -43,9 +43,4 @@ const RiepilogoTable = props => {
         </div>
     )
 }
-
-RiepilogoTable.propTypes = {
-
-}
-
 export default RiepilogoTable

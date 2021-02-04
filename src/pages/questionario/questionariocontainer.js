@@ -4,7 +4,7 @@ import Questionario from '../questionario/questionario'
 const QuestionarioContainer = (props) => {
 
     const [values, setValues] = useState([])
-
+// onChange used for store slected true false vales 
     const onChange = (id, value) => {
         let temp = [...values];
         let found = false;
